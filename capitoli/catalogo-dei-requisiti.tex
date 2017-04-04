@@ -39,13 +39,51 @@
 \section{Requisiti non funzionali}
 \subsection{Requisiti di prodotto}
 \subsubsection{Requisiti di usabilità}
+\begin{itemize}
+    \item[\textbf{MUST}] User experience efficace per consentire agli utenti di raggiungere i propri obiettivi   
+    \item[\textbf{MUST}] User experience efficiente in relazione alla precisione con cui l'utente raggiunge il proprio obiettivo
+    \item[\textbf{SHOULD}] Guida contestuale con tooltip
+    \item[\textbf{SHOULD}] Manuale utente completo
+\end{itemize}
 \subsubsection{Requisiti  di  efficienza  e  performance}       
+\begin{itemize}
+    \item[\textbf{MUST}] Performance adeguate al tipo di attività preposta, tempi di attesa brevi.
+    \item[\textbf{MUST}] Scalabilità dell'infrastruttura in base al numero di utenti serviti.
+    \item[\textbf{SHOULD}] Implementazione di meccanismi intelligenti di scalabilità automatica per la base di dati, le API e la dashboard.
+\end{itemize}
 \subsubsection{Requisiti  di  dependability}
 \paragraph{Requisiti  inversi  (reliability)}
+\begin{itemize}
+    \item[\textbf{MUST}] Il sistema deve dare la possibilità di eseguire in qualunque momento ciascuna delle operazioni definite nei requisiti funzionali con il numero minore di fallimenti possibili se in fase di produzione.
+\end{itemize}
 \paragraph{Requisiti  di  availability}
+\begin{itemize}
+    \item[\textbf{MUST}] Il sistema deve essere sempre disponibile all'utilizzo
+    \item[\textbf{MUST}] Il sistema deve essere distribuito e ridondato per prevenire situazioni di fault
+\end{itemize}
 \subsubsection{Requisiti  di  sicurezza}
+\begin{itemize}
+    \item[\textbf{MUST}] L'autenticazione deve essere gestita in modo centralizzato con un database LDAP dedicato fornito.
+    \item[\textbf{MUST}] Sono definiti due ruoli all'interno del sistema: ruolo "Utente" e ruolo "Supervisore di sessione". 
+    \item[\textbf{MUST}] Le sessioni di ciascun utente sono separate mediante tenancy isolation.
+    \item[\textbf{MUST}] Ogni utente deve avere esclusivamente i privilegi di cui ha bisogno (least privilege).
+\end{itemize}
 \subsection{Requisiti  organizzativi}
-Requisiti  ambientali       
-Requisiti  operazionali
+\subsubsection{Requisiti  ambientali}
+\begin{itemize}
+    \item[\textbf{MUST}] Il sistema sarà realizzato con tecnologie open-source, e sfrutterà le caratteristiche del sistema operativo Linux. La Dashboard sarà implementata con il framework Angular 2.0, le API saranno realizzate con Python (Django REST Framework). Per simulare gli switch il prodotto utilizzerà il software SDN Open vSwitch. Per simulare i dispositivi di livello 3, il prodotto farà uso di meccanismi di containering ottenuti tramite \textit{network namespaces} nativamente implementati nel kernel Linux (per la segregazione a livello di stack di rete) e la funzionalità \textit{chroot} (per la segregazione del filesystem).
+\end{itemize}
+\subsubsection{Requisiti  operazionali}
+\begin{itemize}
+    \item[\textbf{MUST}] Il sistema deve consentire l'utilizzo simultaneo da parte di più utenti.
+\end{itemize}
+\subsubsection{Requisiti di sviluppo}
+\begin{itemize}
+    \item{MUST} Utilizzo di tecnologie open-source
+    \item{MUST} Utilizzo di un ambiente IDE open-source
+    \item{MUST} Utilizzo di Javascript / HTML5 / CSS per la realizzazione della parte di frontend (dashboard)
+\end{itemize}
 \subsection{Requisiti esterni}
+\begin {itemize}
+\end {itemize}
 \end{document}
