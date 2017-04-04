@@ -1,0 +1,51 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\chapter{Introduzione}
+\section{Richiesta}
+L'obiettivo del progetto è la realizzazione di una piattaforma di laboratorio informatico virtuale, acccessibile tramite tecnologie web, da utilizzare per fini didattici (esercitazioni pratiche nelle discipline che le prevedono) e per fini di ricerca.
+Si richiede dunque una piattaforma multi utente e multi ambiente, che consenta all'utente di realizzare esperimenti in un ambiente simulato.
+È richiesto in particolare lo sviluppo di un ambiente specifico per la realizzazione di un laboratorio di "Reti di Calcolatori", che
+\begin{itemize}
+    \item offra la possibilità agli utenti di disegnare topologie di rete coprendo i livelli I, II e III dello stack ISO/OSI
+    \item consenta agli stessi di eseguire il \textit{deployment} della topologia disegnata
+\end{itemize}
+
+\paragraph{Disegno della topologia}
+L'utente deve:
+\begin{enumerate}
+    \item Poter lavorare in un ambiente \textit{multi-canvas}, che consenta una migliore organizzazione del progetto
+    \item Poter disegnare in ciascun \textit{canvas} il livello fisico della topologia, aggiungendo tramite un'interfaccia grafica \textit{drag-and-drop} delle icone rappresentanti i singoli dispositivi appartenenti alla topologia stessa.
+    \item Poter collegare, tramite linee, le icone precedentemente disegnate. È prevista la possibilità di effettuare collegamenti tra dispositivi appartenenti a canvas diversi \textit{cross-canvas linking}.
+    \item Poter inserire annotazioni grafiche nel canvas (forme geometriche, etichette).
+\end{enumerate}
+\paragraph{Deployment della topologia}
+\begin{enumerate}
+    \item Poter configurare tramite l'interfaccia grafica del prodotto i vari dispositivi e i link in fase di pre-deployment
+    \item Eseguire il deployment della topologia di rete
+    \item Applicare configurazioni sui link (limitazione della banda, aumento del bit-error-ratio ecc.)
+    \item Poter accedere ai terminali di ciascuno dei dispositivi appartenenti il canvas in run-time, con la possibilità di installare e configurare software all'interno degli stessi
+
+\end{enumerate}
+\paragraph{Informazioni aggiuntive alla richiesta}
+\begin{itemize}
+    \item Il prodotto deve essere accessibile via web ed integrato con un sistema di autenticazione centralizzata in dotazione (LDAP)
+    \item È definito il concetto di \textit{sessione di lavoro}, che non coincide con la sessione di login. Un utente deve poter effettuare login e logout più volte dalla piattaforma, ed accedere alle sessioni di lavoro a lui disponibile in qualunque momento.
+    \item La sessione di lavoro è creata da un "supervisore di sessione", ovvero un utente con privilegi speciali.
+    \item Deve essere fornita una modalità "supervisore di sessione", oltre a poter eseguire tutte le operazioni di cui sopra, ha la possibilità di interagire con le sessioni degli altri utenti, tramite l'implementazione di un'apposita modalità "actor".
+    \item Le risorse create dall'utente devono rimanere disponibili all'interno della stessa sessione di lavoro, che non coincide con la sessione di login.
+\end{itemize}
+
+\section{Elicitazione}
+Si intende offrire una piattaforma web-based che soddisfi i requisiti esplicitati nella richiesta e che possa essere installata in un ambiente distribuito al fine di poter garantire i requisiti impliciti di scalabilità richiesti dall'utilizzo intensivo multi-utente.
+
+L'applicazione implementerà il concetto di \textit{multi-tenancy} al fine di garantire la separazione degli ambienti nell'utilizzo multi-utente.
+
+L'approccio modulare che ne caratterizzerà lo sviluppo consentirà di espandere la stessa mediante la realizzazione di ambienti legati anche ad altre discipline.
+
+Per quanto riguarda l'ambiente "Reti di calcolatori" richiesto, le funzionalità saranno implementate tramite l'adozione di tecnologie SDN\footnote{\textit {Software Defined Network}, approccio all'orchestrazione delle risorse di rete orientato al software.}
+
+La parte operativa sarà realizzata mediante software open-source, facendo largo uso delle caratteristiche del kernel Linux\footnote{http://www.linux.org}.
+
+La piattaforma disporra di una dashboard grafica disponibile via WEB implementata con tecnologie HTML5/CSS3 e con l'utilizzo di WebSocket.
+Questa dashboard grafica comunicherà con delle API programmabili che effettueranno tutte le operazioni di gestione del prodotto implementando i requisiti esplicitati nei prossimi capitoli del presente documento.
+\end{document}
