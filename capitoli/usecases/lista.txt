@@ -3,8 +3,8 @@
     UC003   &   Selezione della sessione di lavoro \\
     UC004   &   Aggiunta di un dispositivo \\
     UC005   &   Aggiunta di un link tra due dispositivi \\
-    UC006   &   Configurazione di un dispositivo di livello 2 \\
-    UC006   &   Configurazione di un dispositivo di livello 3 \\
+    UC006   &   Eliminazione di un elemento dal canvas \\
+    UC007   &   Configurazione di un dispositivo \\
     UC008   &   Configurazione di un link \\
     UC009   &   Deploy della topologia di rete \\ 
     UC010   &   Apertura del terminale di un dispositivo \\

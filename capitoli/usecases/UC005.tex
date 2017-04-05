@@ -1,31 +1,46 @@
 \documentclass[../../main.tex]{subfiles}
 \begin{document}
-\subsubsection{Caso d’uso UC005: Aggiunta di un link tra due dispositivi }
+\subsection{Caso d’uso UC005: Aggiunta di un link tra due dispositivi }
 \begin{tabularx}{150mm}{|l|X|}
     \hline
     ID                                  & \textbf{UC005}\\
     \hline
     Titolo                              & Aggiunta di un link tra due dispositivi \\
     \hline
-    Descrizione breve                   &    \\
+    Descrizione breve                   & L'utente traccia un collegamento tra i due dispositivi   \\
     \hline
-    Attore primario                     &    \\
+    Attore primario                     & Utente del sistema   \\
     \hline
-    Eventuali altri attori              &    \\
+    Eventuali altri attori              & -  \\
     \hline
-    Stakeholders e rispettivi interessi &    \\
+    Stakeholders e rispettivi interessi & L'utente vuole mettere in comunicazione due dispositivi   \\
     \hline
-    Pre-condizioni                      &    \\
+    Pre-condizioni                      & L'utente ha creato due dispositivi   \\
     \hline
-    Post-condizioni                     &    \\
+    Post-condizioni                     & I due dispositivi (peer del link) sono collegati fra loro e, ad esperimento avviato, potranno comunicare   \\
     \hline
-    Scenario principale                 &    \\
+    Scenario principale                 &
+    \begin {enumerate}
+\item L'utente crea due dispositivi come da UC004
+\item L'utente clicca sull'icona "Aggiungi link"
+\item L'utente traccia una linea sul canvas unendo i nodi coinvolti sul link
+\item Il link viene creato e viene visualizzato nel canvas
+    \end {enumerate}
+    \\
     \hline
-    Scenari alternativi                 &    \\
+    Scenari alternativi                 &    
+    \begin {enumerate}
+\item L'utente crea due dispositivi come da UC004
+\item L'utente clicca sull'icona "Aggiungi link" con il tasto destro del mouse
+\item Viene proposta una finestra di dialogo che consente la selezione dei nodi coinvolti nel link 
+\item L'utente seleziona i nodi e preme "Ok" o il tasto invio
+\item Il link viene creato e viene visualizzato nel canvas
+    \end {enumerate} \\
+
     \hline
-    Requisiti speciali                  &    \\
+    Requisiti speciali                  &    -\\
     \hline
-    Eventuali punti aperti              &    \\
+    Eventuali punti aperti              &    Specificare eventuali proprietà del link al momento della creazione dello stesso\\
     \hline
 \end{tabularx}
 \newpage

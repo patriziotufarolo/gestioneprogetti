@@ -34,8 +34,8 @@
 \contentsline {subsubsection}{Caso d\IeC {\textquoteright }uso UC003: Selezione della sessione di lavoro }{15}{section*.19}
 \contentsline {subsubsection}{Caso d\IeC {\textquoteright }uso UC004: Aggiunta di un dispositivo }{16}{section*.20}
 \contentsline {subsubsection}{Caso d\IeC {\textquoteright }uso UC005: Aggiunta di un link tra due dispositivi }{17}{section*.21}
-\contentsline {subsubsection}{Caso d\IeC {\textquoteright }uso UC006: Configurazione di un dispositivo di livello 3 }{18}{section*.22}
-\contentsline {subsubsection}{Caso d\IeC {\textquoteright }uso UC006: Configurazione di un dispositivo di livello 3 }{19}{section*.23}
+\contentsline {subsubsection}{Caso d\IeC {\textquoteright }uso UC006: Eliminazione di un elemento dal canvas}{18}{section*.22}
+\contentsline {subsubsection}{Caso d\IeC {\textquoteright }uso UC007: Configurazione di un dispositivo }{19}{section*.23}
 \contentsline {subsubsection}{Caso d\IeC {\textquoteright }uso UC008: Configurazione di un link }{20}{section*.24}
 \contentsline {subsubsection}{Caso d\IeC {\textquoteright }uso UC009: Deploy della topologia di rete }{21}{section*.25}
 \contentsline {subsubsection}{Caso d\IeC {\textquoteright }uso UC010: Apertura del terminale di un dispositivo }{22}{section*.26}
