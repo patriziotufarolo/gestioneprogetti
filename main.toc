@@ -29,21 +29,21 @@
 \contentsline {section}{\numberline {3.1}Catalogo dei casi d'uso}{11}{section.3.1}
 \contentsline {section}{\numberline {3.2}Diagramma dei casi d'uso}{12}{section.3.2}
 \contentsline {section}{\numberline {3.3}Schede dei casi d'uso}{13}{section.3.3}
-\contentsline {subsubsection}{Caso d\IeC {\textquoteright }uso UC001: Login alla piattaforma }{13}{section*.17}
-\contentsline {subsubsection}{Caso d\IeC {\textquoteright }uso UC002: Selezione dell'ambiente }{14}{section*.18}
-\contentsline {subsubsection}{Caso d\IeC {\textquoteright }uso UC003: Selezione della sessione di lavoro }{15}{section*.19}
-\contentsline {subsubsection}{Caso d\IeC {\textquoteright }uso UC004: Aggiunta di un dispositivo }{16}{section*.20}
-\contentsline {subsubsection}{Caso d\IeC {\textquoteright }uso UC005: Aggiunta di un link tra due dispositivi }{17}{section*.21}
-\contentsline {subsubsection}{Caso d\IeC {\textquoteright }uso UC006: Eliminazione di un elemento dal canvas}{18}{section*.22}
-\contentsline {subsubsection}{Caso d\IeC {\textquoteright }uso UC007: Configurazione di un dispositivo }{19}{section*.23}
-\contentsline {subsubsection}{Caso d\IeC {\textquoteright }uso UC008: Configurazione di un link }{20}{section*.24}
-\contentsline {subsubsection}{Caso d\IeC {\textquoteright }uso UC009: Deploy della topologia di rete }{21}{section*.25}
-\contentsline {subsubsection}{Caso d\IeC {\textquoteright }uso UC010: Apertura del terminale di un dispositivo }{22}{section*.26}
-\contentsline {subsubsection}{Caso d\IeC {\textquoteright }uso UC011: Creazione di una sessione di lavoro }{23}{section*.27}
-\contentsline {subsubsection}{Caso d\IeC {\textquoteright }uso UC012: Associazione di utenti a una sessione di lavoro }{24}{section*.28}
-\contentsline {subsubsection}{Caso d\IeC {\textquoteright }uso UC013: Generazione di un invite link per l'associazione degli utenti }{25}{section*.29}
-\contentsline {subsubsection}{Caso d\IeC {\textquoteright }uso UC014: Join di una sessione di lavoro tramite invite link }{26}{section*.30}
-\contentsline {subsubsection}{Caso d\IeC {\textquoteright }uso UC015: Logout di un utente }{27}{section*.31}
+\contentsline {subsection}{\numberline {3.3.1}Caso d\IeC {\textquoteright }uso UC001: Login alla piattaforma }{13}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Caso d\IeC {\textquoteright }uso UC002: Selezione dell'ambiente }{14}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Caso d\IeC {\textquoteright }uso UC003: Selezione della sessione di lavoro }{15}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Caso d\IeC {\textquoteright }uso UC004: Aggiunta di un dispositivo }{16}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Caso d\IeC {\textquoteright }uso UC005: Aggiunta di un link tra due dispositivi }{17}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}Caso d\IeC {\textquoteright }uso UC006: Eliminazione di un elemento dal canvas}{18}{subsection.3.3.6}
+\contentsline {subsection}{\numberline {3.3.7}Caso d\IeC {\textquoteright }uso UC007: Configurazione di un dispositivo }{19}{subsection.3.3.7}
+\contentsline {subsection}{\numberline {3.3.8}Caso d\IeC {\textquoteright }uso UC008: Configurazione di un link }{20}{subsection.3.3.8}
+\contentsline {subsection}{\numberline {3.3.9}Caso d\IeC {\textquoteright }uso UC009: Deploy della topologia di rete }{21}{subsection.3.3.9}
+\contentsline {subsection}{\numberline {3.3.10}Caso d\IeC {\textquoteright }uso UC010: Apertura del terminale di un dispositivo }{22}{subsection.3.3.10}
+\contentsline {subsection}{\numberline {3.3.11}Caso d\IeC {\textquoteright }uso UC011: Creazione di una sessione di lavoro }{23}{subsection.3.3.11}
+\contentsline {subsection}{\numberline {3.3.12}Caso d\IeC {\textquoteright }uso UC012: Associazione di utenti a una sessione di lavoro }{24}{subsection.3.3.12}
+\contentsline {subsection}{\numberline {3.3.13}Caso d\IeC {\textquoteright }uso UC013: Generazione di un invite link per l'associazione degli utenti }{25}{subsection.3.3.13}
+\contentsline {subsection}{\numberline {3.3.14}Caso d\IeC {\textquoteright }uso UC014: Join di una sessione di lavoro tramite invite link }{26}{subsection.3.3.14}
+\contentsline {subsection}{\numberline {3.3.15}Caso d\IeC {\textquoteright }uso UC015: Logout di un utente }{27}{subsection.3.3.15}
 \contentsline {chapter}{\numberline {4}Text Chapter}{29}{chapter.4}
 \contentsline {section}{\numberline {4.1}Paragraphs of Text}{29}{section.4.1}
 \contentsline {section}{\numberline {4.2}Citation}{30}{section.4.2}
@@ -72,5 +72,5 @@
 \contentsline {chapter}{\numberline {6}Presenting Information}{37}{chapter.6}
 \contentsline {section}{\numberline {6.1}Table}{37}{section.6.1}
 \contentsline {section}{\numberline {6.2}Figure}{37}{section.6.2}
-\contentsline {chapter}{\leavevmode {\color {myblue}Index}}{39}{section*.32}
+\contentsline {chapter}{\leavevmode {\color {myblue}Index}}{39}{section*.17}
 \contentsfinish 
