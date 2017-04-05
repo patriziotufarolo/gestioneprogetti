@@ -1,0 +1,4 @@
+@startuml
+actor Utente
+actor :Supervisore\ndi sessione: as Supervisore
+@enduml

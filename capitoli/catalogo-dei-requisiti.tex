@@ -7,7 +7,8 @@
     \item[\textbf{MUST}] Sistema di login alla piattaforma
 \end{itemize}
 \paragraph{Modalità utente}
-\begin{itemize}
+\begin{itemize} 
+    \setlength\itemsep{1em}
     \item[\textbf{MUST}] Creazione e eliminazione un canvas
     \item[\textbf{MUST}] Aggiunta di un dispositivo nel canvas
     \item[\textbf{MUST}] Aggiunta di un link tra due dispositivi
@@ -20,15 +21,18 @@
     \item[\textbf{MUST}] Modifica delle proprietà dei link a run-time
     \item[\textbf{MUST}] Modifica delle proprietà degli switch a run-time
     \item[\textbf{MAY}] Realizzazione automatica di topologie comuni    
+    \item[\textbf{MAY}] Integrazione nella UI di comandi di rete comuni (es. visualizzazione dell'output di \textit{ifconfig} o della routing table)
 \end{itemize}
 \paragraph{Funzionalità aggiuntive modalità supervisore}
 \begin{itemize}
+    \setlength\itemsep{1em}
     \item[\textbf{MUST}] Gestione delle sessioni di lavoro
     \item[\textbf{MUST}] Associazione di utenti alle sessioni di lavoro mediante dashboard
     \item[\textbf{SHOULD}] Associazione di utenti alle sessioni di lavoro mediante link di invito
 \end{itemize}
 \paragraph{Funzionalità ulteriori}
 \begin{itemize}
+    \setlength\itemsep{1em}
     \item[\textbf{MAY}] Integrazione con sistemi di virtualizzazione esistenti
     \item[\textbf{MAY}] Integrazione con piattaforme cloud esistenti per l'orchestrazione delle risorse di rete
     \item[\textbf{MAY}] Implementazione di protocolli aggiuntivi per garantire proprietà di sicurezza eventuali (VPN IPSec, etc.)
@@ -40,6 +44,8 @@
 \subsection{Requisiti di prodotto}
 \subsubsection{Requisiti di usabilità}
 \begin{itemize}
+    
+    \setlength\itemsep{1em}
     \item[\textbf{MUST}] User experience efficace per consentire agli utenti di raggiungere i propri obiettivi   
     \item[\textbf{MUST}] User experience efficiente in relazione alla precisione con cui l'utente raggiunge il proprio obiettivo
     \item[\textbf{SHOULD}] Guida contestuale con tooltip
@@ -47,6 +53,7 @@
 \end{itemize}
 \subsubsection{Requisiti  di  efficienza  e  performance}       
 \begin{itemize}
+    \setlength\itemsep{1em}
     \item[\textbf{MUST}] Performance adeguate al tipo di attività preposta, tempi di attesa brevi.
     \item[\textbf{MUST}] Scalabilità dell'infrastruttura in base al numero di utenti serviti.
     \item[\textbf{SHOULD}] Implementazione di meccanismi intelligenti di scalabilità automatica per la base di dati, le API e la dashboard.
@@ -58,11 +65,13 @@
 \end{itemize}
 \paragraph{Requisiti  di  availability}
 \begin{itemize}
+    \setlength\itemsep{1em}
     \item[\textbf{MUST}] Il sistema deve essere sempre disponibile all'utilizzo
     \item[\textbf{MUST}] Il sistema deve essere distribuito e ridondato per prevenire situazioni di fault
 \end{itemize}
 \subsubsection{Requisiti  di  sicurezza}
 \begin{itemize}
+    \setlength\itemsep{1em}
     \item[\textbf{MUST}] L'autenticazione deve essere gestita in modo centralizzato con un database LDAP dedicato fornito.
     \item[\textbf{MUST}] Sono definiti due ruoli all'interno del sistema: ruolo "Utente" e ruolo "Supervisore di sessione". 
     \item[\textbf{MUST}] Le sessioni di ciascun utente sono separate mediante tenancy isolation.
@@ -79,11 +88,14 @@
 \end{itemize}
 \subsubsection{Requisiti di sviluppo}
 \begin{itemize}
-    \item{MUST} Utilizzo di tecnologie open-source
-    \item{MUST} Utilizzo di un ambiente IDE open-source
-    \item{MUST} Utilizzo di Javascript / HTML5 / CSS per la realizzazione della parte di frontend (dashboard)
+    \setlength\itemsep{1em}
+    \item[\textbf{MUST}] Utilizzo di tecnologie open-source.
+    \item[\textbf{MUST}] Utilizzo di un ambiente IDE open-source.
+    \item[\textbf{MUST}] Utilizzo di Javascript / HTML5 / CSS per la realizzazione della parte di frontend (dashboard).
+    \item[\textbf{MUST}] Utilizzo di engine di continuous integration per il deploy istantaneo delle modifiche nell'ambiente di produzione.
 \end{itemize}
 \subsection{Requisiti esterni}
 \begin {itemize}
+    \item[\textbf{MUST}] L'utilizzo della piattaforma non deve impattare sulla sicurezza dell'infrastruttura ad essa sottostante.
 \end {itemize}
 \end{document}
