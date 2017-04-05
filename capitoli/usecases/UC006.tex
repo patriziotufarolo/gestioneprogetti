@@ -7,25 +7,43 @@
     \hline
     Titolo                              & Eliminazione di un elemento dal canvas\\
     \hline
-    Descrizione breve                   &    \\
+    Descrizione breve                   & L'utente può eliminare qualunque elemento del canvas, link o dispositivo che sia.   \\
     \hline
-    Attore primario                     &    \\
+    Attore primario                     & Utente del sistema   \\
     \hline
-    Eventuali altri attori              &    \\
+    Eventuali altri attori              & -   \\
     \hline
-    Stakeholders e rispettivi interessi &    \\
+    Stakeholders e rispettivi interessi & L'utente del sistema deve essere in grado di eliminare un elemento precedentemente creato e non più necessario all'esperimento   \\
     \hline
-    Pre-condizioni                      &    \\
+    Pre-condizioni                      & L'elemento da eliminare deve essere presente   \\
     \hline
-    Post-condizioni                     &    \\
+    Post-condizioni                     & L'elemento selezionato è stato eliminato   \\
     \hline
-    Scenario principale                 &    \\
+    Scenario principale                 & 
+    \begin{enumerate}
+        \item L'utente fa click su un elemento del canvas con il tasto destro del mouse
+        \item Il sistema propone un menù contestuale
+        \item L'utente clicca sulla voce "elimina"
+        \item L'elemento viene eliminato
+    \end{enumerate}
+    \\
     \hline
-    Scenari alternativi                 &    \\
+    Scenari alternativi                 &
+    \begin{enumerate}
+        \item L'utente fa click su un elemento del canvas con il tasto sinistro del mouse
+        \item L'elemento viene selezionato
+        \item L'utente preme il dasto DEL sulla tastiera
+        \item L'elemento viene eliminato
+    \end{enumerate}
+    \begin{enumerate}
+        \item L'utente esegue i punti 1,2,3 dei casi precedenti
+        \item Il sistema va in errore
+        \item Viene proposto all'utente di inviare opzionalmente un report sull'errore
+    \end{enumerate} \\
     \hline
-    Requisiti speciali                  &    \\
+    Requisiti speciali                  &    L'utente deve essere informato che l'operazione di eliminazione è permanente e irreversibile \\
     \hline
-    Eventuali punti aperti              &    \\
+    Eventuali punti aperti              &    Implementare tecniche di snapshotting per rendere l'operazione reversibile\\
     \hline
 \end{tabularx}
 \newpage

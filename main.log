@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.11.24)  5 APR 2017 18:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.11.24)  5 APR 2017 23:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1531,18 +1531,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--47
 
  []
 
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
 
-./main.tex:52: LaTeX Error: There's no line here to end.
+Underfull \hbox (badness 10000) in paragraph at lines 51--53
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.52 \textit
-            {I diagrammi UML sono stati realizzati con il toolkit PlantUML (...
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+ []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 56--57
@@ -1557,18 +1555,12 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `pcr' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 58.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 58.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 58.
 
 Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
-[2] <Pictures/chapter_head_1.pdf, id=100, 596.95016pt x 298.47508pt>
+[2] <Pictures/chapter_head_1.pdf, id=101, 596.95016pt x 298.47508pt>
 File: Pictures/chapter_head_1.pdf Graphic file (type pdf)
  <use Pictures/chapter_head_1.pdf>
 Package pdftex.def Info: Pictures/chapter_head_1.pdf used on input line 72.
@@ -1613,7 +1605,12 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 \c@ttl@toc@default=\count267
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <220> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 3.
- (./main.ptc)
+ (./main.ptc
+Underfull \hbox (badness 1783) in paragraph at lines 48--48
+[]|[]| [][][]\T1/phv/b/n/12 Diagrammi di se-quen-za per la fa-se di
+ []
+
+)
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <30> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 3.
  [5
@@ -1634,17 +1631,12 @@ Underfull \vbox (badness 4013) has occurred while \output is active []
 Capitolo 3.
 [11
 
-] <capitoli/diagramma-casi-d-uso.png, id=411, 836.12375pt x 1269.74374pt>
+] <capitoli/diagramma-casi-d-uso.png, id=418, 836.12375pt x 1269.74374pt>
 File: capitoli/diagramma-casi-d-uso.png Graphic file (type png)
  <use capitoli/diagramma-casi-d-uso.png>
 Package pdftex.def Info: capitoli/diagramma-casi-d-uso.png used on input line 44.
 (pdftex.def)             Requested size: 393.46303pt x 597.50787pt.
- [12 <./capitoli/diagramma-casi-d-uso.png (PNG copy)>] (./capitoli/usecases/usecases.tex (./capitoli/usecases/UC001.tex
-Underfull \hbox (badness 4805) in paragraph at lines 45--45
-[]|\T1/ptm/m/n/10.95 (+20) Un uten-te fa lo-gin al-la piat-ta-for-ma con le cre-
- []
-
-[13]) (./capitoli/usecases/UC002.tex
+ [12 <./capitoli/diagramma-casi-d-uso.png (PNG copy)>] (./capitoli/usecases/usecases.tex (./capitoli/usecases/UC001.tex [13]) (./capitoli/usecases/UC002.tex
 Underfull \hbox (badness 2680) in paragraph at lines 39--39
 []|\T1/ptm/m/n/10.95 (+20) Introduzione di un form per se-gna-la-re il pro-ble-ma
  []
@@ -1659,15 +1651,52 @@ Underfull \hbox (badness 4686) in paragraph at lines 39--39
 []\T1/ptm/m/n/10.95 (+20) L'utente clic-ca sul can-vas per po-si-zio-na-re il
  []
 
-[16]) (./capitoli/usecases/UC005.tex [17]) (./capitoli/usecases/UC006.tex [18]) (./capitoli/usecases/UC007.tex [19]) (./capitoli/usecases/UC008.tex [20]) (./capitoli/usecases/UC009.tex [21]) (./capitoli/usecases/UC010.tex [22]) (./capitoli/usecases/UC011.tex [23]) (./capitoli/usecases/UC012.tex [24]) (./capitoli/usecases/UC013.tex [25]) (./capitoli/usecases/UC014.tex [26]) (./capitoli/usecases/UC015.tex [27]))) [28
+[16]) (./capitoli/usecases/UC005.tex [17]) (./capitoli/usecases/UC006.tex
+Underfull \hbox (badness 3302) in paragraph at lines 48--48
+[]|\T1/ptm/m/n/10.95 (+20) L'utente de-ve es-se-re in-for-ma-to che l'o-pe-ra-zio-ne di
+ []
+
+
+Underfull \hbox (badness 5403) in paragraph at lines 48--48
+[]|\T1/ptm/m/n/10.95 (+20) Implementare tec-ni-che di snap-shot-ting per ren-de-re
+ []
+
+[18]) (./capitoli/usecases/UC007.tex [19]) (./capitoli/usecases/UC008.tex [20]) (./capitoli/usecases/UC009.tex [21]) (./capitoli/usecases/UC010.tex [22]) (./capitoli/usecases/UC011.tex
+Underfull \hbox (badness 3029) in paragraph at lines 39--39
+[]\T1/ptm/m/n/10.95 (+20) Viene mo-stra-to un mes-sag-gio di con-fer-ma al
+ []
+
+[23]) (./capitoli/usecases/UC012.tex
+Underfull \hbox (badness 4217) in paragraph at lines 39--39
+[]\T1/ptm/m/n/10.95 (+20) Il su-per-vi-so-re fa click sul pul-san-te "Ap-pli-ca
+ []
+
+[24]) (./capitoli/usecases/UC013.tex
+Underfull \hbox (badness 1789) in paragraph at lines 35--35
+[]|\T1/ptm/m/n/10.95 (+20) Il su-per-vi-so-re vuo-le un me-to-do ra-pi-do per ese-gui-re
+ []
+
+[25]) (./capitoli/usecases/UC014.tex [26]) (./capitoli/usecases/UC015.tex)))
+Overfull \hbox (10.40251pt too wide) in paragraph at lines 30--7
+[]      
+ []
+
+[27] [28
+
+
+] (./capitoli/diagrammi-sequenza-analisi.tex
+Capitolo 4.
+) [29
+
+] [30
 
 
 ])
-Capitolo 4.
-[29
-
-] [30]
 Capitolo 5.
+[31
+
+] [32]
+Capitolo 6.
 Package mdframed Info: mdframed works in twoside mode on input line 147.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
@@ -1682,7 +1711,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 168.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 168.
-[31
+[33
 
 ]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
@@ -1695,25 +1724,25 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 206.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <6> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 241.
- [32]
+ [34]
 Package mdframed Info: mdframed works in twoside mode on input line 261.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 261.
- [33] [34
+ [35] [36
 
-] (./main.ptc) [35] [36]
-Capitolo 6.
-<Pictures/placeholder.jpg, id=595, 351.3125pt x 193.72375pt>
+] (./main.ptc) [37] [38]
+Capitolo 7.
+<Pictures/placeholder.jpg, id=655, 351.3125pt x 193.72375pt>
 File: Pictures/placeholder.jpg Graphic file (type jpg)
  <use Pictures/placeholder.jpg>
 Package pdftex.def Info: Pictures/placeholder.jpg used on input line 318.
 (pdftex.def)             Requested size: 175.6558pt x 96.86163pt.
- [37
+ [39
 
- <./Pictures/placeholder.jpg>] [38
+ <./Pictures/placeholder.jpg>] [40
 
-] (./main.ind [39
+] (./main.ind [41
 
 
 ])
@@ -1727,18 +1756,18 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 334.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 334.
  ) 
 Here is how much of TeX's memory you used:
- 29801 strings out of 493013
- 543673 string characters out of 6139316
- 727318 words of memory out of 5000000
- 32357 multiletter control sequences out of 15000+600000
- 138290 words of font info for 314 fonts, out of 8000000 for 9000
+ 29866 strings out of 493013
+ 544293 string characters out of 6139316
+ 729400 words of memory out of 5000000
+ 32362 multiletter control sequences out of 15000+600000
+ 138680 words of font info for 320 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,15n,57p,10507b,1224s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (42 pages, 1422506 bytes).
+Output written on main.pdf (44 pages, 1431767 bytes).
 PDF statistics:
- 822 PDF objects out of 1000 (max. 8388607)
- 632 compressed objects within 7 object streams
- 188 named destinations out of 1000 (max. 500000)
- 75033 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 897 PDF objects out of 1000 (max. 8388607)
+ 702 compressed objects within 8 object streams
+ 236 named destinations out of 1000 (max. 500000)
+ 75041 words of extra memory for PDF output out of 89155 (max. 10000000)
 

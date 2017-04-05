@@ -7,25 +7,41 @@
     \hline
     Titolo                              & Configurazione di un link \\
     \hline
-    Descrizione breve                   &    \\
+    Descrizione breve                   & L'utente configura le proprietà di un link. Alcune di queste possono essere la bandwidth, il bit error ratio, la latenza.   \\
     \hline
-    Attore primario                     &    \\
+    Attore primario                     & Utente del sistema   \\
     \hline
-    Eventuali altri attori              &    \\
+    Eventuali altri attori              & -   \\
     \hline
-    Stakeholders e rispettivi interessi &    \\
+    Stakeholders e rispettivi interessi & L'utente vuole poter simulare condizioni di carico sulla rete, malfunzionamenti della stessa, link con bandwidth ridotta rispetto a quella di default   \\
     \hline
-    Pre-condizioni                      &    \\
+    Pre-condizioni                      &  Il link deve esistere  \\
     \hline
-    Post-condizioni                     &    \\
+    Post-condizioni                     &  Le proprietà del link ad esperimento avviato rispecchieranno quelle dichiarate  \\
     \hline
-    Scenario principale                 &    \\
+    Scenario principale                 &  
+     \begin{enumerate}
+        \item L'utente seleziona un link
+        \item L'utente clicca sul tasto configura
+        \item Il sistema propone una finestra di dialogo per la configurazione del link 
+        \item L'utente inserisce la configurazione nella finestra di dialogo 
+        \item L'utente applica la configurazione
+    \end{enumerate}\\
     \hline
-    Scenari alternativi                 &    \\
+    Scenari alternativi                 &  
+    \begin{enumerate}
+        \item L'utente fa doppio click sul link
+        \item Il sistema propone una finestra di dialogo e tutto procede come da punti 3, 4, 5 dello scenario principale
+    \end{enumerate}
+    \begin{enumerate}
+        \item L'utente esegue i punti 1, 2, 3, 4 dello scenario principale
+        \item L'utente fa click sul pulsante "Annulla"
+        \item La configurazione non viene applicata
+    \end{enumerate} \\
     \hline
-    Requisiti speciali                  &    \\
+    Requisiti speciali                  & -   \\
     \hline
-    Eventuali punti aperti              &    \\
+    Eventuali punti aperti              & -   \\
     \hline
 \end{tabularx}
 \newpage

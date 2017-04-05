@@ -7,26 +7,35 @@
     \hline
     Titolo                              & Associazione di utenti a una sessione di lavoro \\
     \hline
-    Descrizione breve                   &    \\
+    Descrizione breve                   & Il supervisore associa gli utenti del sistema a una sessione di lavoro   \\
     \hline
-    Attore primario                     &    \\
+    Attore primario                     & Supervisore del sistema   \\
     \hline
-    Eventuali altri attori              &    \\
+    Eventuali altri attori              & Utente del sistema   \\
     \hline
-    Stakeholders e rispettivi interessi &    \\
+    Stakeholders e rispettivi interessi & Il supervisore del sistema vuole permettere agli utenti di lavorare   \\ & Gli utenti vogliono disegnare le topologie ed eseguire esperimenti su di esse   \\
     \hline
-    Pre-condizioni                      &    \\
+    Pre-condizioni                      & Il supervisore ha creato la sessione di lavoro   \\
     \hline
-    Post-condizioni                     &    \\
+    Post-condizioni                     & Gli utenti sono associati alla sessione di lavoro e possono utilizzare l'ambiente   \\
     \hline
-    Scenario principale                 &    \\
+    Scenario principale                 & 
+    \begin{enumerate}
+        \item Il supervisore di sistema apre la pagina "Sessioni di lavoro"
+        \item Il supervisore fa click sul pulsante "Dettagli" relativo alla sessione di lavoro interessata
+        \item Il supervisore sceglie gli utenti del sistema tra le identità disponibili nel database LDAP
+        \item Il supervisore fa click sul pulsante "Applica associazione utenti"
+        \item Il sistema elimina le eventuali utente non selezionate (se precedentemente esistenti) e crea le associazioni specificate
+        \item Il sistema mostra all'utente un avviso di conferma
+    \end{enumerate}
+    \\
     \hline
-    Scenari alternativi                 &    \\
+    Scenari alternativi                 &    L'associazione può avvenire come da UC013 e UC014\\
     \hline
-    Requisiti speciali                  &    \\
+    Requisiti speciali                  &    -\\
     \hline
-    Eventuali punti aperti              &    \\
+    Eventuali punti aperti              &    -\\
     \hline
 \end{tabularx}
-\newpage
+\vfill\newpage
 \end{document}

@@ -3,30 +3,39 @@
 \subsection{Caso d’uso UC011: Creazione di una sessione di lavoro }
 \begin{tabularx}{150mm}{|l|X|}
     \hline
-    ID                                  & \textbf{UC011}\\
+    ID                                  & \textbf{UC011} \\
     \hline
     Titolo                              & Creazione di una sessione di lavoro \\
     \hline
-    Descrizione breve                   &    \\
+    Descrizione breve                   & Il supervisore crea una nuova sessione di lavoro   \\
     \hline
-    Attore primario                     &    \\
+    Attore primario                     & Supervisore di sessione   \\
     \hline
-    Eventuali altri attori              &    \\
+    Eventuali altri attori              & Utente del sistema   \\
     \hline
-    Stakeholders e rispettivi interessi &    \\
+    Stakeholders e rispettivi interessi & Il supervisore vuole creare una nuova sessione. Gli utenti del sistema vogliono partecipare alla sessione di lavoro del supervisore per utilizzare l'ambiente selezionato \\
     \hline
-    Pre-condizioni                      &    \\
+    Pre-condizioni                      & L'utente ha fatto login \\ & L'utente ha i privilegi di supervisore di sistema   \\
     \hline
-    Post-condizioni                     &    \\
+    Post-condizioni                     & La sessione di lavoro è esistente e può essere effettuato il join degli utenti alla sessione.  
+    \\ & Il supervisore è automaticamente associato alla sessione da lui creata. \\
     \hline
-    Scenario principale                 &    \\
+    Scenario principale                 &
+    \begin {enumerate}
+\item Il supervisore di sistema fa login
+\item Il supervisore clicca sul link "Crea una sessione"
+\item Il supervisore da un nome alla sessione
+\item La sessione viene salvata sul database
+\item Viene mostrato un messaggio di conferma al supervisore
+    \end {enumerate}
+\\
     \hline
-    Scenari alternativi                 &    \\
+    Scenari alternativi                 & -   \\
     \hline
-    Requisiti speciali                  &    \\
+    Requisiti speciali                  & -   \\
     \hline
-    Eventuali punti aperti              &    \\
+    Eventuali punti aperti              & -   \\
     \hline
 \end{tabularx}
-\newpage
+\vfill\newpage
 \end{document}

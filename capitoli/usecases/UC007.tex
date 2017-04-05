@@ -7,25 +7,44 @@
     \hline
     Titolo                              & Configurazione di un dispositivo \\
     \hline
-    Descrizione breve                   &    \\
+    Descrizione breve                   & L'utente configura il dispositivo in fase di pre-deployment. Se il dispositivo è di livello 2 ISO/OSI (es. switch, bridge) i parametri possono riguardare la politica di scheduling e queueing dei pacchetti, le porte del dispositivo, i VLAN tag, porte di trunk, politiche SDN etc.   
+    Se il dispositivo è di livello 3 ISO/OSI, i parametri possono riguardare la configurazione IPv4 e IPv6 (IP/SUBNET/GATEWAY), routing, configurazioni particolari sul kernel (es. forwarding dei pacchetti, firewall) \\
     \hline
-    Attore primario                     &    \\
+    Attore primario                     & Utente del sistema   \\
     \hline
-    Eventuali altri attori              &    \\
+    Eventuali altri attori              & -   \\
     \hline
-    Stakeholders e rispettivi interessi &    \\
+    Stakeholders e rispettivi interessi & L'utente del sistema vuole configurare in modo idoneo ai suoi scopi il dispositivo in oggetto   \\
     \hline
-    Pre-condizioni                      &    \\
+    Pre-condizioni                      & Il dispositivo deve essere presente sulla topologia.\\& L'esperimento non deve essere stato avviato    \\
     \hline
-    Post-condizioni                     &    \\
+    Post-condizioni                     & Il dispositivo è configurato in base alle esigenze dell'utente   \\
     \hline
-    Scenario principale                 &    \\
+    Scenario principale                 &
+    \begin{enumerate}
+        \item L'utente seleziona un dispositivo
+        \item L'utente clicca sul tasto configura
+        \item Il sistema propone una finestra di dialogo
+        \item L'utente inserisce la configurazione nella finestra di dialogo in formato \textit{JSON}
+        \item L'utente applica la configurazione
+    \end{enumerate}
+    \\
     \hline
-    Scenari alternativi                 &    \\
+    Scenari alternativi                 &    
+    \begin{enumerate}
+        \item L'utente fa doppio click sul dispositivo
+        \item Il sistema propone una finestra di dialogo e tutto procede come da punti 3, 4, 5 dello scenario principale
+    \end{enumerate}
+    \begin{enumerate}
+        \item L'utente esegue i punti 1, 2, 3, 4 dello scenario principale
+        \item L'utente fa click sul pulsante "Annulla"
+        \item La configurazione non viene applicata
+    \end{enumerate}
+    \\
     \hline
-    Requisiti speciali                  &    \\
+    Requisiti speciali                  & -   \\
     \hline
-    Eventuali punti aperti              &    \\
+    Eventuali punti aperti              &    Sviluppare UI ad-hoc per la gestione delle configurazioni eliminando l'effort del formato \textit{JSON}\\
     \hline
 \end{tabularx}
 \newpage

@@ -29,7 +29,7 @@
 \contentsline {section}{\numberline {3.1}Catalogo dei casi d'uso}{11}{section.3.1}
 \contentsline {section}{\numberline {3.2}Diagramma dei casi d'uso}{12}{section.3.2}
 \contentsline {section}{\numberline {3.3}Schede dei casi d'uso}{13}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Caso d\IeC {\textquoteright }uso UC001: Login alla piattaforma }{13}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.1}Caso d\IeC {\textquoteright }uso UC001: Login alla piattaforma}{13}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Caso d\IeC {\textquoteright }uso UC002: Selezione dell'ambiente }{14}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Caso d\IeC {\textquoteright }uso UC003: Selezione della sessione di lavoro }{15}{subsection.3.3.3}
 \contentsline {subsection}{\numberline {3.3.4}Caso d\IeC {\textquoteright }uso UC004: Aggiunta di un dispositivo }{16}{subsection.3.3.4}
@@ -44,33 +44,34 @@
 \contentsline {subsection}{\numberline {3.3.13}Caso d\IeC {\textquoteright }uso UC013: Generazione di un invite link per l'associazione degli utenti }{25}{subsection.3.3.13}
 \contentsline {subsection}{\numberline {3.3.14}Caso d\IeC {\textquoteright }uso UC014: Join di una sessione di lavoro tramite invite link }{26}{subsection.3.3.14}
 \contentsline {subsection}{\numberline {3.3.15}Caso d\IeC {\textquoteright }uso UC015: Logout di un utente }{27}{subsection.3.3.15}
-\contentsline {chapter}{\numberline {4}Text Chapter}{29}{chapter.4}
-\contentsline {section}{\numberline {4.1}Paragraphs of Text}{29}{section.4.1}
-\contentsline {section}{\numberline {4.2}Citation}{30}{section.4.2}
-\contentsline {section}{\numberline {4.3}Lists}{30}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Numbered List}{30}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Bullet Points}{30}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Descriptions and Definitions}{30}{subsection.4.3.3}
-\contentsline {chapter}{\numberline {5}In-text Elements}{31}{chapter.5}
-\contentsline {section}{\numberline {5.1}Theorems}{31}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Several equations}{31}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Single Line}{31}{subsection.5.1.2}
-\contentsline {section}{\numberline {5.2}Definitions}{31}{section.5.2}
-\contentsline {section}{\numberline {5.3}Notations}{32}{section.5.3}
-\contentsline {section}{\numberline {5.4}Remarks}{32}{section.5.4}
-\contentsline {section}{\numberline {5.5}Corollaries}{32}{section.5.5}
-\contentsline {section}{\numberline {5.6}Propositions}{32}{section.5.6}
-\contentsline {subsection}{\numberline {5.6.1}Several equations}{32}{subsection.5.6.1}
-\contentsline {subsection}{\numberline {5.6.2}Single Line}{32}{subsection.5.6.2}
-\contentsline {section}{\numberline {5.7}Examples}{32}{section.5.7}
-\contentsline {subsection}{\numberline {5.7.1}Equation and Text}{32}{subsection.5.7.1}
-\contentsline {subsection}{\numberline {5.7.2}Paragraph of Text}{33}{subsection.5.7.2}
-\contentsline {section}{\numberline {5.8}Exercises}{33}{section.5.8}
-\contentsline {section}{\numberline {5.9}Problems}{33}{section.5.9}
-\contentsline {section}{\numberline {5.10}Vocabulary}{33}{section.5.10}
-\contentsline {part}{\@mypartnumtocformat {II}{Part Two}}{35}{part.2}
-\contentsline {chapter}{\numberline {6}Presenting Information}{37}{chapter.6}
-\contentsline {section}{\numberline {6.1}Table}{37}{section.6.1}
-\contentsline {section}{\numberline {6.2}Figure}{37}{section.6.2}
-\contentsline {chapter}{\leavevmode {\color {myblue}Index}}{39}{section*.17}
+\contentsline {chapter}{\numberline {4}Diagrammi di sequenza per la fase di analisi}{29}{chapter.4}
+\contentsline {chapter}{\numberline {5}Text Chapter}{31}{chapter.5}
+\contentsline {section}{\numberline {5.1}Paragraphs of Text}{31}{section.5.1}
+\contentsline {section}{\numberline {5.2}Citation}{32}{section.5.2}
+\contentsline {section}{\numberline {5.3}Lists}{32}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Numbered List}{32}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Bullet Points}{32}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Descriptions and Definitions}{32}{subsection.5.3.3}
+\contentsline {chapter}{\numberline {6}In-text Elements}{33}{chapter.6}
+\contentsline {section}{\numberline {6.1}Theorems}{33}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Several equations}{33}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Single Line}{33}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Definitions}{33}{section.6.2}
+\contentsline {section}{\numberline {6.3}Notations}{34}{section.6.3}
+\contentsline {section}{\numberline {6.4}Remarks}{34}{section.6.4}
+\contentsline {section}{\numberline {6.5}Corollaries}{34}{section.6.5}
+\contentsline {section}{\numberline {6.6}Propositions}{34}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Several equations}{34}{subsection.6.6.1}
+\contentsline {subsection}{\numberline {6.6.2}Single Line}{34}{subsection.6.6.2}
+\contentsline {section}{\numberline {6.7}Examples}{34}{section.6.7}
+\contentsline {subsection}{\numberline {6.7.1}Equation and Text}{34}{subsection.6.7.1}
+\contentsline {subsection}{\numberline {6.7.2}Paragraph of Text}{35}{subsection.6.7.2}
+\contentsline {section}{\numberline {6.8}Exercises}{35}{section.6.8}
+\contentsline {section}{\numberline {6.9}Problems}{35}{section.6.9}
+\contentsline {section}{\numberline {6.10}Vocabulary}{35}{section.6.10}
+\contentsline {part}{\@mypartnumtocformat {II}{Part Two}}{37}{part.2}
+\contentsline {chapter}{\numberline {7}Presenting Information}{39}{chapter.7}
+\contentsline {section}{\numberline {7.1}Table}{39}{section.7.1}
+\contentsline {section}{\numberline {7.2}Figure}{39}{section.7.2}
+\contentsline {chapter}{\leavevmode {\color {myblue}Index}}{41}{section*.17}
 \contentsfinish 
