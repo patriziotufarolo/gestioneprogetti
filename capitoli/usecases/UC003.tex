@@ -1,0 +1,42 @@
+\documentclass[../../main.tex]{subfiles}
+\begin{document}
+\subsubsection{Caso d’uso UC003: Selezione della sessione di lavoro }
+\begin{tabularx}{150mm}{|l|X|}
+    \hline
+    ID                                  & \textbf{UC003}\\
+    \hline
+    Titolo                              & Selezione della sessione di lavoro \\
+    \hline
+    Descrizione breve                   & L'utente dopo aver scelto l'ambiente su cui vuole lavorare, ottiene una lista di tutte le sessioni di lavoro attive per quell'ambiente. Può quindi scegliere la sessione di lavoro relativa.   \\
+    \hline
+    Attore primario                     & Utente   \\
+    \hline
+    Eventuali altri attori              & Supervisore di sessione   \\
+    \hline
+    Stakeholders e rispettivi interessi & L'utente vuole poter accedere a una sessione per poter lavorare   \\
+    \hline
+    Pre-condizioni                      & L'utente ha scelto un ambiente ed è associato a una sessione di lavoro nell'ambiente scelto   \\
+    \hline
+    Post-condizioni                     & L'utente può vedere il proprio canvas di lavoro   \\
+    \hline
+    Scenario principale                 & \begin{enumerate}
+        \item L'utente esegue UC001 e UC002
+        \item Il sistema propone le sessioni di lavoro abilitate per quell'utente
+        \item L'utente sceglie la sessione di lavoro tra quelle proposte
+    \end{enumerate} \\
+    \hline
+    Scenari alternativi &
+    \begin{enumerate}
+        \item L'utente esegue UC001 e UC002
+        \item L'utente non è associato a sessioni di lavoro
+        \item Viene mostrato un messaggio informativo
+    \end{enumerate}
+        \\
+    \hline
+    Requisiti speciali                  & -   \\
+    \hline
+    Eventuali punti aperti              & -   \\
+    \hline
+\end{tabularx}
+\newpage
+\end{document}

@@ -1,0 +1,47 @@
+\documentclass[../../main.tex]{subfiles}
+\begin{document}
+\subsubsection{Caso d’uso UC001: Login alla piattaforma }
+\begin{tabularx}{150mm}{|l|X|}
+    \hline
+    ID                                  & \textbf{UC001}\\
+    \hline
+    Titolo                              & Login alla piattaforma \\
+    \hline
+    Descrizione breve                   & Un utente fa login alla piattaforma con le credenziali memorizzate nel database di autenticazione dell'organizzazione di appartenenza   \\
+    \hline
+    Attore primario                     & Utente del sistema   \\
+    \hline
+    Eventuali altri attori              & Supervisore di sessione   \\
+    \hline
+    Stakeholders e rispettivi interessi & L'utente del sistema necessita di utilizzare il sistema per condurre un'esercitazione o un esperimento. Nel caso in cui l'utente sia un supervisore di sessione, vuole poter creare una nuova sessione di lavoro ed associare alla stessa degli utenti   \\
+    \hline
+    Pre-condizioni                      & L'utente ha un username e una password per effettuare il login   \\
+    \hline
+    Post-condizioni                     & L'utente ha accesso al sistema e può condurre le azioni desiderate, in base ai privilegi ad esso garantiti   \\
+    \hline
+    Scenario principale                 & \begin {enumerate}
+\item {L'utente visita la pagina web della piattaforma}
+\item {L'utente clicca sul link login}
+\item {L'utente inserisce le proprie credenziali}
+\item {Il sistema effettua un check sulle credenziali e accetta l'accesso}
+    \end{enumerate}
+    \\
+    \hline
+    Scenari alternativi                 &
+    \begin {enumerate}
+\item{L'utente visita la pagina web della piattaforma}
+\item{L'utente clicca sul link login}
+\item{L'utente inserisce credenziali errate}
+\item{Il sistema effettua un check sulle credenziali e nega l'accesso}
+\item{L'utente inserisce credenziali corrette}
+\item{Il sistema effettua un check sulle credenziali e accetta l'accesso}
+    \end{enumerate}
+    \\
+    \hline
+    Requisiti speciali                  &    \\
+    \hline
+    Eventuali punti aperti              &    Inserire possibilità di ripristinare la password sul database LDAP in caso di password dimenticata \\
+    \hline
+\end{tabularx}
+\newpage
+\end{document}

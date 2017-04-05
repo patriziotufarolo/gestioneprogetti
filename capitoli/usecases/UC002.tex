@@ -1,0 +1,42 @@
+\documentclass[../../main.tex]{subfiles}
+\begin{document}
+\subsubsection{Caso d’uso UC002: Selezione dell'ambiente }
+\begin{tabularx}{150mm}{|l|X|}
+    \hline
+    ID                                  & \textbf{UC002}\\
+    \hline
+    Titolo                              & Selezione dell'ambiente \\
+    \hline
+    Descrizione breve                   & L'utente, dopo aver effettuato il login, vuole selezionare un ambiente di lavoro tra quelli disponibili. Ad esempio, per condurre un esperimento in "Reti di calcolatori", seleziona l'ambiente "Reti".   \\
+    \hline
+    Attore primario                     & Utente   \\
+    \hline
+    Eventuali altri attori              & Supervisore di sessione   \\
+    \hline
+    Stakeholders e rispettivi interessi & L'utente vuole effettuare una sessione di lavoro in un determinato ambiente   \\
+    \hline
+    Pre-condizioni                      & Deve essere stato installato e configurato sulla piattaforma almeno un ambiente   \\
+    \hline
+    Post-condizioni                     & All'utente vengono mostrate le sessioni di lavoro disponibili per l'ambiente da egli scelto  \\
+    \hline
+    Scenario principale                 & \begin{enumerate}
+        \item L'utente effettua UC001
+        \item L'utente seleziona l'ambiente tra quelli proposti dal sistema
+    \end{enumerate}
+            \\
+    \hline
+    Scenari alternativi                 & \begin {enumerate}
+        \item L'utente effettua UC001
+        \item Non è stato configurato nessun ambiente nella piattaforma, viene mostrato un messaggio informativo e la piattaforma non è utilizzabile
+        \end{enumerate}
+            \\
+    \hline
+    Requisiti speciali                  &    \\
+    \hline
+    Eventuali punti aperti              &     \begin{enumerate}
+        Introduzione di un form per segnalare il problema all'amministratore di sistema
+    \end{enumerate}    \\
+    \hline
+\end{tabularx}
+\newpage
+\end{document}
