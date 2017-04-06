@@ -1,0 +1,74 @@
+
+  ┌─┐
+  ║"│
+  └┬┘
+  ┌┼┐
+   │                                          ┌──┐                                   ┌───────┐
+  ┌┴┐                                         │UI│                                   │Sistema│
+Utente                                        └┬─┘                                   └───┬───┘
+ ┌┴┐        1 Seleziona un dispositivo        ┌┴┐                                        │
+ │ │ ────────────────────────────────────────>│ │                                        │
+ └┬┘                                          │ │                                        │
+  │         2 Dispositivo selezionato         │ │                                        │
+  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │                                        │
+  │                                           └┬┘                                        │
+  │         3 Click sul tasto configura        │                                         │
+  │ ───────────────────────────────────────────>                                         │
+  │                                            │                                         │
+  │ 4 Apertura della finestra di configurazione│                                         │
+  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─                                         │
+  │                                            │                                         │
+  │     5 Inserimento della configurazione     │                                         │
+  │ ───────────────────────────────────────────>                                         │
+  │                                            │                                         │
+  │        6 Click sul tasto "Applica"        ┌┴┐                                        │
+  │ ─────────────────────────────────────────>│ │                                        │
+  │                                           │ │                                        │
+  │                                           │ │     7 Invio della configurazione      ┌┴┐
+  │                                           │ │ ────────────────────────────────────> │ │
+  │                                           └┬┘                                       │ │
+  │                                            │                                        │ │────┐
+  │                                            │                                        │ │    │ <b>8</b>
+  │                                            │                                        │ │<───┘ Applicazione della configurazione
+  │                                            │                                        │ │
+  │                                            │                                        │ │
+  │                                           ┌┴┐9 Notifica di configurazione applicata │ │
+  │                                           │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─  │ │
+  │                                           │ │                                       └┬┘
+ ┌┴┐ 10 Messaggio di configurazione applicata │ │                                        │
+ │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │                                        │
+ └┬┘                                          └┬┘                                        │
+
+@startuml
+hide footbox
+autonumber
+Actor Utente
+activate Utente
+Utente -> UI : Seleziona un dispositivo
+deactivate Utente
+activate UI
+Utente <-- UI : Dispositivo selezionato
+deactivate UI
+activate Utente
+Utente -> UI : Click sul tasto configura
+deactivate Utente
+activate UI
+Utente <-- UI : Apertura della finestra di configurazione
+deactivate UI
+activate Utente
+Utente -> UI : Inserimento della configurazione
+Utente -> UI : Click sul tasto "Applica"
+deactivate Utente
+activate UI
+UI -> Sistema : Invio della configurazione
+deactivate UI
+activate Sistema
+Sistema -> Sistema : Applicazione della configurazione
+UI <-- Sistema : Notifica di configurazione applicata
+deactivate Sistema
+activate UI
+Utente <-- UI : Messaggio di configurazione applicata 
+deactivate UI
+activate Utente
+deactivate Utente
+@enduml

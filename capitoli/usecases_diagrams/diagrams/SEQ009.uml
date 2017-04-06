@@ -1,0 +1,14 @@
+
+   ┌─┐
+   ║"│
+   └┬┘
+   ┌┼┐
+    │
+   ┌┴┐
+Patrizio
+
+@startuml
+hide footbox
+Actor Patrizio
+
+@enduml

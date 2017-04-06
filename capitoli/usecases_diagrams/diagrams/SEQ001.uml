@@ -1,0 +1,46 @@
+
+  ┌─┐
+  ║"│
+  └┬┘
+  ┌┼┐
+   │                             ┌───────┐
+  ┌┴┐                            │Sistema│
+Utente                           └───┬───┘
+ ┌┴┐  1 Richiesta pagina di login   ┌┴┐
+ │ │ ─────────────────────────────> │ │
+ └┬┘                                │ │
+  │ 2 Visualizzazione form di login │ │
+  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │
+  │                                 └┬┘
+  │    3 Inserimento credenziali     │
+  │ ────────────────────────────────>│
+  │                                  │
+  │                                  ────┐
+  │                                      │ <b>4</b>
+  │                                  <───┘ Validazione delle credenziali
+  │
+  │                                  │
+ ┌┴┐5 Messaggio di conferma / errore │
+ │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│
+ └┬┘                                 │
+
+@startuml
+hide footbox
+autonumber 
+Actor Utente
+activate Utente
+Utente -> Sistema   :   Richiesta pagina di login
+deactivate Utente
+activate Sistema
+Utente <-- Sistema  :   Visualizzazione form di login    
+deactivate Sistema
+activate Utente
+Utente -> Sistema   :   Inserimento credenziali
+deactivate Utente
+activate Sistema
+Sistema -> Sistema  :   Validazione delle credenziali
+Utente <-- Sistema  :   Messaggio di conferma / errore
+deactivate Sistema
+activate Utente
+deactivate Utente
+@enduml

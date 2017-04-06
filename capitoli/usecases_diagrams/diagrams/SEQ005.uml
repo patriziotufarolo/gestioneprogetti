@@ -1,0 +1,58 @@
+
+  ┌─┐
+  ║"│
+  └┬┘
+  ┌┼┐
+   │                                      ┌──┐                   ┌───────┐
+  ┌┴┐                                     │UI│                   │Sistema│
+Utente                                    └┬─┘                   └───┬───┘
+ ┌┴┐  1 Click sull'icona "Aggiungi link"  ┌┴┐                        │
+ │ │ ────────────────────────────────────>│ │                        │
+ └┬┘                                      │ │                        │
+  │       2 Modalità aggiunta link        │ │                        │
+  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │                        │
+  │                                       └┬┘                        │
+  │ 3 Trascina mouse da un device all'altro│                         │
+  │ ───────────────────────────────────────>                         │
+  │                                        │                         │
+  │                                        │     4 Crea il link     ┌┴┐
+  │                                        │ ──────────────────────>│ │
+  │                                        │                        │ │
+  │                                        │                        │ │────┐
+  │                                        │                        │ │    │ <b>5</b>
+  │                                        │                        │ │<───┘ Creazione del link
+  │                                        │                        │ │
+  │                                        │                        │ │
+  │                                       ┌┴┐6 Notifica link creato │ │
+  │                                       │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─  │ │
+  │                                       │ │                       └┬┘
+ ┌┴┐        7 Notifica link creato        │ │                        │
+ │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │                        │
+ └┬┘                                      └┬┘                        │
+
+@startuml
+hide footbox
+autonumber
+Actor Utente
+activate Utente
+Utente -> UI        :   Click sull'icona "Aggiungi link"
+deactivate Utente
+activate UI
+Utente <-- UI       :   Modalità aggiunta link
+deactivate UI
+activate Utente
+Utente -> UI        :   Trascina mouse da un device all'altro
+deactivate Utente
+activate UI
+UI -> Sistema       :   Crea il link
+deactivate UI
+activate Sistema
+Sistema -> Sistema  :   Creazione del link
+UI <-- Sistema      :   Notifica link creato
+deactivate Sistema
+activate UI
+Utente <-- UI       :   Notifica link creato
+deactivate UI
+activate Utente
+deactivate Utente
+@enduml

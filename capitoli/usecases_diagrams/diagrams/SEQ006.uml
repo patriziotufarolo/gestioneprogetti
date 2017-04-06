@@ -1,0 +1,58 @@
+
+  ┌─┐
+  ║"│
+  └┬┘
+  ┌┼┐
+   │                                            ┌──┐                              ┌───────┐
+  ┌┴┐                                           │UI│                              │Sistema│
+Utente                                          └┬─┘                              └───┬───┘
+ ┌┴┐           1 Seleziona l'elemento            ┌┴┐                                  │
+ │ │ ──────────────────────────────────────────> │ │                                  │
+ └┬┘                                             │ │                                  │
+  │            2 Elemento selezionato            │ │                                  │
+  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │                                  │
+  │                                              └┬┘                                  │
+  │       3 Invia comando di cancellazione       │                                    │
+  │ ─────────────────────────────────────────────>                                    │
+  │                                              │                                    │
+  │                                              │4 Inoltra comando di cancellazione ┌┴┐
+  │                                              │ ────────────────────────────────> │ │
+  │                                              │                                   │ │
+  │                                              │                                   │ │────┐
+  │                                              │                                   │ │    │ <b>5</b>
+  │                                              │                                   │ │<───┘ Cancellazione dell'elemento
+  │                                              │                                   │ │
+  │                                              │                                   │ │
+  │                                              ┌┴┐    6 Cancellazione avvenuta     │ │
+  │                                              │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │
+  │                                              │ │                                 └┬┘
+ ┌┴┐7 Mostra messaggio di cancellazione avvenuta │ │                                  │
+ │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─  │ │                                  │
+ └┬┘                                             └┬┘                                  │
+
+@startuml
+hide footbox
+autonumber 
+Actor Utente
+activate Utente
+Utente -> UI : Seleziona l'elemento
+deactivate Utente
+activate UI
+Utente <-- UI : Elemento selezionato
+deactivate UI
+activate Utente
+Utente -> UI : Invia comando di cancellazione
+deactivate Utente
+activate UI
+UI -> Sistema : Inoltra comando di cancellazione
+deactivate UI 
+activate Sistema
+Sistema -> Sistema : Cancellazione dell'elemento
+UI <-- Sistema : Cancellazione avvenuta
+deactivate Sistema
+activate UI
+Utente <-- UI : Mostra messaggio di cancellazione avvenuta
+deactivate UI
+activate Utente
+deactivate Utente
+@enduml

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.11.24)  5 APR 2017 23:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Arch Linux) (preloaded format=pdflatex 2016.11.24)  6 APR 2017 18:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1582,7 +1582,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 9.
  [3
 
- <./Pictures/chapter_head_1.pdf>])
+ <./Pictures/chapter_head_1.pdf>] [4])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
@@ -1605,12 +1605,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 \c@ttl@toc@default=\count267
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <220> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 3.
- (./main.ptc
-Underfull \hbox (badness 1783) in paragraph at lines 48--48
-[]|[]| [][][]\T1/phv/b/n/12 Diagrammi di se-quen-za per la fa-se di
- []
-
-)
+ (./main.ptc)
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <30> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 3.
  [5
@@ -1631,7 +1626,7 @@ Underfull \vbox (badness 4013) has occurred while \output is active []
 Capitolo 3.
 [11
 
-] <capitoli/diagramma-casi-d-uso.png, id=418, 836.12375pt x 1269.74374pt>
+] <capitoli/diagramma-casi-d-uso.png, id=470, 836.12375pt x 1269.74374pt>
 File: capitoli/diagramma-casi-d-uso.png Graphic file (type png)
  <use capitoli/diagramma-casi-d-uso.png>
 Package pdftex.def Info: capitoli/diagramma-casi-d-uso.png used on input line 44.
@@ -1686,16 +1681,115 @@ Overfull \hbox (10.40251pt too wide) in paragraph at lines 30--7
 
 ] (./capitoli/diagrammi-sequenza-analisi.tex
 Capitolo 4.
-) [29
+<capitoli/usecases_diagrams/diagrams/SEQ001.png, id=622, 502.87875pt x 276.03125pt>
+File: capitoli/usecases_diagrams/diagrams/SEQ001.png Graphic file (type png)
+ <use capitoli/usecases_diagrams/diagrams/SEQ001.png>
+Package pdftex.def Info: capitoli/usecases_diagrams/diagrams/SEQ001.png used on input line 8.
+(pdftex.def)             Requested size: 398.33858pt x 218.64774pt.
+ <capitoli/usecases_diagrams/diagrams/SEQ002.png, id=623, 590.205pt x 337.26pt>
+File: capitoli/usecases_diagrams/diagrams/SEQ002.png Graphic file (type png)
+ <use capitoli/usecases_diagrams/diagrams/SEQ002.png>
+Package pdftex.def Info: capitoli/usecases_diagrams/diagrams/SEQ002.png used on input line 15.
+(pdftex.def)             Requested size: 455.24408pt x 260.14386pt.
 
-] [30
+Overfull \hbox (28.45273pt too wide) in paragraph at lines 15--16
+ [][] 
+ []
 
 
-])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29
+
+ <./capitoli/usecases_diagrams/diagrams/SEQ001.png (PNG copy)>] <capitoli/usecases_diagrams/diagrams/SEQ003.png, id=628, 441.65pt x 233.87375pt>
+File: capitoli/usecases_diagrams/diagrams/SEQ003.png Graphic file (type png)
+ <use capitoli/usecases_diagrams/diagrams/SEQ003.png>
+Package pdftex.def Info: capitoli/usecases_diagrams/diagrams/SEQ003.png used on input line 22.
+(pdftex.def)             Requested size: 426.79134pt x 226.01505pt.
+ <capitoli/usecases_diagrams/diagrams/SEQ004.png, id=629, 850.17625pt x 379.4175pt>
+File: capitoli/usecases_diagrams/diagrams/SEQ004.png Graphic file (type png)
+ <use capitoli/usecases_diagrams/diagrams/SEQ004.png>
+Package pdftex.def Info: capitoli/usecases_diagrams/diagrams/SEQ004.png used on input line 28.
+(pdftex.def)             Requested size: 426.79134pt x 190.47247pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30 <./capitoli/usecases_diagrams/diagrams/SEQ002.png (PNG copy)> <./capitoli/usecases_diagrams/diagrams/SEQ003.png (PNG copy)>] <capitoli/usecases_diagrams/diagrams/SEQ005.png, id=634, 641.39626pt x 335.2525pt>
+File: capitoli/usecases_diagrams/diagrams/SEQ005.png Graphic file (type png)
+ <use capitoli/usecases_diagrams/diagrams/SEQ005.png>
+Package pdftex.def Info: capitoli/usecases_diagrams/diagrams/SEQ005.png used on input line 34.
+(pdftex.def)             Requested size: 398.33858pt x 208.21248pt.
+ <capitoli/usecases_diagrams/diagrams/SEQ006.png, id=635, 850.17625pt x 335.2525pt>
+File: capitoli/usecases_diagrams/diagrams/SEQ006.png Graphic file (type png)
+ <use capitoli/usecases_diagrams/diagrams/SEQ006.png>
+Package pdftex.def Info: capitoli/usecases_diagrams/diagrams/SEQ006.png used on input line 40.
+(pdftex.def)             Requested size: 398.33858pt x 157.0776pt.
+ <capitoli/usecases_diagrams/diagrams/SEQ007.png, id=636, 869.2475pt x 422.57875pt>
+File: capitoli/usecases_diagrams/diagrams/SEQ007.png Graphic file (type png)
+ <use capitoli/usecases_diagrams/diagrams/SEQ007.png>
+Package pdftex.def Info: capitoli/usecases_diagrams/diagrams/SEQ007.png used on input line 46.
+(pdftex.def)             Requested size: 398.33858pt x 193.6535pt.
+ [31 <./capitoli/usecases_diagrams/diagrams/SEQ004.png (PNG copy)> <./capitoli/usecases_diagrams/diagrams/SEQ005.png (PNG copy)> <./capitoli/usecases_diagrams/diagrams/SEQ006.png (PNG copy)>] <capitoli/usecases_diagrams/diagrams/SEQ008.png, id=642, 869.2475pt x 422.57875pt>
+File: capitoli/usecases_diagrams/diagrams/SEQ008.png Graphic file (type png)
+ <use capitoli/usecases_diagrams/diagrams/SEQ008.png>
+Package pdftex.def Info: capitoli/usecases_diagrams/diagrams/SEQ008.png used on input line 52.
+(pdftex.def)             Requested size: 398.33858pt x 193.6535pt.
+ <capitoli/usecases_diagrams/diagrams/SEQ009.png, id=643, 235.88126pt x 175.65625pt>
+File: capitoli/usecases_diagrams/diagrams/SEQ009.png Graphic file (type png)
+ <use capitoli/usecases_diagrams/diagrams/SEQ009.png>
+Package pdftex.def Info: capitoli/usecases_diagrams/diagrams/SEQ009.png used on input line 58.
+(pdftex.def)             Requested size: 398.33858pt x 296.64163pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32 <./capitoli/usecases_diagrams/diagrams/SEQ007.png (PNG copy)> <./capitoli/usecases_diagrams/diagrams/SEQ008.png (PNG copy)>] <capitoli/usecases_diagrams/diagrams/SEQ010.png, id=648, 423.5825pt x 233.87375pt>
+File: capitoli/usecases_diagrams/diagrams/SEQ010.png Graphic file (type png)
+ <use capitoli/usecases_diagrams/diagrams/SEQ010.png>
+Package pdftex.def Info: capitoli/usecases_diagrams/diagrams/SEQ010.png used on input line 64.
+(pdftex.def)             Requested size: 398.33858pt x 219.94482pt.
+ <capitoli/usecases_diagrams/diagrams/SEQ011.png, id=649, 423.5825pt x 233.87375pt>
+File: capitoli/usecases_diagrams/diagrams/SEQ011.png Graphic file (type png)
+ <use capitoli/usecases_diagrams/diagrams/SEQ011.png>
+Package pdftex.def Info: capitoli/usecases_diagrams/diagrams/SEQ011.png used on input line 70.
+(pdftex.def)             Requested size: 398.33858pt x 219.94482pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [33 <./capitoli/usecases_diagrams/diagrams/SEQ009.png (PNG copy)> <./capitoli/usecases_diagrams/diagrams/SEQ010.png (PNG copy)>] <capitoli/usecases_diagrams/diagrams/SEQ012.png, id=655, 423.5825pt x 233.87375pt>
+File: capitoli/usecases_diagrams/diagrams/SEQ012.png Graphic file (type png)
+ <use capitoli/usecases_diagrams/diagrams/SEQ012.png>
+Package pdftex.def Info: capitoli/usecases_diagrams/diagrams/SEQ012.png used on input line 76.
+(pdftex.def)             Requested size: 398.33858pt x 219.94482pt.
+ <capitoli/usecases_diagrams/diagrams/SEQ013.png, id=656, 423.5825pt x 233.87375pt>
+File: capitoli/usecases_diagrams/diagrams/SEQ013.png Graphic file (type png)
+ <use capitoli/usecases_diagrams/diagrams/SEQ013.png>
+Package pdftex.def Info: capitoli/usecases_diagrams/diagrams/SEQ013.png used on input line 82.
+(pdftex.def)             Requested size: 398.33858pt x 219.94482pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [34 <./capitoli/usecases_diagrams/diagrams/SEQ011.png (PNG copy)> <./capitoli/usecases_diagrams/diagrams/SEQ012.png (PNG copy)>] <capitoli/usecases_diagrams/diagrams/SEQ014.png, id=661, 423.5825pt x 233.87375pt>
+File: capitoli/usecases_diagrams/diagrams/SEQ014.png Graphic file (type png)
+ <use capitoli/usecases_diagrams/diagrams/SEQ014.png>
+Package pdftex.def Info: capitoli/usecases_diagrams/diagrams/SEQ014.png used on input line 88.
+(pdftex.def)             Requested size: 398.33858pt x 219.94482pt.
+ <capitoli/usecases_diagrams/diagrams/SEQ015.png, id=662, 423.5825pt x 233.87375pt>
+File: capitoli/usecases_diagrams/diagrams/SEQ015.png Graphic file (type png)
+ <use capitoli/usecases_diagrams/diagrams/SEQ015.png>
+Package pdftex.def Info: capitoli/usecases_diagrams/diagrams/SEQ015.png used on input line 94.
+(pdftex.def)             Requested size: 398.33858pt x 219.94482pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35 <./capitoli/usecases_diagrams/diagrams/SEQ013.png (PNG copy)> <./capitoli/usecases_diagrams/diagrams/SEQ014.png (PNG copy)>]) [36 <./capitoli/usecases_diagrams/diagrams/SEQ015.png (PNG copy)>] (./main.ptc) [37
+
+
+
+] [38])
 Capitolo 5.
-[31
+[39
 
-] [32]
+] [40]
 Capitolo 6.
 Package mdframed Info: mdframed works in twoside mode on input line 147.
 Package mdframed Info: mdframed detected package amsthm 
@@ -1711,7 +1805,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 168.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 168.
-[33
+[41
 
 ]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
@@ -1724,25 +1818,25 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 206.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <6> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 241.
- [34]
+ [42]
 Package mdframed Info: mdframed works in twoside mode on input line 261.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 261.
- [35] [36
+ [43] [44
 
-] (./main.ptc) [37] [38]
+] (./main.ptc) [45] [46]
 Capitolo 7.
-<Pictures/placeholder.jpg, id=655, 351.3125pt x 193.72375pt>
+<Pictures/placeholder.jpg, id=787, 351.3125pt x 193.72375pt>
 File: Pictures/placeholder.jpg Graphic file (type jpg)
  <use Pictures/placeholder.jpg>
 Package pdftex.def Info: Pictures/placeholder.jpg used on input line 318.
 (pdftex.def)             Requested size: 175.6558pt x 96.86163pt.
- [39
+ [47
 
- <./Pictures/placeholder.jpg>] [40
+ <./Pictures/placeholder.jpg>] [48
 
-] (./main.ind [41
+] (./main.ind [49
 
 
 ])
@@ -1756,18 +1850,18 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 334.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 334.
  ) 
 Here is how much of TeX's memory you used:
- 29866 strings out of 493013
- 544293 string characters out of 6139316
- 729400 words of memory out of 5000000
- 32362 multiletter control sequences out of 15000+600000
+ 29989 strings out of 493013
+ 547964 string characters out of 6139316
+ 729487 words of memory out of 5000000
+ 32442 multiletter control sequences out of 15000+600000
  138680 words of font info for 320 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,15n,57p,10507b,1224s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (44 pages, 1431767 bytes).
+Output written on main.pdf (53 pages, 1664104 bytes).
 PDF statistics:
- 897 PDF objects out of 1000 (max. 8388607)
- 702 compressed objects within 8 object streams
- 236 named destinations out of 1000 (max. 500000)
- 75041 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 1081 PDF objects out of 1200 (max. 8388607)
+ 830 compressed objects within 9 object streams
+ 261 named destinations out of 1000 (max. 500000)
+ 75244 words of extra memory for PDF output out of 89155 (max. 10000000)
 

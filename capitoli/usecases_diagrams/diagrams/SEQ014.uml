@@ -1,0 +1,29 @@
+
+  ┌─┐
+  ║"│
+  └┬┘
+  ┌┼┐
+   │                                              ┌───────┐
+  ┌┴┐                                             │Sistema│
+Utente                                            └───┬───┘
+  │    1. Richiesta pagina delle sessioni di lavoro   │
+  │ ──────────────────────────────────────────────────>
+  │                                                   │
+  │ 2. Visualizzazione della pagina sessioni di lavoro│
+  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
+  │                                                   │
+  │      3. Click sulla sessione di lavoro scelta     │
+  │ ──────────────────────────────────────────────────>
+  │                                                   │
+  │        4. Apertura della sessione di lavoro       │
+  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
+  │                                                   │
+
+@startuml
+hide footbox
+Actor Utente
+Utente -> Sistema   :   1. Richiesta pagina delle sessioni di lavoro 
+Sistema --> Utente  :   2. Visualizzazione della pagina sessioni di lavoro
+Utente -> Sistema   :   3. Click sulla sessione di lavoro scelta
+Sistema --> Utente  :   4. Apertura della sessione di lavoro
+@enduml

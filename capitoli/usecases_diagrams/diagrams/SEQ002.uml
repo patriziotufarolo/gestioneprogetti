@@ -1,0 +1,77 @@
+
+  ┌─┐
+  ║"│
+  └┬┘
+  ┌┼┐
+   │                                              ┌───────┐
+  ┌┴┐                                             │Sistema│
+Utente                                            └───┬───┘
+ ┌┴┐        1 1. Richiesta pagina "Ambienti"         ┌┴┐
+ │ │ ──────────────────────────────────────────────> │ │
+ └┬┘                                                 │ │
+  │ 2 2. Visualizzazione pagina lista degli ambienti │ │
+  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │
+  │                                                  └┬┘
+  │          3 3. Click sull'ambiente scelto          │
+  │ ─────────────────────────────────────────────────>│
+  │                                                   │
+  │                                                   ────┐
+  │                                                       │ <b>4</b>
+  │                                                   <───┘ 4. Verifica della presenza di
+  │                                                         sessioni di lavoro
+  │
+  │                                                   │
+ ┌┴┐       5 5. Visualizzazione delle sessioni        │
+ │ │       di lavoro disponibili per l'ambiente       │
+ │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │
+ │ │                                                  │
+ │ │                                                  │
+ │ │                                                  │
+ │ │                                                  │
+ │ │                                                  │
+ │ │                                                  │
+ │ │                                                  │
+ │ │                                                  │
+ │ │                                                  │
+ │ │                                                  │
+ │ │                                                  │
+ │ │                                                  │
+ │ │                                                  │
+ │ │                                                  │
+ │ │                                                  │
+ │ │                                                  │
+ │ │                                                  │
+ │ │                                                  │
+ │ │                                                  │
+ │ │                                                  │
+ │ │                                                  │
+ │ │                                                  │
+ │ │                                                  │
+ │ │                                                  │
+ │ │                                                  │
+ │ │                                                  │
+ │ │                                                  │
+ │ │                                                  │
+ │ │                                                  │
+ │ │                                                  │
+ └┬┘                                                  │
+
+@startuml
+hide footbox
+autonumber
+Actor Utente
+activate Utente
+Utente -> Sistema   :   1. Richiesta pagina "Ambienti"     
+deactivate Utente
+activate Sistema
+Sistema --> Utente  :   2. Visualizzazione pagina lista degli ambienti 
+deactivate Sistema
+activate Utente
+Utente -> Sistema   :   3. Click sull'ambiente scelto
+deactivate Utente
+activate Sistema
+Sistema -> Sistema  :   4. Verifica della presenza di\nsessioni di lavoro
+Sistema --> Utente  :   5. Visualizzazione delle sessioni\ndi lavoro disponibili per l'ambiente
+activate Utente
+deactivate Utente
+@enduml
