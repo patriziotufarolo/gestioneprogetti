@@ -1,0 +1,92 @@
+%% Creator: Inkscape inkscape 0.92.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'SEQ007.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{526.5bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.64529915)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{SEQ007.pdf}}%
+    \put(0.01139601,0.53277051){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Utente}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{SEQ007.pdf}}%
+    \put(0.46652422,0.54416652){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{UI}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{SEQ007.pdf}}%
+    \put(0.73504274,0.54416652){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Sistema}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{SEQ007.pdf}}%
+    \put(0.13746439,0.49093476){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{1}}}}%
+    \put(0.15598291,0.49093476){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Seleziona un dispositivo}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{SEQ007.pdf}}%
+    \put(0.14529915,0.44943505){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{2}}}}%
+    \put(0.16381766,0.44943505){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Dispositivo selezionato}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{SEQ007.pdf}}%
+    \put(0.13817664,0.40793534){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{3}}}}%
+    \put(0.15669516,0.40793534){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Click sul tasto configura}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{SEQ007.pdf}}%
+    \put(0.14957265,0.35565727){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{4}}}}%
+    \put(0.16809117,0.3664356){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Apertura della finestra}}}%
+    \put(0.19230769,0.34487891){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{di configurazione}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{SEQ007.pdf}}%
+    \put(0.1011396,0.3033792){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{5}}}}%
+    \put(0.11965812,0.3033792){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Inserimento della configurazione}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{SEQ007.pdf}}%
+    \put(0.13888889,0.26187947){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{6}}}}%
+    \put(0.15740741,0.26187947){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Click sul tasto "Applica"}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{SEQ007.pdf}}%
+    \put(0.49358974,0.22037965){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{7}}}}%
+    \put(0.51210826,0.22037965){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Invio della configurazione}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{SEQ007.pdf}}%
+    \put(0.79273504,0.16810156){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{8}}}}%
+    \put(0.81125356,0.17887991){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Applicazione}}}%
+    \put(0.81125356,0.1573232){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{della configurazione}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{SEQ007.pdf}}%
+    \put(0.50641026,0.08652664){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{9}}}}%
+    \put(0.59116809,0.09730499){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Notifica di}}}%
+    \put(0.52492877,0.07574828){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{configurazione applicata}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{SEQ007.pdf}}%
+    \put(0.06980057,0.03424859){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{10}}}}%
+    \put(0.1011396,0.03424859){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Messaggio di configurazione applicata}}}%
+  \end{picture}%
+\endgroup%

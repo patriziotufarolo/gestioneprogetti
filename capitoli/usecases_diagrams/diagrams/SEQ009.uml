@@ -1,14 +1,52 @@
 
-   ┌─┐
-   ║"│
-   └┬┘
-   ┌┼┐
-    │
-   ┌┴┐
-Patrizio
+  ┌─┐
+  ║"│
+  └┬┘
+  ┌┼┐
+   │                                ┌──┐                            ┌───────┐
+  ┌┴┐                               │UI│                            │Sistema│
+Utente                              └┬─┘                            └───┬───┘
+ ┌┴┐ 1 Click sul pulsante "Deploy"   ┌┴┐                                │
+ │ │ ──────────────────────────────> │ │                                │
+ └┬┘                                 │ │                                │
+  │                                  │ │        2 Lancia deploy        ┌┴┐
+  │                                  │ │ ─────────────────────────────>│ │
+  │                                  └┬┘                               │ │
+  │                                  │                                 │ │────┐
+  │                                  │                                 │ │    │ <b>3</b>
+  │                                  │                                 │ │<───┘ Deploy topologia
+  │                                  │                                 │ │
+  │                                  │                                 │ │
+  │                                  ┌┴┐4 Notifica di deploy completato│ │
+  │                                  │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │
+  │                                  │ │                               └┬┘
+ ┌┴┐5 Messaggio di deploy completato │ │                                │
+ │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─  │ │                                │
+ └┬┘                                 └┬┘                                │
 
 @startuml
 hide footbox
-Actor Patrizio
+autonumber
+
+skinparam shadowing false
+skinparam sequenceMessageAlign center
+skinparam monochrome true
+
+
+Actor Utente
+
+Utente -> UI   :   Click sul pulsante "Deploy"
+
+activate UI
+UI -> Sistema  :   Lancia deploy
+deactivate UI
+activate Sistema
+Sistema -> Sistema :  Deploy topologia
+UI <-- Sistema  :   Notifica di deploy completato
+deactivate Sistema 
+activate UI
+Utente <-- UI  : Messaggio di deploy completato 
+deactivate UI
+
 
 @enduml

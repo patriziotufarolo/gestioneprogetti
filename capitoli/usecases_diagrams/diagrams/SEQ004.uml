@@ -3,61 +3,69 @@
   ║"│
   └┬┘
   ┌┼┐
-   │                                                   ┌──┐                               ┌───────┐
-  ┌┴┐                                                  │UI│                               │Sistema│
-Utente                                                 └┬─┘                               └───┬───┘
- ┌┴┐     1 1. Click sull'icona "Nuovo dispositivo"     ┌┴┐                                    │
- │ │ ─────────────────────────────────────────────────>│ │                                    │
- └┬┘                                                   │ │                                    │
-  │        2 2. Mostra tipologie di dispositivi        │ │                                    │
-  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │                                    │
-  │                                                    └┬┘                                    │
-  │    3 3. Click sul tipo di dispositivo desiderato    │                                     │
-  │ ────────────────────────────────────────────────────>                                     │
-  │                                                     │                                     │
-  │4 4. Click sul canvas per posizionare il dispositivo┌┴┐                                    │
-  │ ──────────────────────────────────────────────────>│ │                                    │
-  │                                                    │ │                                    │
-  │                                                    │ │     5 5. Richiesta creazione      ┌┴┐
-  │                                                    │ │     del dispositivo               │ │
-  │                                                    │ │ ────────────────────────────────> │ │
-  │                                                    └┬┘                                   │ │
-  │                                                     │                                    │ │─ ─ ┐
-  │                                                     │                                    │ │    | <b>6</b>
-  │                                                     │                                    │ │< ─ ┘ 6. Creazione del dispositivo
-  │                                                     │                                    │ │
-  │                                                     │                                    │ │
-  │                                                    ┌┴┐7 7. Notifica "Dispositivo creato" │ │
-  │                                                    │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─  │ │
-  │                                                    │ │                                   └┬┘
- ┌┴┐        8 8. Mostra dispositivo sul canvas         │ │                                    │
- │ │ <─────────────────────────────────────────────────│ │                                    │
- └┬┘                                                   └┬┘                                    │
+   │                                         ┌──┐                            ┌───────┐
+  ┌┴┐                                        │UI│                            │Sistema│
+Utente                                       └┬─┘                            └───┬───┘
+ ┌┴┐ 1 Click sull'icona "Nuovo dispositivo"  ┌┴┐                                 │
+ │ │ ───────────────────────────────────────>│ │                                 │
+ └┬┘                                         │ │                                 │
+  │    2 Mostra tipologie di dispositivi     │ │                                 │
+  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │                                 │
+  │                                          └┬┘                                 │
+  │ 3 Click sul tipo di dispositivo desiderato│                                  │
+  │ ──────────────────────────────────────────>                                  │
+  │                                           │                                  │
+  │        4 Click sul canvas per            ┌┴┐                                 │
+  │        posizionare il dispositivo        │ │                                 │
+  │ ────────────────────────────────────────>│ │                                 │
+  │                                          │ │                                 │
+  │                                          │ │     5 Richiesta creazione      ┌┴┐
+  │                                          │ │     del dispositivo            │ │
+  │                                          │ │ ─────────────────────────────> │ │
+  │                                          └┬┘                                │ │
+  │                                           │                                 │ │─ ─ ┐
+  │                                           │                                 │ │    | <b>6</b>
+  │                                           │                                 │ │< ─ ┘ Creazione del
+  │                                           │                                 │ │      dispositivo
+  │                                           │                                 │ │
+  │                                           │                                 │ │
+  │                                          ┌┴┐7 Notifica "Dispositivo creato" │ │
+  │                                          │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │
+  │                                          │ │                                └┬┘
+ ┌┴┐          8 Mostra dispositivo           │ │                                 │
+ │ │          sul canvas                     │ │                                 │
+ │ │ <───────────────────────────────────────│ │                                 │
+ └┬┘                                         └┬┘                                 │
 
 @startuml
 hide footbox
 autonumber
+
+skinparam shadowing false
+skinparam sequenceMessageAlign center
+skinparam monochrome true
+
 Actor Utente
-activate Utente
-Utente -> UI        :   1. Click sull'icona "Nuovo dispositivo"
-deactivate Utente
+
+Utente -> UI        :   Click sull'icona "Nuovo dispositivo"
+
 activate UI
-UI --> Utente        :   2. Mostra tipologie di dispositivi
+UI --> Utente        :  Mostra tipologie di dispositivi
 deactivate UI
-activate Utente
-Utente -> UI        :   3. Click sul tipo di dispositivo desiderato
-Utente -> UI        :   4. Click sul canvas per posizionare il dispositivo
-deactivate Utente
+
+Utente -> UI        :   Click sul tipo di dispositivo desiderato
+Utente -> UI        :   Click sul canvas per\nposizionare il dispositivo
+
 activate UI
-UI -> Sistema       :   5. Richiesta creazione\ndel dispositivo
+UI -> Sistema       :   Richiesta creazione\ndel dispositivo
 deactivate UI
 activate Sistema
-Sistema --> Sistema  :   6. Creazione del dispositivo
-Sistema --> UI       :   7. Notifica "Dispositivo creato"
+Sistema --> Sistema  :   Creazione del\ndispositivo
+Sistema --> UI       :   Notifica "Dispositivo creato"
 deactivate Sistema
 activate UI
-UI -> Utente        :   8. Mostra dispositivo sul canvas
+UI -> Utente        :    Mostra dispositivo\nsul canvas
 deactivate UI
-activate Utente
-deactivate Utente
+
+
 @enduml

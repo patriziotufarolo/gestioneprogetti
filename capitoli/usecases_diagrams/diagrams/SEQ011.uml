@@ -1,29 +1,86 @@
 
-  ┌─┐
-  ║"│
-  └┬┘
-  ┌┼┐
-   │                                              ┌───────┐
-  ┌┴┐                                             │Sistema│
-Utente                                            └───┬───┘
-  │    1. Richiesta pagina delle sessioni di lavoro   │
-  │ ──────────────────────────────────────────────────>
-  │                                                   │
-  │ 2. Visualizzazione della pagina sessioni di lavoro│
-  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
-  │                                                   │
-  │      3. Click sulla sessione di lavoro scelta     │
-  │ ──────────────────────────────────────────────────>
-  │                                                   │
-  │        4. Apertura della sessione di lavoro       │
-  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
-  │                                                   │
+    ┌─┐
+    ║"│
+    └┬┘
+    ┌┼┐
+     │                                        ┌──┐                   ┌───────┐
+    ┌┴┐                                       │UI│                   │Sistema│
+Supervisore                                   └┬─┘                   └───┬───┘
+    ┌┴┐1 Richiesta pagina "Sessioni di lavoro"┌┴┐                        │
+    │ │ ─────────────────────────────────────>│ │                        │
+    └┬┘                                       │ │                        │
+     │    2 Visualizzazione della pagina      │ │                        │
+     │    "Sessioni di lavoro"                │ │                        │
+     │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │                        │
+     │                                        └┬┘                        │
+     │       3 Click su                        │                         │
+     │       "crea sessione di lavoro"         │                         │
+     │────────────────────────────────────────>│                         │
+     │                                         │                         │
+     │      4 Visualizzazione form             │                         │
+     │      " Nuova sessione di lavoro"        │                         │
+     │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │                         │
+     │                                         │                         │
+     ────┐                                     │                         │
+         │ <b>5</b>                            │                         │
+     <───┘ Compilazione form                   │                         │
+                                               │                         │
+     │                                         │                         │
+     │      6 Click sul pulsante salva        ┌┴┐                        │
+     │───────────────────────────────────────>│ │                        │
+     │                                        │ │                        │
+     │                                        │ │   7 Salva sessione    ┌┴┐
+     │                                        │ │   di lavoro           │ │
+     │                                        │ │ ────────────────────> │ │
+     │                                        └┬┘                       │ │
+     │                                         │                        │ │────┐
+     │                                         │                        │ │    │ <b>8</b>
+     │                                         │                        │ │<───┘ Salvataggio sessione
+     │                                         │                        │ │      di lavoro
+     │                                         │                        │ │
+     │                                         │                        │ │
+     │                                        ┌┴┐9 Notifica salvataggio │ │
+     │                                        │ │completato             │ │
+     │                                        │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─  │ │
+     │                                        │ │                       └┬┘
+    ┌┴┐  10 Messaggio "Creazione sessione di  │ │                        │
+    │ │  lavoro completata"                   │ │                        │
+    │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │                        │
+    └┬┘                                       └┬┘                        │
 
 @startuml
+autonumber
 hide footbox
-Actor Utente
-Utente -> Sistema   :   1. Richiesta pagina delle sessioni di lavoro 
-Sistema --> Utente  :   2. Visualizzazione della pagina sessioni di lavoro
-Utente -> Sistema   :   3. Click sulla sessione di lavoro scelta
-Sistema --> Utente  :   4. Apertura della sessione di lavoro
+skinparam shadowing false
+skinparam sequenceMessageAlign cener
+skinparam monochrome true
+Actor Supervisore as Utente
+
+Utente -> UI   :   Richiesta pagina "Sessioni di lavoro"
+
+activate UI
+UI --> Utente  :   Visualizzazione della pagina\n"Sessioni di lavoro"
+deactivate UI
+
+Utente -> UI   :   Click su\n"crea sessione di lavoro"
+
+activate UI
+UI --> Utente  :   Visualizzazione form\n" Nuova sessione di lavoro"
+deactivate UI
+
+Utente -> Utente   :   Compilazione form
+Utente -> UI   :   Click sul pulsante salva
+
+activate UI
+UI -> Sistema  :   Salva sessione\ndi lavoro
+deactivate UI
+activate Sistema
+Sistema -> Sistema : Salvataggio sessione\ndi lavoro
+Sistema --> UI : Notifica salvataggio\ncompletato 
+deactivate Sistema
+activate UI
+UI --> Utente  : Messaggio "Creazione sessione di\nlavoro completata"
+deactivate UI
+
+
 @enduml

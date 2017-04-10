@@ -33,16 +33,22 @@ Utente                                    └┬─┘                   └─�
 @startuml
 hide footbox
 autonumber
+
+skinparam shadowing false
+skinparam sequenceMessageAlign center
+skinparam monochrome true
+
+
 Actor Utente
-activate Utente
+
 Utente -> UI        :   Click sull'icona "Aggiungi link"
-deactivate Utente
+
 activate UI
 Utente <-- UI       :   Modalità aggiunta link
 deactivate UI
-activate Utente
+
 Utente -> UI        :   Trascina mouse da un device all'altro
-deactivate Utente
+
 activate UI
 UI -> Sistema       :   Crea il link
 deactivate UI
@@ -53,6 +59,6 @@ deactivate Sistema
 activate UI
 Utente <-- UI       :   Notifica link creato
 deactivate UI
-activate Utente
-deactivate Utente
+
+
 @enduml

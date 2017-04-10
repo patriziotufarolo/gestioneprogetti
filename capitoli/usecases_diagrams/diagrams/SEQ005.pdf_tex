@@ -1,0 +1,80 @@
+%% Creator: Inkscape inkscape 0.92.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'SEQ005.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{468bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.51282051)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{SEQ005.pdf}}%
+    \put(0.01282051,0.3862258){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Utente}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{SEQ005.pdf}}%
+    \put(0.49439103,0.39904631){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{UI}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{SEQ005.pdf}}%
+    \put(0.72596154,0.39904631){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Sistema}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{SEQ005.pdf}}%
+    \put(0.10657051,0.33916058){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{1}}}}%
+    \put(0.12740385,0.33916058){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Click sull'icona "Aggiungi link"}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{SEQ005.pdf}}%
+    \put(0.15384615,0.2924734){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{2}}}}%
+    \put(0.17467949,0.2924734){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Modalità aggiunta link}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{SEQ005.pdf}}%
+    \put(0.07051282,0.24578623){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{3}}}}%
+    \put(0.09134615,0.24578623){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Trascina mouse da un device all'altro}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{SEQ005.pdf}}%
+    \put(0.56810897,0.19909903){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{4}}}}%
+    \put(0.58894231,0.19909903){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Crea il link}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{SEQ005.pdf}}%
+    \put(0.79086538,0.15241185){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{5}}}}%
+    \put(0.81169872,0.15241185){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Creazione del link}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{SEQ005.pdf}}%
+    \put(0.53285256,0.08489134){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{6}}}}%
+    \put(0.5536859,0.08489134){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Notifica link creato}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{SEQ005.pdf}}%
+    \put(0.17067308,0.03820414){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{7}}}}%
+    \put(0.19150641,0.03820414){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Notifica link creato}}}%
+  \end{picture}%
+\endgroup%

@@ -3,38 +3,43 @@
   ║"│
   └┬┘
   ┌┼┐
-   │                                                  ┌───────┐
-  ┌┴┐                                                 │Sistema│
-Utente                                                └───┬───┘
- ┌┴┐   1 1. Richiesta pagina delle sessioni di lavoro    ┌┴┐
- │ │ ──────────────────────────────────────────────────> │ │
- └┬┘                                                     │ │
-  │ 2 2. Visualizzazione della pagina sessioni di lavoro │ │
-  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │
-  │                                                      └┬┘
-  │      3 3. Click sulla sessione di lavoro scelta       │
-  │ ─────────────────────────────────────────────────────>│
-  │                                                       │
-  │        4 4. Apertura della sessione di lavoro         │
-  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│
-  │                                                       │
+   │                                                 ┌──┐
+  ┌┴┐                                                │UI│
+Utente                                               └┬─┘
+ ┌┴┐   1 Richiesta pagina delle sessioni di lavoro    ┌┴┐
+ │ │ ───────────────────────────────────────────────> │ │
+ └┬┘                                                  │ │
+  │ 2 Visualizzazione della pagina sessioni di lavoro │ │
+  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │
+  │                                                   └┬┘
+  │      3 Click sulla sessione di lavoro scelta      │
+  │ ──────────────────────────────────────────────────>
+  │                                                   │
+  │        4 Apertura della sessione di lavoro        │
+  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
+  │                                                   │
 
 @startuml
 hide footbox
 autonumber
+
+skinparam shadowing false
+skinparam sequenceMessageAlign center
+skinparam monochrome true
 Actor Utente
-activate Utente
-Utente -> Sistema   :   1. Richiesta pagina delle sessioni di lavoro 
-deactivate Utente
+participant UI as Sistema
+
+Utente -> Sistema   :   Richiesta pagina delle sessioni di lavoro 
+
 activate Sistema
-Sistema --> Utente  :   2. Visualizzazione della pagina sessioni di lavoro
+Sistema --> Utente  :   Visualizzazione della pagina sessioni di lavoro
 deactivate Sistema
-activate Utente
-Utente -> Sistema   :   3. Click sulla sessione di lavoro scelta
-deactivate Utente
+
+Utente -> Sistema   :   Click sulla sessione di lavoro scelta
+
 activate Sistema
-Sistema --> Utente  :   4. Apertura della sessione di lavoro
+Sistema --> Utente  :   Apertura della sessione di lavoro
 deactivate Sistema
-activate Utente
-deactivate Utente
+
+
 @enduml

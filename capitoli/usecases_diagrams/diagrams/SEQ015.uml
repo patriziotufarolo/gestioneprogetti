@@ -3,27 +3,39 @@
   ║"│
   └┬┘
   ┌┼┐
-   │                                              ┌───────┐
-  ┌┴┐                                             │Sistema│
-Utente                                            └───┬───┘
-  │    1. Richiesta pagina delle sessioni di lavoro   │
-  │ ──────────────────────────────────────────────────>
-  │                                                   │
-  │ 2. Visualizzazione della pagina sessioni di lavoro│
-  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
-  │                                                   │
-  │      3. Click sulla sessione di lavoro scelta     │
-  │ ──────────────────────────────────────────────────>
-  │                                                   │
-  │        4. Apertura della sessione di lavoro       │
-  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
-  │                                                   │
+   │                               ┌──┐              ┌───────┐
+  ┌┴┐                              │UI│              │Sistema│
+Utente                             └┬─┘              └───┬───┘
+  │   1 Click sul pulsante logout   │                    │
+  │ ────────────────────────────────>                    │
+  │                                 │                    │
+  │                                 │   2 Invio logout   │
+  │                                 │ ───────────────────>
+  │                                 │                    │
+  │                                 │                    │────┐
+  │                                 │                    │    │ <b>3</b>
+  │                                 │                    │<───┘ Logout utente
+  │                                 │                    │
+  │                                 │                    │
+  │                                 │ 4 Logout effettuato│
+  │                                 │ <───────────────────
+  │                                 │                    │
+  │ 5 Messaggio di logout effettuato│                    │
+  │ <────────────────────────────────                    │
+  │                                 │                    │
 
 @startuml
 hide footbox
+autonumber
+
+skinparam shadowing false
+skinparam sequenceMessageAlign center
+skinparam monochrome true
+
 Actor Utente
-Utente -> Sistema   :   1. Richiesta pagina delle sessioni di lavoro 
-Sistema --> Utente  :   2. Visualizzazione della pagina sessioni di lavoro
-Utente -> Sistema   :   3. Click sulla sessione di lavoro scelta
-Sistema --> Utente  :   4. Apertura della sessione di lavoro
+Utente -> UI   :  Click sul pulsante logout
+UI -> Sistema  :  Invio logout
+Sistema -> Sistema : Logout utente
+Sistema -> UI : Logout effettuato
+UI -> Utente  : Messaggio di logout effettuato
 @enduml

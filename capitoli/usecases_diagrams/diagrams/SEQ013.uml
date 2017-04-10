@@ -1,29 +1,69 @@
 
-  ┌─┐
-  ║"│
-  └┬┘
-  ┌┼┐
-   │                                              ┌───────┐
-  ┌┴┐                                             │Sistema│
-Utente                                            └───┬───┘
-  │    1. Richiesta pagina delle sessioni di lavoro   │
-  │ ──────────────────────────────────────────────────>
-  │                                                   │
-  │ 2. Visualizzazione della pagina sessioni di lavoro│
-  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
-  │                                                   │
-  │      3. Click sulla sessione di lavoro scelta     │
-  │ ──────────────────────────────────────────────────>
-  │                                                   │
-  │        4. Apertura della sessione di lavoro       │
-  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
-  │                                                   │
+    ┌─┐
+    ║"│
+    └┬┘
+    ┌┼┐
+     │                                        ┌──┐                        ┌───────┐
+    ┌┴┐                                       │UI│                        │Sistema│
+Supervisore                                   └┬─┘                        └───┬───┘
+    ┌┴┐1 Richiesta pagina "Sessioni di lavoro"┌┴┐                             │
+    │ │ ─────────────────────────────────────>│ │                             │
+    └┬┘                                       │ │                             │
+     │    2 Visualizzazione della pagina      │ │                             │
+     │    "Sessioni di lavoro"                │ │                             │
+     │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │                             │
+     │                                        └┬┘                             │
+     │       3 Apertura di una sessione        │                              │
+     │       di lavoro esistente               │                              │
+     │────────────────────────────────────────>│                              │
+     │                                         │                              │
+     │ 4 Visualizzazione "sessione di lavoro"  │                              │
+     │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │                              │
+     │                                         │                              │
+     │   5 Click sul pulsante "Genera link"    │                              │
+     │────────────────────────────────────────>│                              │
+     │                                         │                              │
+     │                                         │6 Richiedi nuovo link di join┌┴┐
+     │                                         │ ───────────────────────────>│ │
+     │                                         │                             │ │
+     │                                         │ 7 Restituisci link di join  │ │
+     │                                         │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │
+     │                                         │                             └┬┘
+    ┌┴┐          8 Mostra link di join         │                              │
+    │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─                              │
+    └┬┘                                        │                              │
 
 @startuml
+autonumber
 hide footbox
-Actor Utente
-Utente -> Sistema   :   1. Richiesta pagina delle sessioni di lavoro 
-Sistema --> Utente  :   2. Visualizzazione della pagina sessioni di lavoro
-Utente -> Sistema   :   3. Click sulla sessione di lavoro scelta
-Sistema --> Utente  :   4. Apertura della sessione di lavoro
+skinparam shadowing false
+skinparam sequenceMessageAlign cener
+skinparam monochrome true
+Actor Supervisore as Utente
+
+Utente -> UI   :   Richiesta pagina "Sessioni di lavoro"
+
+activate UI
+UI --> Utente  :   Visualizzazione della pagina\n"Sessioni di lavoro"
+deactivate UI
+
+Utente -> UI   :   Apertura di una sessione\ndi lavoro esistente
+
+activate UI
+UI --> Utente  :   Visualizzazione "sessione di lavoro"
+deactivate UI
+
+Utente -> UI   :   Click sul pulsante "Genera link"
+
+activate UI
+UI -> Sistema  :   Richiedi nuovo link di join
+deactivate UI
+activate Sistema
+Sistema --> UI : Restituisci link di join
+deactivate Sistema
+activate UI
+UI --> Utente  : Mostra link di join 
+deactivate UI
+
+
 @enduml

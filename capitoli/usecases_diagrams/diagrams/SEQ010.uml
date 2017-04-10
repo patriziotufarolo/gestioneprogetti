@@ -1,29 +1,45 @@
 
-  ┌─┐
-  ║"│
-  └┬┘
-  ┌┼┐
-   │                                              ┌───────┐
-  ┌┴┐                                             │Sistema│
-Utente                                            └───┬───┘
-  │    1. Richiesta pagina delle sessioni di lavoro   │
-  │ ──────────────────────────────────────────────────>
-  │                                                   │
-  │ 2. Visualizzazione della pagina sessioni di lavoro│
-  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
-  │                                                   │
-  │      3. Click sulla sessione di lavoro scelta     │
-  │ ──────────────────────────────────────────────────>
-  │                                                   │
-  │        4. Apertura della sessione di lavoro       │
-  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─
-  │                                                   │
+    ┌─┐
+    ║"│
+    └┬┘
+    ┌┼┐
+     │                               ┌──┐                             ┌───────┐
+    ┌┴┐                              │UI│                             │Sistema│
+Supervisore                          └┬─┘                             └───┬───┘
+    ┌┴┐1 Doppio click sul dispositivo┌┴┐                                  │
+    │ │ ────────────────────────────>│ │                                  │
+    └┬┘                              │ │                                  │
+     │                               │ │ 2 Richiedi sessione terminale   ┌┴┐
+     │                               │ │ ──────────────────────────────> │ │
+     │                               └┬┘                                 │ │
+     │                                │ 3 Restituisci sessione terminale │ │
+     │                                │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │
+     │                                │                                  └┬┘
+    ┌┴┐     4 Visualizza terminale    │                                   │
+    │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─                                    │
+    │ │                               │                                   │
+    └┬┘
 
 @startuml
+autonumber
 hide footbox
-Actor Utente
-Utente -> Sistema   :   1. Richiesta pagina delle sessioni di lavoro 
-Sistema --> Utente  :   2. Visualizzazione della pagina sessioni di lavoro
-Utente -> Sistema   :   3. Click sulla sessione di lavoro scelta
-Sistema --> Utente  :   4. Apertura della sessione di lavoro
+skinparam shadowing false
+skinparam sequenceMessageAlign center
+skinparam monochrome true
+
+
+Actor Supervisore   as  Utente 
+
+Utente -> UI   :   Doppio click sul dispositivo
+
+activate UI
+UI -> Sistema  :   Richiedi sessione terminale
+deactivate UI
+activate Sistema
+UI <-- Sistema : Restituisci sessione terminale
+deactivate Sistema
+activate UI
+Utente <-- UI : Visualizza terminale
+deactivate UI
+
 @enduml

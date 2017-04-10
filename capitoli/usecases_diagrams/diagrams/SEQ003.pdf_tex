@@ -1,0 +1,69 @@
+%% Creator: Inkscape inkscape 0.92.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'SEQ003.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{295.5bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.55583756)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{SEQ003.pdf}}%
+    \put(0.02030457,0.35534238){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Utente}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{SEQ003.pdf}}%
+    \put(0.94543147,0.37564695){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{UI}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{SEQ003.pdf}}%
+    \put(0.17005076,0.28080254){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{1}}}}%
+    \put(0.20304569,0.28080254){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Richiesta pagina delle sessioni di lavoro}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{SEQ003.pdf}}%
+    \put(0.12436548,0.20686143){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{2}}}}%
+    \put(0.15736041,0.20686143){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Visualizzazione della pagina sessioni di lavoro}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{SEQ003.pdf}}%
+    \put(0.20812183,0.13292032){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{3}}}}%
+    \put(0.24111675,0.13292032){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Click sulla sessione di lavoro scelta}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{SEQ003.pdf}}%
+    \put(0.23730964,0.05897917){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{4}}}}%
+    \put(0.27030457,0.05897917){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Apertura della sessione di lavoro}}}%
+  \end{picture}%
+\endgroup%

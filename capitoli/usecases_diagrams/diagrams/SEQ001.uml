@@ -3,44 +3,90 @@
   ║"│
   └┬┘
   ┌┼┐
-   │                             ┌───────┐
-  ┌┴┐                            │Sistema│
-Utente                           └───┬───┘
- ┌┴┐  1 Richiesta pagina di login   ┌┴┐
- │ │ ─────────────────────────────> │ │
- └┬┘                                │ │
-  │ 2 Visualizzazione form di login │ │
-  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │
-  │                                 └┬┘
-  │    3 Inserimento credenziali     │
-  │ ────────────────────────────────>│
-  │                                  │
-  │                                  ────┐
-  │                                      │ <b>4</b>
-  │                                  <───┘ Validazione delle credenziali
-  │
-  │                                  │
- ┌┴┐5 Messaggio di conferma / errore │
- │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│
- └┬┘                                 │
+   │                                      ┌──┐                     ┌───────┐
+  ┌┴┐                                     │UI│                     │Sistema│
+Utente                                    └┬─┘                     └───┬───┘
+ ┌┴┐     1 Richiesta pagina di login       ┌┴┐                         │
+ │ │ ────────────────────────────────────> │ │                         │
+ └┬┘                                       │ │                         │
+  │    2 Visualizzazione form di login     │ │                         │
+  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │                         │
+  │                                        └┬┘                         │
+  │        3 Inserimento credenziali       │                           │
+  │ ───────────────────────────────────────>                           │
+  │                                        │                           │
+  │                                        │4 Invio delle credenziali ┌┴┐
+  │                                        │ ───────────────────────> │ │
+  │                                        │                          │ │
+  │                                        │                          │ │────┐
+  │                                        │                          │ │    │ <b>5</b>
+  │                                        │                          │ │<───┘ Validazione delle credenziali
+  │                                        │                          │ │
+  │                                        └┬┘                        │ │
+  │                                        ┌┴┐   6 Login effettuato   │ │
+  │                                        │   <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │
+  │                                        │                          └┬┘
+ ┌┴┐7 Mostra messaggio di login effettuato │                           │
+ │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─  │                           │
+ │ │                                       │                           │
+ │ │                                       │                           │
+ │ │                                       │                           │
+ │ │                                       │                           │
+ │ │                                       │                           │
+ │ │                                       │                           │
+ │ │                                       │                           │
+ │ │                                       │                           │
+ │ │                                       │                           │
+ │ │                                       │                           │
+ │ │                                       │                           │
+ │ │                                       │                           │
+ │ │                                       │                           │
+ │ │                                       │                           │
+ │ │                                       │                           │
+ │ │                                       │                           │
+ │ │                                       │                           │
+ │ │                                       │                           │
+ │ │                                       │                           │
+ │ │                                       │                           │
+ │ │                                       │                           │
+ │ │                                       │                           │
+ │ │                                       │                           │
+ │ │                                       │                           │
+ │ │                                       │                           │
+ │ │                                       │                           │
+ │ │                                       │                           │
+ │ │                                       │                           │
+ │ │                                       │                           │
+ │ │                                       │                           │
+ └┬┘                                       │                           │
 
 @startuml
 hide footbox
-autonumber 
+autonumber
+
+skinparam shadowing false
+skinparam sequenceMessageAlign center
+skinparam monochrome true
+
 Actor Utente
-activate Utente
-Utente -> Sistema   :   Richiesta pagina di login
-deactivate Utente
-activate Sistema
-Utente <-- Sistema  :   Visualizzazione form di login    
-deactivate Sistema
-activate Utente
-Utente -> Sistema   :   Inserimento credenziali
-deactivate Utente
+
+Utente -> UI   :   Richiesta pagina di login
+
+activate UI 
+Utente <-- UI  :   Visualizzazione form di login    
+deactivate UI
+
+Utente -> UI   :   Inserimento credenziali
+
+activate UI
+UI -> Sistema  : Invio delle credenziali
+deactivate UI
 activate Sistema
 Sistema -> Sistema  :   Validazione delle credenziali
-Utente <-- Sistema  :   Messaggio di conferma / errore
+UI <-- Sistema  : Login effettuato
 deactivate Sistema
-activate Utente
-deactivate Utente
+activate UI
+Utente <-- UI : Mostra messaggio di login effettuato
+
+
 @enduml
