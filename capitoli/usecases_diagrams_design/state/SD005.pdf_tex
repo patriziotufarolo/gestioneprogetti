@@ -1,0 +1,84 @@
+%% Creator: Inkscape inkscape 0.92.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'SD005.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{333.75bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.66741573)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{SD005.pdf}}%
+    \put(0.28314607,1.60899978){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Modalità modifica topologia}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{SD005.pdf}}%
+    \put(0.40561798,1.39260225){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Visualizzazione canvas}}}%
+    \put(0.39438202,1.33767999){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Attesa eventi}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{SD005.pdf}}%
+    \put(0.26404494,1.16114156){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Modalità selezione}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{SD005.pdf}}%
+    \put(0.06067416,0.92968092){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Primo dispositivo selezionato}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{SD005.pdf}}%
+    \put(0.26629213,0.69822024){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Secondo dispositivo selezionato}}}%
+    \put(0.25505618,0.643298){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Messaggio di conferma}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{SD005.pdf}}%
+    \put(0.21348315,0.46675957){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Creazione del dispositivo nel database}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{SD005.pdf}}%
+    \put(0.36179775,0.23529889){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Messaggio di errore}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{SD005.pdf}}%
+    \put(0.51348315,1.25086787){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Aggiungi link}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{SD005.pdf}}%
+    \put(0.30449438,1.01940719){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Seleziona primo dispositivo}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{SD005.pdf}}%
+    \put(0.28651685,0.78794652){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Seleziona secondo dispositivo}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{SD005.pdf}}%
+    \put(0.52247191,0.55648584){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Ok}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{SD005.pdf}}%
+    \put(0.81011236,1.01940719){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Annulla}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{SD005.pdf}}%
+    \put(0.44831461,0.32502524){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Creato}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{SD005.pdf}}%
+    \put(0.55168539,0.32502524){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Errore}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{SD005.pdf}}%
+  \end{picture}%
+\endgroup%

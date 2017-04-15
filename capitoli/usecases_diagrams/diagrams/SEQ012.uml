@@ -3,48 +3,50 @@
     ║"│
     └┬┘
     ┌┼┐
-     │                                        ┌──┐                    ┌───────┐
-    ┌┴┐                                       │UI│                    │Sistema│
-Supervisore                                   └┬─┘                    └───┬───┘
-    ┌┴┐1 Richiesta pagina "Sessioni di lavoro"┌┴┐                         │
-    │ │ ─────────────────────────────────────>│ │                         │
-    └┬┘                                       │ │                         │
-     │    2 Visualizzazione della pagina      │ │                         │
-     │    "Sessioni di lavoro"                │ │                         │
-     │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │                         │
-     │                                        └┬┘                         │
-     │       3 Apertura di una sessione        │                          │
-     │       di lavoro esistente               │                          │
-     │────────────────────────────────────────>│                          │
-     │                                         │                          │
-     │ 4 Visualizzazione "sessione di lavoro"  │                          │
-     │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │                          │
-     │                                         │                          │
-     ────┐                                     │                          │
-         │ <b>5</b>                            │                          │
-     <───┘ Selezione degli utenti              │                          │
-           da associare                        │                          │
-                                               │                          │
-     │                                         │                          │
-     │     6 Click sul pulsante associa       ┌┴┐                         │
-     │───────────────────────────────────────>│ │                         │
-     │                                        │ │                         │
-     │                                        │ │   7 Associa utenti     ┌┴┐
-     │                                        │ │ ─────────────────────> │ │
-     │                                        └┬┘                        │ │
-     │                                         │                         │ │────┐
-     │                                         │                         │ │    │ <b>8</b>
-     │                                         │                         │ │<───┘ Associazione utenti
-     │                                         │                         │ │
-     │                                         │                         │ │
-     │                                        ┌┴┐9 Notifica associazione │ │
-     │                                        │ │completata              │ │
-     │                                        │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │
-     │                                        │ │                        └┬┘
-    ┌┴┐    10 Messaggio "Utenti associati     │ │                         │
-    │ │    con successo"                      │ │                         │
-    │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │                         │
-    └┬┘                                       └┬┘                         │
+     │                                        ┌──┐                   ┌───────┐
+    ┌┴┐                                       │UI│                   │Sistema│
+Supervisore                                   └┬─┘                   └───┬───┘
+    ┌┴┐1 Richiesta pagina "Sessioni di lavoro"┌┴┐                        │
+    │ │ ─────────────────────────────────────>│ │                        │
+    └┬┘                                       │ │                        │
+     │    2 Visualizzazione della pagina      │ │                        │
+     │    "Sessioni di lavoro"                │ │                        │
+     │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │                        │
+     │                                        └┬┘                        │
+     │       3 Click su                        │                         │
+     │       "crea sessione di lavoro"         │                         │
+     │────────────────────────────────────────>│                         │
+     │                                         │                         │
+     │      4 Visualizzazione form             │                         │
+     │      " Nuova sessione di lavoro"        │                         │
+     │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │                         │
+     │                                         │                         │
+     ────┐                                     │                         │
+         │ <b>5</b>                            │                         │
+     <───┘ Compilazione form                   │                         │
+                                               │                         │
+     │                                         │                         │
+     │      6 Click sul pulsante salva        ┌┴┐                        │
+     │───────────────────────────────────────>│ │                        │
+     │                                        │ │                        │
+     │                                        │ │   7 Salva sessione    ┌┴┐
+     │                                        │ │   di lavoro           │ │
+     │                                        │ │ ────────────────────> │ │
+     │                                        └┬┘                       │ │
+     │                                         │                        │ │────┐
+     │                                         │                        │ │    │ <b>8</b>
+     │                                         │                        │ │<───┘ Salvataggio sessione
+     │                                         │                        │ │      di lavoro
+     │                                         │                        │ │
+     │                                         │                        │ │
+     │                                        ┌┴┐9 Notifica salvataggio │ │
+     │                                        │ │completato             │ │
+     │                                        │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─  │ │
+     │                                        │ │                       └┬┘
+    ┌┴┐  10 Messaggio "Creazione sessione di  │ │                        │
+    │ │  lavoro completata"                   │ │                        │
+    │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │                        │
+    └┬┘                                       └┬┘                        │
 
 @startuml
 autonumber
@@ -60,24 +62,24 @@ activate UI
 UI --> Utente  :   Visualizzazione della pagina\n"Sessioni di lavoro"
 deactivate UI
 
-Utente -> UI   :   Apertura di una sessione\ndi lavoro esistente
+Utente -> UI   :   Click su\n"crea sessione di lavoro"
 
 activate UI
-UI --> Utente  :   Visualizzazione "sessione di lavoro"
+UI --> Utente  :   Visualizzazione form\n" Nuova sessione di lavoro"
 deactivate UI
 
-Utente -> Utente   :   Selezione degli utenti\nda associare
-Utente -> UI   :   Click sul pulsante associa
+Utente -> Utente   :   Compilazione form
+Utente -> UI   :   Click sul pulsante salva
 
 activate UI
-UI -> Sistema  :   Associa utenti
+UI -> Sistema  :   Salva sessione\ndi lavoro
 deactivate UI
 activate Sistema
-Sistema -> Sistema : Associazione utenti
-Sistema --> UI : Notifica associazione\ncompletata
+Sistema -> Sistema : Salvataggio sessione\ndi lavoro
+Sistema --> UI : Notifica salvataggio\ncompletato 
 deactivate Sistema
 activate UI
-UI --> Utente  : Messaggio "Utenti associati\ncon successo"
+UI --> Utente  : Messaggio "Creazione sessione di\nlavoro completata"
 deactivate UI
 
 

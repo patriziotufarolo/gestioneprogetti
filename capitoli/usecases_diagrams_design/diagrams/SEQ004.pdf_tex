@@ -1,0 +1,97 @@
+%% Creator: Inkscape inkscape 0.92.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'SEQ004.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{519bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.73843931)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{SEQ004.pdf}}%
+    \put(0.01156069,0.62428453){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Utente}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{SEQ004.pdf}}%
+    \put(0.37210983,0.63584523){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{WebUI}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{SEQ004.pdf}}%
+    \put(0.61127168,0.63584523){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{WebService}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{SEQ004.pdf}}%
+    \put(0.89089595,0.63584523){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Database}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{SEQ004.pdf}}%
+    \put(0.10621387,0.58184422){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{1}}}}%
+    \put(0.125,0.58184422){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{get(createDeviceForm)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{SEQ004.pdf}}%
+    \put(0.12355491,0.5397448){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{2}}}}%
+    \put(0.14234104,0.5397448){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{show(CDeviceForm)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{SEQ004.pdf}}%
+    \put(0.0599711,0.46484307){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{3}}}}%
+    \put(0.07875723,0.49764538){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{fillForm}}}%
+    \put(0.07875723,0.47577716){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(name,}}}%
+    \put(0.07875723,0.45390895){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{type,}}}%
+    \put(0.07875723,0.43204075){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{properties)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{SEQ004.pdf}}%
+    \put(0.13367052,0.3711552){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{4}}}}%
+    \put(0.15245665,0.3711552){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{do(createDevice)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{SEQ004.pdf}}%
+    \put(0.44508671,0.32905565){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{5}}}}%
+    \put(0.46387283,0.32905565){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{do(createDevice)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{SEQ004.pdf}}%
+    \put(0.73121387,0.25415392){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{6}}}}%
+    \put(0.75,0.28695621){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{createDevice}}}%
+    \put(0.77890173,0.26508799){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{(name,}}}%
+    \put(0.7882948,0.24321981){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{type,}}}%
+    \put(0.76083815,0.22135158){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{properties)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{SEQ004.pdf}}%
+    \put(0.69725434,0.17925218){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{7}}}}%
+    \put(0.71604046,0.17925218){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{return(deviceCreated)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{SEQ004.pdf}}%
+    \put(0.42991329,0.13715274){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{8}}}}%
+    \put(0.44869942,0.13715274){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{return(deviceCreated)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{SEQ004.pdf}}%
+    \put(0.42268786,0.0950533){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{9}}}}%
+    \put(0.44147399,0.0950533){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{show(deviceInCanvas)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{SEQ004.pdf}}%
+    \put(0.07080925,0.03416765){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{10}}}}%
+    \put(0.10260116,0.03416765){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{show(deviceCreatedMessage)}}}%
+  \end{picture}%
+\endgroup%

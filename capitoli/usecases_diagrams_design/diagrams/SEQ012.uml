@@ -1,0 +1,73 @@
+
+    ┌─┐
+    ║"│
+    └┬┘
+    ┌┼┐
+     │                            ┌─────┐                 ┌──────────┐                ┌─────────┐
+    ┌┴┐                           │WebUI│                 │WebService│                │Databasea│
+Supervisore                       └──┬──┘                 └────┬─────┘                └────┬────┘
+     │  1 get(createSessionForm)    ┌┴┐                        │                           │
+     │─────────────────────────────>│ │                        │                           │
+     │                              │ │                        │                           │
+     │  2 show(createSessionForm)   │ │                        │                           │
+     │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │                        │                           │
+     │                              └┬┘                        │                           │
+     ────┐                           │                         │                           │
+         │ <b>3</b>                  │                         │                           │
+     <───┘ compile session form      │                         │                           │
+                                     │                         │                           │
+     │                               │                         │                           │
+     │       4 send session         ┌┴┐                        │                           │
+     │─────────────────────────────>│ │                        │                           │
+     │                              │ │                        │                           │
+     │                              │ │   5 createSession()   ┌┴┐                          │
+     │                              │ │ ─────────────────────>│ │                          │
+     │                              └┬┘                       │ │                          │
+     │                               │                        │ │   6 createSession()     ┌┴┐
+     │                               │                        │ │ ──────────────────────> │ │
+     │                               │                        └┬┘                         │ │
+     │                               │                         │ 7 return(createdSession) │ │
+     │                               │                         │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │
+     │                               │                         │                          └┬┘
+     │                              ┌┴┐8 return(createdSession)│                           │
+     │                              │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │                           │
+     │                              │ │                        │                           │
+     │9 show(createdSessionMessage) │ │                        │                           │
+     │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │                        │                           │
+     │                              └┬┘                        │                           │
+
+@startuml
+hide footbox
+autonumber
+
+skinparam shadowing false
+skinparam sequenceMessageAlign center
+skinparam monochrome true
+
+Actor Supervisore as u
+participant WebUI as ui
+participant WebService as ws
+participant Databasea as d
+
+u -> ui : get(createSessionForm)
+activate ui
+u <-- ui : show(createSessionForm)
+deactivate ui
+u -> u : compile session form
+u -> ui : send session
+activate ui
+ui -> ws : createSession()
+deactivate ui
+activate ws
+ws -> d : createSession()
+deactivate ws
+activate d
+ws <-- d : return(createdSession)
+deactivate d
+activate ws
+ui <-- ws : return(createdSession)
+deactivate ws
+activate ui
+u <-- ui :  show(createdSessionMessage)
+deactivate ui
+@enduml

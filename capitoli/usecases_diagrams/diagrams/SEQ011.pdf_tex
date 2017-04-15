@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{499.5bp}%
+    \setlength{\unitlength}{393bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,49 +48,24 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.78978979)%
+  \begin{picture}(1,0.41793893)%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{SEQ011.pdf}}%
-    \put(0.01201201,0.67117853){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Supervisore}}}%
+    \put(0.01526718,0.26718492){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Utente}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{SEQ011.pdf}}%
-    \put(0.48423423,0.68319054){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{UI}}}%
+    \put(0.46278626,0.2824521){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{UI}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{SEQ011.pdf}}%
-    \put(0.71171171,0.68319054){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Sistema}}}%
+    \put(0.8759542,0.2824521){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Sistema}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{SEQ011.pdf}}%
-    \put(0.09084084,0.62708138){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{1}}}}%
-    \put(0.11036036,0.62708138){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Richiesta pagina "Sessioni di lavoro"}}}%
+    \put(0.08396947,0.21113779){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{1}}}}%
+    \put(0.10877863,0.21113779){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Doppio click sul dispositivo}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{SEQ011.pdf}}%
-    \put(0.10585586,0.57197747){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{2}}}}%
-    \put(0.12537538,0.58333844){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Visualizzazione della pagina}}}%
-    \put(0.12537538,0.56061652){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{"Sessioni di lavoro"}}}%
+    \put(0.51431298,0.15554084){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{2}}}}%
+    \put(0.53912214,0.15554084){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Richiedi sessione terminale}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{SEQ011.pdf}}%
-    \put(0.09084084,0.50551262){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{3}}}}%
-    \put(0.11036036,0.51687356){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Click su}}}%
-    \put(0.11036036,0.49415165){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{"crea sessione di lavoro"}}}%
+    \put(0.50858779,0.0999439){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{3}}}}%
+    \put(0.53339695,0.0999439){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Restituisci sessione terminale}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{SEQ011.pdf}}%
-    \put(0.10585586,0.43904776){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{4}}}}%
-    \put(0.12537538,0.45040871){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Visualizzazione form}}}%
-    \put(0.12537538,0.42768679){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{" Nuova sessione di lavoro"}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=8]{SEQ011.pdf}}%
-    \put(0.09084084,0.38394371){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{5}}}}%
-    \put(0.11036036,0.38394371){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Compilazione form}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=9]{SEQ011.pdf}}%
-    \put(0.09084084,0.32068123){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{6}}}}%
-    \put(0.11036036,0.32068123){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Click sul pulsante salva}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=10]{SEQ011.pdf}}%
-    \put(0.50525526,0.26557734){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{7}}}}%
-    \put(0.52477477,0.27693827){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Salva sessione}}}%
-    \put(0.52477477,0.25421637){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{di lavoro}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=11]{SEQ011.pdf}}%
-    \put(0.77252252,0.19911244){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{8}}}}%
-    \put(0.79204204,0.21047341){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Salvataggio sessione}}}%
-    \put(0.79204204,0.18775152){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{di lavoro}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=12]{SEQ011.pdf}}%
-    \put(0.52777778,0.11312807){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{9}}}}%
-    \put(0.5472973,0.12448904){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Notifica salvataggio}}}%
-    \put(0.5472973,0.1017671){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{completato}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=13]{SEQ011.pdf}}%
-    \put(0.10585586,0.04666307){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{10}}}}%
-    \put(0.13888889,0.05802404){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Messaggio "Creazione sessione di}}}%
-    \put(0.13888889,0.0353021){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{lavoro completata"}}}%
+    \put(0.13167939,0.04434693){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{4}}}}%
+    \put(0.15648855,0.04434693){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Visualizza terminale}}}%
   \end{picture}%
 \endgroup%

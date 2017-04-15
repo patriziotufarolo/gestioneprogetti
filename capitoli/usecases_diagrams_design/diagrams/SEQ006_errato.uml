@@ -1,0 +1,164 @@
+
+             ┌─┐
+             ║"│
+             └┬┘
+             ┌┼┐
+              │                             ┌─────┐                     ┌──────────┐            ┌───────────────┐           ┌──────┐
+             ┌┴┐                            │WebUI│                     │WebService│            │ContainerEngine│           │Kernel│
+           Utente                           └──┬──┘                     └────┬─────┘            └───────┬───────┘           └──┬───┘
+             │      1 enterSelectionMode      ┌┴┐                            │                          │                      │
+             │ ──────────────────────────────>│ │                            │                          │                      │
+             │                                │ │                            │                          │                      │
+             │     2 returnSelectionMode      │ │                            │                          │                      │
+             │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │                            │                          │                      │
+             │                                └┬┘                            │                          │                      │
+             │                                 │                             │                          │                      │
+╔═══════╤════╪═════════════════════════════════╪═════════════════════════════╪═══════════════╗          │                      │
+║ LOOP  │  until elementSelected               │                             │               ║          │                      │
+╟───────┘    │                                 │                             │               ║          │                      │
+║            │────┐                                                          │               ║          │                      │
+║            │    │ <b>3</b>                                                 │               ║          │                      │
+║            │<───┘ selectElement(e_n, elements)                             │               ║          │                      │
+║            │                                                               │               ║          │                      │
+║            │                                 │                             │               ║          │                      │
+║            │       4 elementSelected        ┌┴┐                            │               ║          │                      │
+║            │ ──────────────────────────────>│ │                            │               ║          │                      │
+║            │                                │ │                            │               ║          │                      │
+║            │                                │ │ 5 deleteElements(elements) │               ║          │                      │
+║            │                                │ │ ──────────────────────────>│               ║          │                      │
+╚════════════╪════════════════════════════════╪═╪════════════════════════════╪═══════════════╝          │                      │
+             │                                └┬┘                            │                          │                      │
+             │                                 │                             │                          │                      │
+             │          ╔══════════════════════╪════╤════════════════════════╪══════════════════════════╪══════════════════════╪═════════════════════════════════════════════╗
+             │          ║ DELETEELEMENTS(ELEMENTS)  │                        │                          │                      │                                             ║
+             │          ╟───────────────────────────┘                        │                          │                      │                                             ║
+             │          ║         ╔═══════╤════╪═════════════════════════════╪══════════════════════════╪══════════════════════╪═══════════════════════════════════╗         ║
+             │          ║         ║ LOOP  │  elements                        │                          │                      │                                   ║         ║
+             │          ║         ╟───────┘    │                             │                          │                      │                                   ║         ║
+             │          ║         ║            │                             │                          │                      │                                   ║         ║
+             │          ║         ║            │              ╔══════╤═══════╪══════════════════════════╪══════════════════════╪═════════════════════════╗         ║         ║
+             │          ║         ║            │              ║ ALT  │  e_n is device                   │                      │                         ║         ║         ║
+             │          ║         ║            │              ╟──────┘       │                          │                      │                         ║         ║         ║
+             │          ║         ║            │              ║              │                 6 retrieveLinks                 │                         ║         ║         ║
+             │          ║         ║            │              ║              │ ────────────────────────────────────────────────>                         ║         ║         ║
+             │          ║         ║            │              ║              │                          │                      │                         ║         ║         ║
+             │          ║         ║            │              ║              │────┐                                            │                         ║         ║         ║
+             │          ║         ║            │              ║              │    │ <b>7</b>                                   │                         ║         ║         ║
+             │          ║         ║            │              ║              │<───┘ deleteElements(links)                      │                         ║         ║         ║
+             │          ║         ║            │              ║              │                                                 │                         ║         ║         ║
+             │          ║         ║            │              ║              │                          │                      │                         ║         ║         ║
+             │          ║         ║            │              ║              │    8 deleteContainer    ┌┴┐                     │                         ║         ║         ║
+             │          ║         ║            │              ║              │ ───────────────────────>│ │                     │                         ║         ║         ║
+             │          ║         ║            │              ║              │                         │ │                     │                         ║         ║         ║
+             │          ║         ║            │              ║              │                         │ │                     │                         ║         ║         ║
+             │          ║         ║            │              ║              │        ╔══════╤═════════╪═╪═════════════════════╪════════════╗            ║         ║         ║
+             │          ║         ║            │              ║              │        ║ PAR  │         │ │                     │            ║            ║         ║         ║
+             │          ║         ║            │              ║              │        ╟──────┘         │ │    9 deleteNetNS    │            ║            ║         ║         ║
+             │          ║         ║            │              ║              │        ║                │ │ ───────────────────>│            ║            ║         ║         ║
+             │          ║         ║            │              ║              │        ║                │ │                     │            ║            ║         ║         ║
+             │          ║         ║            │              ║              │        ║                │ │     10 deleteFS     │            ║            ║         ║         ║
+             │          ║         ║            │              ║              │        ║                │ │ ───────────────────>│            ║            ║         ║         ║
+             │          ║         ║            │              ║              │        ╚════════════════╪═╪═════════════════════╪════════════╝            ║         ║         ║
+             │          ║         ║            │              ║              │                         └┬┘                     │                         ║         ║         ║
+             │          ║         ║            │              ║              │                          │                      │                         ║         ║         ║
+             │          ║         ║            │              ║              │        ╔══════╤══════════╪══════════════════════╪════════════╗            ║         ║         ║
+             │          ║         ║            │              ║              │        ║ PAR  │          │                      │            ║            ║         ║         ║
+             │          ║         ║            │              ║              │        ╟──────┘          │ 11 returnDeletedNetNS│            ║            ║         ║         ║
+             │          ║         ║            │              ║              │        ║                 │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─            ║            ║         ║         ║
+             │          ║         ║            │              ║              │        ║                 │                      │            ║            ║         ║         ║
+             │          ║         ║            │              ║              │        ║                 │  12 returnDeletedFS  │            ║            ║         ║         ║
+             │          ║         ║            │              ║              │        ║                 │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─            ║            ║         ║         ║
+             │          ║         ║            │              ║              │        ╚═════════════════╪══════════════════════╪════════════╝            ║         ║         ║
+             │          ║         ║            │              ║              │                          │                      │                         ║         ║         ║
+             │          ║         ║            │              ║             ┌┴┐13 returnDeletedContainer│                      │                         ║         ║         ║
+             │          ║         ║            │              ║             │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│                      │                         ║         ║         ║
+             │          ║         ║            │              ╠═════════════╪═╪═════════════════════════╪══════════════════════╪═════════════════════════╣         ║         ║
+             │          ║         ║            │              ║ [e_n is link] │                         │                      │                         ║         ║         ║
+             │          ║         ║            │              ║             │ │                 14 deleteLink                 ┌┴┐                        ║         ║         ║
+             │          ║         ║            │              ║             │ │ ─────────────────────────────────────────────>│ │                        ║         ║         ║
+             │          ║         ║            │              ║             └┬┘                         │                     │ │                        ║         ║         ║
+             │          ║         ║            │              ║              │                          │                     │ │────┐                   ║         ║         ║
+             │          ║         ║            │              ║              │                          │                     │ │    │ <b>15</b>         ║         ║         ║
+             │          ║         ║            │              ║              │                          │                     │ │<───┘ deleteVethPair    ║         ║         ║
+             │          ║         ║            │              ║              │                          │                     │ │                        ║         ║         ║
+             │          ║         ║            │              ║              │                          │                     │ │                        ║         ║         ║
+             │          ║         ║            │              ║              │              16 returnDeletedLink              │ │                        ║         ║         ║
+             │          ║         ║            │              ║              │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │                        ║         ║         ║
+             │          ║         ║            │              ╚══════════════╪══════════════════════════╪════════════════════════════════════════════════╝         ║         ║
+             │          ║         ║            │                             │                          │                      │                                   ║         ║
+             │          ║         ║            │   17 return deletedElement  │                          │                      │                                   ║         ║
+             │          ║         ║            │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─                           │                      │                                   ║         ║
+             │          ║         ╚════════════╪═════════════════════════════╪══════════════════════════╪══════════════════════╪═══════════════════════════════════╝         ║
+             │          ╚══════════════════════╪═════════════════════════════╪══════════════════════════╪══════════════════════╪═════════════════════════════════════════════╝
+             │                                 │                             │                          │                      │
+             │                                 │────┐                                                   │                      │
+             │                                 │    │ <b>18</b>                                         │                      │
+             │                                 │<───┘ exitElementSelectionMode                          │                      │
+             │                                 │                                                        │                      │
+             │                                 │                             │                          │                      │
+             │      19 showElementDeleted      │                             │                          │                      │
+             │ <────────────────────────────────                             │                          │                      │
+             │                                 │                             │                          │                      │
+
+@startuml
+hide footbox
+autonumber
+
+skinparam shadowing false
+skinparam sequenceMessageAlign center
+skinparam monochrome true
+
+
+Actor Utente as u
+participant WebUI as ui
+participant WebService as ws
+participant ContainerEngine as c
+participant Kernel as k
+
+u -> ui : enterSelectionMode
+activate ui
+u <-- ui : returnSelectionMode
+deactivate ui
+loop until elementSelected
+    u -> u : selectElement(e_n, elements)
+    u -> ui : elementSelected
+    activate ui
+    ui -> ws : deleteElements(elements)
+end
+deactivate ui
+group deleteElements(elements)
+    loop elements
+        alt e_n is device
+            ws -> k : retrieveLinks
+            ws -> ws : deleteElements(links)
+            ws -> c : deleteContainer
+            activate c
+            group par
+                c -> k : deleteNetNS
+                c -> k : deleteFS
+            end
+            deactivate c
+            group par
+                c <-- k : returnDeletedNetNS
+                c <-- k : returnDeletedFS
+            end
+            activate c
+            ws <-- c : returnDeletedContainer
+            deactivate c
+        else e_n is link
+            activate ws
+            ws -> k : deleteLink
+            deactivate ws
+            activate k
+            k -> k : deleteVethPair
+            ws <-- k : returnDeletedLink
+            deactivate k
+        end
+        ui <-- ws: return deletedElement
+    end
+activate ui
+end
+ui -> ui : exitElementSelectionMode
+u <- ui : showElementDeleted
+deactivate ui
+@enduml

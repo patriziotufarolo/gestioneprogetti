@@ -1,0 +1,11 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+state "Validazione link" as s1
+state "Messaggio di errore" as s2
+state "Visualizzazione canvas" as s3
+
+[*] --> s1 : Click sul link
+s1 --> s2 : Non valido
+s1 --> s3 : Link valido
+@enduml

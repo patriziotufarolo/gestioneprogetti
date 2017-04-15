@@ -1,0 +1,80 @@
+%% Creator: Inkscape inkscape 0.92.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'SD006.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{360.75bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.20997921)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{SD006.pdf}}%
+    \put(0.2993763,1.15593534){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Modalità modifica topologia}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{SD006.pdf}}%
+    \put(0.30769231,0.95573389){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Visualizzazione canvas}}}%
+    \put(0.2972973,0.90492223){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Attesa eventi}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{SD006.pdf}}%
+    \put(0.05613306,0.74159666){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Modalità selezione}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{SD006.pdf}}%
+    \put(0.3024948,0.52745948){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Messaggio di conferma}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{SD006.pdf}}%
+    \put(0.2047817,0.31332226){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Eliminazione elemento dal database}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{SD006.pdf}}%
+    \put(0.16320166,0.09918505){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Messaggio di errore}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{SD006.pdf}}%
+    \put(0.35550936,0.82460748){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Elimina elemento}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{SD006.pdf}}%
+    \put(0.4012474,0.71753888){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Seleziona elemento}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{SD006.pdf}}%
+    \put(0.35343035,0.61047027){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Conferma}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{SD006.pdf}}%
+    \put(0.47609148,0.39633306){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Ok}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{SD006.pdf}}%
+    \put(0.71933472,0.71753888){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Annulla}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{SD006.pdf}}%
+    \put(0.31392931,0.18219584){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{: Eliminazione fallita}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{SD006.pdf}}%
+    \put(0.61746362,0.18219584){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Eliminazione avvenuta}}}%
+  \end{picture}%
+\endgroup%

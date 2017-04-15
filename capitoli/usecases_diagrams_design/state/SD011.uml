@@ -1,0 +1,26 @@
+
+   ,-------------------.
+   |Esperimento avviato|
+   |-------------------|
+   |Attesa eventi      |
+   |-------------------|
+   `-------------------'
+             |
+             |
+,-------------------------.
+|Visualizzazione terminale|
+|-------------------------|
+|-------------------------|
+`-------------------------'
+
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+
+state "Modalità esperimento" as se {
+    state "Esperimento avviato" as s1: Attesa eventi
+    state "Visualizzazione terminale" as s2
+    s1 --> s2 : Richiedi terminale
+}
+
+@enduml

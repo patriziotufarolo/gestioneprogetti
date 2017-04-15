@@ -1,0 +1,116 @@
+
+           ,----------.
+           |WebService|
+           |----------|
+           |----------|
+           `----------'
+                 |
+                 |
+,--------.  ,-------.   ,-------------.
+|Database|  |Sistema|   |TerminalProxy|
+|--------|--|-------|---|-------------|
+|--------|  |-------|   |-------------|
+`--------'  `-------'   `-------------'
+
+,---------------.  ,-----------.
+|ContainerEngine|  |KernelLinux|
+|---------------|  |-----------|
+|---------------|  |-----------|
+`---------------'  `-----------'
+
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+
+Sistema -up-> WebUI
+Sistema -up-> WebService
+Sistema -right-> TerminalProxy
+Sistema -down-> ContainerEngine
+Sistema -left-> LDAPServer
+Sistema -left-> Database
+Sistema -down-> KernelLinux
+
+class WebUI {
+    - environment
+    --
+    + get
+    + do
+    + populate
+    ~ show
+}
+class LDAPServer {
+    --
+    + checkCredentials
+}
+
+class WebService {
+    - address
+    - port
+    --
+    + login
+    + getEnvironments
+    + getSessions
+    + createDevice
+    + createLink
+    ~ generateLink
+    + deleteElements
+    + sendConfiguration
+    + deployTopology
+    + terminateExperiment
+    + obtainTerminal
+    + createSession
+    + getSession
+    + retrieveUsers
+    + associate
+    + generateLink
+    + deleteSession
+}
+
+class Database {
+    - hostname
+    - port
+    - username
+    - password
+    - driver
+    --
+    + retrieveDevicesForTopology
+    + retrieveLinksForTopology
+    + saveConfiguration
+    + createDevice
+    + createLink
+    + deleteDevice
+    + deleteLink
+    + getUsers
+    + checkIfUserExists
+    + createUserAndLogin
+    + lookupSessions
+    + retrieveSession
+    + storeLink
+    + storeAssociation
+    + deleteToken
+}
+
+class TerminalProxy {
+    - address
+    - port
+    --
+    + openTerminal
+    ~ prepareSocket
+    ~ attachTTYToSocket
+}
+
+class KernelLinux {
+    --
+    + createNetNS
+    + createFS
+    + removeNetNS
+    + removeFS
+}
+
+class ContainerEngine {
+    --
+    + createContainer
+    + removeContainer
+    + getContainerTty
+}
+@enduml

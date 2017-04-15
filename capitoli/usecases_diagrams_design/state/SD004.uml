@@ -1,0 +1,18 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+state "Modalità modifica topologia" as sm {
+state "Visualizzazione canvas" as s1 : Attesa eventi
+state "Scelta del tipo di dispositivo" as s2
+state "Posizionamento nel canvas" as s3
+state "Creazione del dispositivo nel database" as s4 
+[*] --> s1
+s1 --> s2 : Nuovo dispositivo
+s2 --> s3 : L2
+s2 --> s3 : L3
+s3 --> s3 : Posiziona nel canvas
+s3 --> s1 : Annulla
+s3 --> s4 : Memorizza dispositivo
+s4 --> s1 : Visualizza dispositivo sul canvas
+}
+@enduml

@@ -1,37 +1,41 @@
 \documentclass[../../main.tex]{subfiles}
 \begin{document}
-\subsection{Caso d’uso UC013: Generazione di un invite link per l'associazione degli utenti }
+\subsection{Caso d’uso UC013: Associazione di utenti a una sessione di lavoro }
 \begin{tabularx}{150mm}{|l|X|}
     \hline
     ID                                  & \textbf{UC013}\\
     \hline
-    Titolo                              & Generazione di un invite link per l'associazione degli utenti \\
+    Titolo                              & Associazione di utenti a una sessione di lavoro \\
     \hline
-    Descrizione breve                   & Il supervisore genera un link da fornire agli utenti affinché essi possano registrarsi alla sessione di lavoro   \\
+    Descrizione breve                   & Il supervisore associa gli utenti del sistema a una sessione di lavoro   \\
     \hline
-    Attore primario                     & Supervisore di sessione   \\
+    Attore primario                     & Supervisore del sistema   \\
     \hline
-    Eventuali altri attori              & Utenti del sistema   \\
+    Eventuali altri attori              & Utente del sistema   \\
     \hline
-    Stakeholders e rispettivi interessi & Il supervisore vuole un metodo rapido per eseguire l'associazione degli utenti   \\
+    Stakeholders e rispettivi interessi & Il supervisore del sistema vuole permettere agli utenti di lavorare   \\ & Gli utenti vogliono disegnare le topologie ed eseguire esperimenti su di esse   \\
     \hline
-    Pre-condizioni                      & La sessione di lavoro è stata creata   \\
+    Pre-condizioni                      & Il supervisore ha creato la sessione di lavoro   \\
     \hline
-    Post-condizioni                     & Viene generato un link per l'associazione degli utenti   \\
+    Post-condizioni                     & Gli utenti sono associati alla sessione di lavoro e possono utilizzare l'ambiente   \\
     \hline
     Scenario principale                 & 
-    \begin{itemize}
+    \begin{enumerate}
         \item Il supervisore di sistema apre la pagina "Sessioni di lavoro"
-        \item Il supervisore di sistema clicka sul pulsante "Genera link di associazione" relativo alla sessione di lavoro desiderata
-    \end{itemize} 
+        \item Il supervisore fa click sul pulsante "Dettagli" relativo alla sessione di lavoro interessata
+        \item Il supervisore sceglie gli utenti del sistema tra le identità disponibili nel database LDAP
+        \item Il supervisore fa click sul pulsante "Applica associazione utenti"
+        \item Il sistema elimina le eventuali utente non selezionate (se precedentemente esistenti) e crea le associazioni specificate
+        \item Il sistema mostra all'utente un avviso di conferma
+    \end{enumerate}
     \\
     \hline
-    Scenari alternativi                 & -   \\
+    Scenari alternativi                 &    L'associazione può avvenire come da UC013 e UC014\\
     \hline
-    Requisiti speciali                  & Il link ha una durata di 60 minuti.  \\
+    Requisiti speciali                  &    -\\
     \hline
-    Eventuali punti aperti              & -   \\
+    Eventuali punti aperti              &    -\\
     \hline
 \end{tabularx}
-\newpage
+\vfill\newpage
 \end{document}

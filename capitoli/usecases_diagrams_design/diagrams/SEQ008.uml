@@ -1,0 +1,74 @@
+
+  ┌─┐
+  ║"│
+  └┬┘
+  ┌┼┐
+   │                            ┌─────┐               ┌──────────┐                    ┌────────┐
+  ┌┴┐                           │WebUI│               │WebService│                    │Database│
+Utente                          └──┬──┘               └────┬─────┘                    └───┬────┘
+  │     1 do(configureLink,l)     ┌┴┐                      │                              │
+  │ ─────────────────────────────>│ │                      │                              │
+  │                               │ │                      │                              │
+  │ 2 show(linkConfigurationForm) │ │                      │                              │
+  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │                      │                              │
+  │                               └┬┘                      │                              │
+  │────┐                           │                       │                              │
+  │    │ <b>3</b>                  │                       │                              │
+  │<───┘ writeConfiguration()      │                       │                              │
+  │                                │                       │                              │
+  │                                │                       │                              │
+  │    4 do(sendConfiguration)    ┌┴┐                      │                              │
+  │ ─────────────────────────────>│ │                      │                              │
+  │                               │ │                      │                              │
+  │                               │ │5 sendConfiguration()┌┴┐                             │
+  │                               │ │ ───────────────────>│ │                             │
+  │                               └┬┘                     │ │                             │
+  │                                │                      │ │   6 saveConfiguration()     ┌┴┐
+  │                                │                      │ │ ──────────────────────────> │ │
+  │                                │                      └┬┘                             │ │
+  │                                │                       │ 7 return(configurationSaved) │ │
+  │                                │                       │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │
+  │                                │                       │                              └┬┘
+  │                               ┌┴┐ 8 return(configured) │                              │
+  │                               │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─                              │
+  │                               │ │                      │                              │
+  │ 9 show(configuredLinkMessage) │ │                      │                              │
+  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │                      │                              │
+  │                               └┬┘                      │                              │
+
+@startuml
+hide footbox
+autonumber
+
+skinparam shadowing false
+skinparam sequenceMessageAlign center
+skinparam monochrome true
+
+
+Actor Utente as u
+participant WebUI as ui
+participant WebService as ws
+participant Database as d
+
+u -> ui : do(configureLink,l)
+activate ui
+u <-- ui : show(linkConfigurationForm)
+deactivate ui
+u -> u : writeConfiguration()
+u -> ui : do(sendConfiguration)
+activate ui
+ui -> ws : sendConfiguration()
+deactivate ui
+activate ws
+ws -> d : saveConfiguration()
+deactivate ws
+activate d
+ws <-- d : return(configurationSaved)
+deactivate d
+activate ws
+ui <-- ws :return(configured)
+deactivate ws
+activate ui
+u <-- ui : show(configuredLinkMessage)
+deactivate ui
+@enduml

@@ -1,0 +1,90 @@
+%% Creator: Inkscape inkscape 0.92.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'SEQ002.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{441.75bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.80475382)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{SEQ002.pdf}}%
+    \put(0.03904924,0.6706365){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Utente}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{SEQ002.pdf}}%
+    \put(0.39813243,0.68421884){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{WebUI}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{SEQ002.pdf}}%
+    \put(0.73514431,0.68421884){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{WebService}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{SEQ002.pdf}}%
+    \put(0.0475382,0.61398336){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{environmentsPage}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{SEQ002.pdf}}%
+    \put(0.11544992,0.57980204){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{1}}}}%
+    \put(0.13752122,0.57980204){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{get(environmentsPage)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{SEQ002.pdf}}%
+    \put(0.50424448,0.53034059){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{2}}}}%
+    \put(0.52631579,0.53034059){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{getEnvironments()}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{SEQ002.pdf}}%
+    \put(0.49745331,0.48087911){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{3}}}}%
+    \put(0.51952462,0.48087911){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{return(environments)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{SEQ002.pdf}}%
+    \put(0.45755518,0.43141765){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{4}}}}%
+    \put(0.47962649,0.43141765){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{populate(environments)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{SEQ002.pdf}}%
+    \put(0.10865874,0.35988489){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{5}}}}%
+    \put(0.13073005,0.35988489){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{show(environmentsPage)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{SEQ002.pdf}}%
+    \put(0.0475382,0.29174768){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{selectEnvironment}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{SEQ002.pdf}}%
+    \put(0.11120543,0.25756624){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{6}}}}%
+    \put(0.13327674,0.25756624){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{do(selectEnvironment())}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{SEQ002.pdf}}%
+    \put(0.45755518,0.20810475){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{7}}}}%
+    \put(0.47962649,0.20810475){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{store(selectedEnvironment)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{SEQ002.pdf}}%
+    \put(0.12139219,0.13657197){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{8}}}}%
+    \put(0.1434635,0.13657197){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{show(confirmMessage)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{SEQ002.pdf}}%
+    \put(0.25636672,0.06503923){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Stored environment will be sent in each request and will be used}}}%
+    \put(0.25636672,0.03934685){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{by the webservice for request validation, through a middleware}}}%
+  \end{picture}%
+\endgroup%

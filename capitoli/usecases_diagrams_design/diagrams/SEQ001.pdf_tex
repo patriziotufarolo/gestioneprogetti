@@ -1,0 +1,119 @@
+%% Creator: Inkscape inkscape 0.92.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'SEQ001.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{555bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.90810811)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{SEQ001.pdf}}%
+    \put(0.03108108,0.80135797){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Utente}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{SEQ001.pdf}}%
+    \put(0.27635135,0.81216878){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{WebUI}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{SEQ001.pdf}}%
+    \put(0.48108108,0.81216878){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{WebService}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{SEQ001.pdf}}%
+    \put(0.75202703,0.81216878){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Database}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{SEQ001.pdf}}%
+    \put(0.87635135,0.81216878){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{LDAPServer}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{SEQ001.pdf}}%
+    \put(0.11418919,0.76167054){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{1}}}}%
+    \put(0.13175676,0.76167054){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{get(loginPage)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{SEQ001.pdf}}%
+    \put(0.10202703,0.7223019){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{2}}}}%
+    \put(0.11959459,0.7223019){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{return(loginPage)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{SEQ001.pdf}}%
+    \put(0.07635135,0.68293325){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{3}}}}%
+    \put(0.09391892,0.68293325){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Insert credentials}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{SEQ001.pdf}}%
+    \put(0.13581081,0.62599702){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{4}}}}%
+    \put(0.15337838,0.62599702){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{do(login)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{SEQ001.pdf}}%
+    \put(0.38918919,0.58662837){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{5}}}}%
+    \put(0.40675676,0.58662837){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{login}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{SEQ001.pdf}}%
+    \put(0.6277027,0.54725973){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{6}}}}%
+    \put(0.64527027,0.54725973){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{checkCredentials(u,p)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{SEQ001.pdf}}%
+    \put(0.6722973,0.50789106){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{7}}}}%
+    \put(0.68986486,0.50789106){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{return(result)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{SEQ001.pdf}}%
+    \put(0.03783784,0.46311691){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{alt}}}}%
+    \put(0.12432432,0.46427431){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{[result = true]}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{SEQ001.pdf}}%
+    \put(0.57094595,0.43591041){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{8}}}}%
+    \put(0.58851351,0.43591041){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{checkIfUserExists()}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{SEQ001.pdf}}%
+    \put(0.60472973,0.39654174){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{9}}}}%
+    \put(0.6222973,0.39654174){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{return(result)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{SEQ001.pdf}}%
+    \put(0.47837838,0.35176771){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{alt}}}}%
+    \put(0.56486486,0.35292515){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{[queryResult = 0]}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{SEQ001.pdf}}%
+    \put(0.55472973,0.32456121){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{10}}}}%
+    \put(0.58445946,0.32456121){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{createUserAndLogin()}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{SEQ001.pdf}}%
+    \put(0.59527027,0.28519258){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{11}}}}%
+    \put(0.625,0.28519258){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{return(token)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{SEQ001.pdf}}%
+    \put(0.35337838,0.23636446){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{12}}}}%
+    \put(0.38310811,0.23636446){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{return(token)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{SEQ001.pdf}}%
+    \put(0.32364865,0.19699583){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{13}}}}%
+    \put(0.35337838,0.19699583){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{store(token)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{SEQ001.pdf}}%
+    \put(0.08648649,0.14005944){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{14}}}}%
+    \put(0.11621622,0.14005944){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{show(successPage)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{SEQ001.pdf}}%
+    \put(0.02432432,0.10725362){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{[result = false]}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{SEQ001.pdf}}%
+    \put(0.33040541,0.08068444){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{15}}}}%
+    \put(0.36013514,0.08068444){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{return(loginFailed)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{SEQ001.pdf}}%
+    \put(0.10675676,0.04131585){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{16}}}}%
+    \put(0.13648649,0.04131585){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{show(failPage)}}}%
+  \end{picture}%
+\endgroup%

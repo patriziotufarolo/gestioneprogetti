@@ -1,4 +1,6 @@
 @startuml
+skinparam monochrome true
+skinparam shadowing false
 left to right direction
 actor Utente
 
@@ -16,12 +18,13 @@ usecase (UC006 Eliminazione di un elemento\n dal canvas) as UC006
 usecase (UC007 Configurazione\ndi un dispositivo) as UC007
 usecase (UC008 Configurazione\ndi un link) as UC008
 usecase (UC009 Deploy della topologia di rete) as UC009
-usecase (UC010 Apertura\ndel terminale\ndi un dispositivo) as UC010
-usecase (UC011 Creazione\ndi una sessione\ndi lavoro) as UC011
-usecase (UC012 Associazione di utenti\na una sessione di lavoro) as UC012
-usecase (UC013 Generazione\ndi un invite link\nper l'associazione degli utenti) as UC013
-usecase (UC014 Join\ndi una sessione\ntramite invite link) as UC014
-usecase (UC015 Logout di un utente) as UC015
+usecase (UC010 Chiusura dell'esperimento) as UC010
+usecase (UC011 Apertura\ndel terminale\ndi un dispositivo) as UC011
+usecase (UC012 Creazione\ndi una sessione\ndi lavoro) as UC012
+usecase (UC013 Associazione di utenti\na una sessione di lavoro) as UC013
+usecase (UC014 Generazione\ndi un invite link\nper l'associazione degli utenti) as UC014
+usecase (UC015 Join\ndi una sessione\ntramite invite link) as UC015
+usecase (UC016 Logout di un utente) as UC016
 
 
 Utente -- UC001
@@ -34,10 +37,12 @@ Utente -- UC007
 Utente -- UC008
 Utente -- UC009
 Utente -- UC010
-Supervisore -- UC011
+UC009 <. UC010: <<includes>>
+Utente -- UC011
 Supervisore -- UC012
 Supervisore -- UC013
-Utente -- UC014
+Supervisore -- UC014
 Utente -- UC015
-UC013 <. UC014 : <<extends>>
+Utente -- UC016
+UC014 <. UC015 : <<extends>>
 @enduml

@@ -1,0 +1,66 @@
+
+  ┌─┐
+  ║"│
+  └┬┘
+  ┌┼┐
+   │                ┌─────┐          ┌──────────┐                    ┌────────┐
+  ┌┴┐               │WebUI│          │WebService│                    │Database│
+Utente              └──┬──┘          └────┬─────┘                    └───┬────┘
+  │────┐                                  │                              │
+  │    │ <b>1</b>                         │                              │
+  │<───┘ get(inviteLink)                  │                              │
+  │                                       │                              │
+  │                    │                  │                              │
+  │            2 getSession()             ┌┴┐                            │
+  │ ─────────────────────────────────────>│ │                            │
+  │                    │                  │ │                            │
+  │                    │                  │ │────┐                       │
+  │                    │                  │ │    │ <b>3</b>              │
+  │                    │                  │ │<───┘ associateUserSession()│
+  │                    │                  │ │                            │
+  │                    │                  │ │                            │
+  │                    │                  │ │    4 storeAssociation()    ┌┴┐
+  │                    │                  │ │ ──────────────────────────>│ │
+  │                    │                  └┬┘                            │ │
+  │                    │                  │        5 return(ok)          │ │
+  │                    │                  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │
+  │                    │                  │                              └┬┘
+  │          6 return(uiSession)          │                              │
+  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─                               │
+  │                    │                  │                              │
+  │  7 openSession()  ┌┴┐                 │                              │
+  │ ─────────────────>│ │                 │                              │
+  │                   │ │                 │                              │
+  │     8 show()      │ │                 │                              │
+  │ <─ ─ ─ ─ ─ ─ ─ ─ ─│ │                 │                              │
+  │                   └┬┘                 │                              │
+
+@startuml
+autonumber
+hide footbox
+skinparam shadowing false
+skinparam sequenceMessageAlign cener
+skinparam monochrome true
+
+actor Utente as u
+participant WebUI as ui
+participant WebService as ws
+participant Database as db
+
+u->u : get(inviteLink)
+u->ws : getSession()
+activate ws
+ws->ws: associateUserSession()
+ws->db: storeAssociation()
+deactivate ws
+activate db
+ws<--db: return(ok)
+deactivate db
+activate ws
+u<--ws: return(uiSession)
+deactivate ws
+u->ui:openSession()
+activate ui
+u<--ui: show()
+deactivate ui
+@enduml

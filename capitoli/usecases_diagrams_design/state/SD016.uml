@@ -1,0 +1,11 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+state "Visualizzazione pagina web" as s1 : Attesa eventi
+state "Messaggio di conferma" as s2
+[*] --> s1
+s1 --> s2 : Logout
+s2 --> s2 : Scelta 
+s2 --> [*] : Si
+s2 --> s1 : No
+@enduml

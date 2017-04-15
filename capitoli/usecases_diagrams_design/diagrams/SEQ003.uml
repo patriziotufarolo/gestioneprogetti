@@ -1,0 +1,99 @@
+
+             ┌─┐
+             ║"│
+             └┬┘
+             ┌┼┐
+              │                      ┌─────┐                     ┌──────────┐               ┌────────┐
+             ┌┴┐                     │WebUI│                     │WebService│               │Database│
+           Utente                    └──┬──┘                     └────┬─────┘               └───┬────┘
+             │                          │                             │                         │
+╔════════════╪══╤═══════════════════════╪═════════════════════════════╪═════════════════════════╪══════════════╗
+║ SESSIONSPAGE  │                       │                             │                         │              ║
+╟───────────────┘1 get(sessionsPage)   ┌┴┐                            │                         │              ║
+║            │ ───────────────────────>│ │                            │                         │              ║
+║            │                         │ │                            │                         │              ║
+║            │                         │ │      2 getSessions()       ┌┴┐                       │              ║
+║            │                         │ │ ──────────────────────────>│ │                       │              ║
+║            │                         └┬┘                            │ │                       │              ║
+║            │                          │                             │ │3 lookupSessions(user)┌┴┐             ║
+║            │                          │                             │ │ ────────────────────>│ │             ║
+║            │                          │                             └┬┘                      │ │             ║
+║            │                          │                             │   4 return(sessions)   │ │             ║
+║            │                          │                             │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │             ║
+║            │                          │                             │                        └┬┘             ║
+║            │                         ┌┴┐     5 return(sessions)     │                         │              ║
+║            │                         │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─                         │              ║
+║            │                         │ │                            │                         │              ║
+║            │                         │ │────┐                       │                         │              ║
+║            │                         │ │    │ <b>6</b>              │                         │              ║
+║            │                         │ │<───┘ populate(sessions)    │                         │              ║
+║            │                         │ │                            │                         │              ║
+║            │                         │ │                            │                         │              ║
+║            │  7 show(sessionsPage)   │ │                            │                         │              ║
+║            │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │                            │                         │              ║
+╚════════════╪════════════════════════════════════════════════════════╪═════════════════════════╪══════════════╝
+             │                          │                             │                         │
+             │                          │                             │                         │
+╔════════════╪═══╤══════════════════════╪═════════════════════════════╪═══╗                     │
+║ SELECTSESSION  │                      │                             │   ║                     │
+╟────────────────8 do(selectSession)   ┌┴┐                            │   ║                     │
+║            │ ───────────────────────>│ │                            │   ║                     │
+║            │                         │ │                            │   ║                     │
+║            │                         │ │────┐                       │   ║                     │
+║            │                         │ │    │ <b>9</b>              │   ║                     │
+║            │                         │ │<───┘ store(SelectedSession)│   ║                     │
+║            │                         │ │                            │   ║                     │
+║            │                         │ │                            │   ║                     │
+║            │ 10 show(confirmMessage) │ │                            │   ║                     │
+║            │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │                            │   ║                     │
+╚════════════╪════════════════════════════════════════════════════════╪═══╝                     │
+             │                          │                             │                         │
+             │         ╔════════════════╧═════════════════════════════╧══════════════════╗      │
+             │         ║Stored session will be sent in each request and will be used    ░║      │
+             │         ║by the webservice for request validation, through a middleware   ║      │
+             │         ╚════════════════╤═════════════════════════════╤══════════════════╝      │
+
+@startuml
+hide footbox
+autonumber
+
+skinparam shadowing false
+skinparam sequenceMessageAlign center
+skinparam monochrome true
+
+Actor Utente
+participant WebUI
+participant WebService
+participant Database
+group sessionsPage
+    Utente -> WebUI : get(sessionsPage)
+activate WebUI
+WebUI -> WebService : getSessions()
+deactivate WebUI
+activate WebService
+WebService -> Database : lookupSessions(user)
+deactivate WebService
+activate Database
+WebService <-- Database : return(sessions)
+deactivate Database
+activate WebService
+WebUI <-- WebService : return(sessions)
+deactivate WebService
+activate WebUI
+WebUI -> WebUI : populate(sessions)
+Utente <-- WebUI : show(sessionsPage)
+deactivate WebUI
+end
+group selectSession
+    Utente -> WebUI: do(selectSession)
+activate WebUI
+WebUI -> WebUI : store(SelectedSession)
+Utente <-- WebUI : show(confirmMessage)
+deactivate WebUI
+end
+note over WebUI, WebService
+    Stored session will be sent in each request and will be used
+    by the webservice for request validation, through a middleware 
+end note
+
+@enduml

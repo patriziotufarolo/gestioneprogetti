@@ -1,34 +1,34 @@
 \documentclass[../../main.tex]{subfiles}
 \begin{document}
-\subsection{Caso d’uso UC014: Join di una sessione di lavoro tramite invite link }
+\subsection{Caso d’uso UC014: Generazione di un invite link per l'associazione degli utenti }
 \begin{tabularx}{150mm}{|l|X|}
     \hline
     ID                                  & \textbf{UC014}\\
     \hline
-    Titolo                              & Join di una sessione di lavoro tramite invite link \\
+    Titolo                              & Generazione di un invite link per l'associazione degli utenti \\
     \hline
-    Descrizione breve                   & L'utente partecipa a una sessione di lavoro tramite link  \\
+    Descrizione breve                   & Il supervisore genera un link da fornire agli utenti affinché essi possano registrarsi alla sessione di lavoro   \\
     \hline
-    Attore primario                     & Utente del sistema   \\
+    Attore primario                     & Supervisore di sessione   \\
     \hline
-    Eventuali altri attori              & Supervisore di sessione   \\
+    Eventuali altri attori              & Utenti del sistema   \\
     \hline
-    Stakeholders e rispettivi interessi & L'utente del sistema vuole effettuare il join alla sessione di lavoro e accedere all'ambiente  \\
+    Stakeholders e rispettivi interessi & Il supervisore vuole un metodo rapido per eseguire l'associazione degli utenti   \\
     \hline
-    Pre-condizioni                      & La sessione lavoro deve esistere, il link deve essere valido e non scaduto  \\
+    Pre-condizioni                      & La sessione di lavoro è stata creata   \\
     \hline
-    Post-condizioni                     & L'utente può accedere alla sessione di lavoro   \\
+    Post-condizioni                     & Viene generato un link per l'associazione degli utenti   \\
     \hline
-    Scenario principale                 &
-    \begin{enumerate}
-        \item L'utente inserisce il link nel browser
-        \item L'utente effettua il login
-        \item L'utente è associato alla sessione di lavoro 
-    \end{enumerate} \\
-            \hline
+    Scenario principale                 & 
+    \begin{itemize}
+        \item Il supervisore di sistema apre la pagina "Sessioni di lavoro"
+        \item Il supervisore di sistema clicka sul pulsante "Genera link di associazione" relativo alla sessione di lavoro desiderata
+    \end{itemize} 
+    \\
+    \hline
     Scenari alternativi                 & -   \\
     \hline
-    Requisiti speciali                  & -   \\
+    Requisiti speciali                  & Il link ha una durata di 60 minuti.  \\
     \hline
     Eventuali punti aperti              & -   \\
     \hline

@@ -1,0 +1,124 @@
+
+             ┌─┐
+             ║"│
+             └┬┘
+             ┌┼┐
+              │                             ┌─────┐                        ┌──────────┐                ┌────────┐
+             ┌┴┐                            │WebUI│                        │WebService│                │Database│
+           Utente                           └──┬──┘                        └────┬─────┘                └───┬────┘
+             │     1 enterSelectionMode()     ┌┴┐                               │                          │
+             │ ──────────────────────────────>│ │                               │                          │
+             │                                │ │                               │                          │
+             │  2 show(selectionModeMessage)  │ │                               │                          │
+             │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │                               │                          │
+             │                                └┬┘                               │                          │
+             │                                 │                                │                          │
+╔═══════╤════╪═════════════════════════════════╪════════════╗                   │                          │
+║ LOOP  │  until elementSelected               │            ║                   │                          │
+╟───────┘    │                                 │            ║                   │                          │
+║            │────┐                            │            ║                   │                          │
+║            │    │ <b>3</b>                   │            ║                   │                          │
+║            │<───┘ selectElement(en, elements)│            ║                   │                          │
+║            │                                 │            ║                   │                          │
+║            │                                 │            ║                   │                          │
+║            │        4 elementSelected        │            ║                   │                          │
+║            │ ───────────────────────────────>│            ║                   │                          │
+╚════════════╪═════════════════════════════════╪════════════╝                   │                          │
+             │                                 │                                │                          │
+             │                                 │   5 deleteElements(elements)   │                          │
+             │                                 │────────────────────────────────>                          │
+             │                                 │                                │                          │
+             │                                 │                                │                          │
+             │                               ╔═╪═════════════════════════╤══════╪══════════════════════════╪══════════════════════════════════╗
+             │                               ║ DELETEELEMENTS(ELEMENTS)  │      │                          │                                  ║
+             │                               ╟───────────────────────────┘      │                          │                                  ║
+             │                               ║ │       ╔═══════╤════════════════╪══════════════════════════╪════════════════════════╗         ║
+             │                               ║ │       ║ LOOP  │  elements      │                          │                        ║         ║
+             │                               ║ │       ╟───────┘                │                          │                        ║         ║
+             │                               ║ │       ║                        │                          │                        ║         ║
+             │                               ║ │       ║         ╔══════╤═══════╪══════════════════════════╪══════════════╗         ║         ║
+             │                               ║ │       ║         ║ ALT  │  en is device                    │              ║         ║         ║
+             │                               ║ │       ║         ╟──────┘       │                          │              ║         ║         ║
+             │                               ║ │       ║         ║              │────┐                                    ║         ║         ║
+             │                               ║ │       ║         ║              │    │ <b>6</b>                           ║         ║         ║
+             │                               ║ │       ║         ║              │<───┘ deleteElements(links)              ║         ║         ║
+             │                               ║ │       ║         ║              │                                         ║         ║         ║
+             │                               ║ │       ║         ║              │                          │              ║         ║         ║
+             │                               ║ │       ║         ║              │    7 deleteDevice()      ┌┴┐            ║         ║         ║
+             │                               ║ │       ║         ║              │ ───────────────────────> │ │            ║         ║         ║
+             │                               ║ │       ║         ║              │                          │ │            ║         ║         ║
+             │                               ║ │       ║         ║              │    8 return(deleted)     │ │            ║         ║         ║
+             │                               ║ │       ║         ║              │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │            ║         ║         ║
+             │                               ║ │       ║         ╠══════════════╪═════════════════════════════════════════╣         ║         ║
+             │                               ║ │       ║         ║ [en is link] │                          │              ║         ║         ║
+             │                               ║ │       ║         ║              │     9 delete(link)       ┌┴┐            ║         ║         ║
+             │                               ║ │       ║         ║              │ ───────────────────────> │ │            ║         ║         ║
+             │                               ║ │       ║         ║              │                          │ │            ║         ║         ║
+             │                               ║ │       ║         ║              │   10 return(deleted)     │ │            ║         ║         ║
+             │                               ║ │       ║         ║              │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │            ║         ║         ║
+             │                               ║ │       ║         ╚══════════════╪═════════════════════════════════════════╝         ║         ║
+             │                               ║ │       ╚════════════════════════╪══════════════════════════╪════════════════════════╝         ║
+             │                               ╚═╪════════════════════════════════╪══════════════════════════╪══════════════════════════════════╝
+             │                                 │                                │                          │
+             │                                ┌┴┐   11 return(deletedElement)   │                          │
+             │                                │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─                           │
+             │                                │ │                               │                          │
+             │                                │ │────┐                          │                          │
+             │                                │ │    │ <b>12</b>                │                          │
+             │                                │ │<───┘ removeElementFromCanvas()│                          │
+             │                                │ │                               │                          │
+             │                                │ │                               │                          │
+             │ 13 show(elementDeletedMessage) │ │                               │                          │
+             │ <──────────────────────────────│ │                               │                          │
+             │                                └┬┘                               │                          │
+
+@startuml
+hide footbox
+autonumber
+
+skinparam shadowing false
+skinparam sequenceMessageAlign center
+skinparam monochrome true
+
+
+Actor Utente as u
+participant WebUI as ui
+participant WebService as ws
+participant Database as d
+
+u -> ui : enterSelectionMode()
+activate ui
+u <-- ui : show(selectionModeMessage)
+deactivate ui
+loop until elementSelected
+    u -> u : selectElement(en, elements)
+    u -> ui : elementSelected
+end
+activate ui
+    ui -> ws : deleteElements(elements)
+deactivate ui
+group deleteElements(elements)
+    loop elements
+        alt en is device
+            ws -> ws : deleteElements(links)
+            ws -> d : deleteDevice()
+            activate d
+            ws <-- d : return(deleted)
+            deactivate d
+        else en is link
+            ws -> d : delete(link)
+            activate d
+            ws <-- d: return(deleted)
+            deactivate d
+        end
+    end
+end
+deactivate ws
+activate ws
+ui <-- ws: return(deletedElement)
+deactivate ws
+activate ui
+ui -> ui : removeElementFromCanvas()
+u <- ui : show(elementDeletedMessage)
+deactivate ui
+@enduml

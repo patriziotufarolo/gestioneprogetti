@@ -1,0 +1,96 @@
+
+  ┌─┐
+  ║"│
+  └┬┘
+  ┌┼┐
+   │                       ┌─────┐                   ┌──────────┐              ┌─────────────┐          ┌───────────────┐
+  ┌┴┐                      │WebUI│                   │WebService│              │TerminalProxy│          │ContainerEngine│
+Utente                     └──┬──┘                   └────┬─────┘              └──────┬──────┘          └───────┬───────┘
+  │1 do(openTerminal, device)┌┴┐                          │                           │                         │
+  │ ────────────────────────>│ │                          │                           │                         │
+  │                          │ │                          │                           │                         │
+  │                          │ │ 2 obtainTerminal(device) │                           │                         │
+  │                          │ │ ────────────────────────>│                           │                         │
+  │                          └┬┘                          │                           │                         │
+  │                           │                           │────┐                                                │
+  │                           │                           │    │ <b>3</b>                                       │
+  │                           │                           │<───┘ checkIfTerminalReady()                         │
+  │                           │                           │                                                     │
+  │                           │                           │                           │                         │
+  │                           │                           │                           │                         │
+  │              ╔══════╤═════╪═══════════════════════════╪═══════════════════════════╪═════════════════════════╪═════════════════╗
+  │              ║ ALT  │  terminalReady                  │                           │                         │                 ║
+  │              ╟──────┘     │                           │                           │                         │                 ║
+  │              ║            │ 4 return(terminalSession) │                           │                         │                 ║
+  │              ║            │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─                            │                         │                 ║
+  │              ╠════════════╪═══════════════════════════╪═══════════════════════════╪═════════════════════════╪═════════════════╣
+  │              ║            │                           │                           │                         │                 ║
+  │              ║            │                           │  5 openTerminal(device)  ┌┴┐                        │                 ║
+  │              ║            │                           │ ────────────────────────>│ │                        │                 ║
+  │              ║            │                           │                          │ │                        │                 ║
+  │              ║            │                           │                          │ │────┐                   │                 ║
+  │              ║            │                           │                          │ │    │ <b>6</b>          │                 ║
+  │              ║            │                           │                          │ │<───┘ prepareSocket()   │                 ║
+  │              ║            │                           │                          │ │                        │                 ║
+  │              ║            │                           │                          │ │                        │                 ║
+  │              ║            │                           │                          │ │  7 getContainerTTY()  ┌┴┐                ║
+  │              ║            │                           │                          │ │ ─────────────────────>│ │                ║
+  │              ║            │                           │                          └┬┘                       │ │                ║
+  │              ║            │                           │                           │ 8 return(containerTTY) │ │                ║
+  │              ║            │                           │                           │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │                ║
+  │              ║            │                           │                           │                        └┬┘                ║
+  │              ║            │                           │                           │────┐                    │                 ║
+  │              ║            │                           │                           │    │ <b>9</b>           │                 ║
+  │              ║            │                           │                           │<───┘ attachTTYToSocket()│                 ║
+  │              ║            │                           │                           │                         │                 ║
+  │              ║            │                           │                           │                         │                 ║
+  │              ║            │                           │     10 return(socket)     │                         │                 ║
+  │              ║            │                           │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─                          │                 ║
+  │              ║            │                           │                           │                         │                 ║
+  │              ║            │ 11 return(terminalSession)│                           │                         │                 ║
+  │              ║            │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─                            │                         │                 ║
+  │              ╚════════════╪═══════════════════════════╪═══════════════════════════╪═════════════════════════╪═════════════════╝
+  │                           │                           │                           │                         │
+  │  12 show(terminalWindow)  │                           │                           │                         │
+  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─                            │                           │                         │
+  │                           │                           │                           │                         │
+
+@startuml
+autonumber
+hide footbox
+skinparam shadowing false
+skinparam sequenceMessageAlign center
+skinparam monochrome true
+
+Actor Utente as u
+participant WebUI as ui
+participant WebService as ws
+participant TerminalProxy as p
+participant ContainerEngine as c
+
+u -> ui : do(openTerminal, device)
+activate ui
+ui -> ws : obtainTerminal(device)
+deactivate ui
+ws -> ws : checkIfTerminalReady()
+alt terminalReady
+    ui <-- ws: return(terminalSession)
+else
+    ws -> p: openTerminal(device)
+    activate p
+    p -> p: prepareSocket()
+    p -> c: getContainerTTY()
+    deactivate p
+    activate c
+    p <-- c: return(containerTTY)
+    deactivate c
+    activate p
+    p -> p: attachTTYToSocket()
+    ws <-- p: return(socket)
+    deactivate p
+    ui <-- ws: return(terminalSession)
+end
+activate ui
+u <-- ui: show(terminalWindow)
+deactivate ui
+@enduml

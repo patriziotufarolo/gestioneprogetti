@@ -1,0 +1,105 @@
+
+             ┌─┐
+             ║"│
+             └┬┘
+             ┌┼┐
+              │                           ┌─────┐                     ┌──────────┐             ┌────────┐
+             ┌┴┐                          │WebUI│                     │WebService│             │Database│
+           Utente                         └──┬──┘                     └────┬─────┘             └───┬────┘
+             │        1 do(addLink)         ┌┴┐                            │                       │
+             │ ────────────────────────────>│ │                            │                       │
+             │                              │ │                            │                       │
+             │                              │ │────┐                       │                       │
+             │                              │ │    │ <b>2</b>              │                       │
+             │                              │ │<───┘ do(enterSelectionMode)│                       │
+             │                              │ │                            │                       │
+             │                              │ │                            │                       │
+             │ 3 show(selectionModeMessage) │ │                            │                       │
+             │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │                            │                       │
+             │                              └┬┘                            │                       │
+             │                               │                             │                       │
+╔════════════╪═════╤═════════════════════════╪═════════════════════════════╪═══════════════════════╪══════════════╗
+║ DEVICESELECTION  │                         │                             │                       │              ║
+╟─────────────────┐                          │                             │                       │              ║
+║            │    │ <b>4</b>                 │                             │                       │              ║
+║            │<───┘ selectDevice(d1, device) │                             │                       │              ║
+║            │                               │                             │                       │              ║
+║            │                               │                             │                       │              ║
+║            │────┐                          │                             │                       │              ║
+║            │    │ <b>5</b>                 │                             │                       │              ║
+║            │<───┘ selectDevice(d2, device) │                             │                       │              ║
+║            │                               │                             │                       │              ║
+║            │                               │                             │                       │              ║
+║            │   6 do(createLink, d1, d2)   ┌┴┐                            │                       │              ║
+║            │ ────────────────────────────>│ │                            │                       │              ║
+║            │                              │ │                            │                       │              ║
+║            │                              │ │    7 createLink(d1, d2)    ┌┴┐                     │              ║
+║            │                              │ │ ──────────────────────────>│ │                     │              ║
+║            │                              └┬┘                            │ │                     │              ║
+║            │                               │                             │ │8 createLink(d1, d2)┌┴┐             ║
+║            │                               │                             │ │ ──────────────────>│ │             ║
+║            │                               │                             └┬┘                    │ │             ║
+║            │                               │                             │  9 return(created)   │ │             ║
+║            │                               │                             │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │             ║
+║            │                               │                             │                      └┬┘             ║
+║            │                              ┌┴┐     10 return(created)     │                       │              ║
+║            │                              │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─                       │              ║
+╚════════════╪══════════════════════════════╪═╪════════════════════════════╪═══════════════════════╪══════════════╝
+             │                              │ │                            │                       │
+             │                              │ │────┐                       │                       │
+             │                              │ │    │ <b>11</b>             │                       │
+             │                              │ │<───┘ do(exitSelectionMode) │                       │
+             │                              │ │                            │                       │
+             │                              │ │                            │                       │
+             │                              │ │────┐                       │                       │
+             │                              │ │    │ <b>12</b>             │                       │
+             │                              │ │<───┘ do(addLinkInCanvas)   │                       │
+             │                              │ │                            │                       │
+             │                              │ │                            │                       │
+             │ 13 show(linkCreatedMessage)  │ │                            │                       │
+             │ <────────────────────────────│ │                            │                       │
+             │                              └┬┘                            │                       │
+
+@startuml
+hide footbox
+autonumber
+
+skinparam shadowing false
+skinparam sequenceMessageAlign center
+skinparam monochrome true
+
+
+Actor Utente as u
+participant WebUI as ui
+participant WebService as ws
+participant Database as d
+
+u -> ui : do(addLink)
+activate ui
+ui -> ui : do(enterSelectionMode)
+u <-- ui : show(selectionModeMessage)
+deactivate ui
+group deviceSelection
+u -> u : selectDevice(d1, device)
+u -> u : selectDevice(d2, device)
+u -> ui : do(createLink, d1, d2)
+activate ui
+ui -> ws : createLink(d1, d2)
+deactivate ui
+activate ws
+ws -> d : createLink(d1, d2)
+deactivate ws
+activate d
+ws <-- d : return(created)
+deactivate d
+activate ws
+ui <-- ws : return(created)
+deactivate ws
+activate ui
+end
+ui -> ui : do(exitSelectionMode)
+
+ui -> ui : do(addLinkInCanvas)
+u <- ui : show(linkCreatedMessage)
+deactivate ui
+@enduml

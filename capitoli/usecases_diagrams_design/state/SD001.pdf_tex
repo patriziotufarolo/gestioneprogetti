@@ -1,0 +1,82 @@
+%% Creator: Inkscape inkscape 0.92.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'SD001.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{314.25bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.56324582)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{SD001.pdf}}%
+    \put(0.26968974,1.50120501){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Modalità modifica topologia}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{SD001.pdf}}%
+    \put(0.10739857,1.27137948){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Visualizzazione pagina web}}}%
+    \put(0.09546539,1.21304915){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Attesa eventi}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{SD001.pdf}}%
+    \put(0.22792363,1.02555607){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Form di login}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{SD001.pdf}}%
+    \put(0.16348449,0.77973272){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Autenticazione LDAP}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{SD001.pdf}}%
+    \put(0.11813842,0.53390933){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Controllo utenza esistente}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{SD001.pdf}}%
+    \put(0.06443914,0.28808594){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Creazione utenza}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{SD001.pdf}}%
+    \put(0.34128878,1.12085012){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Login}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{SD001.pdf}}%
+    \put(0.53102625,0.99793842){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Inserimento credenziali}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{SD001.pdf}}%
+    \put(0.22434368,0.87502673){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Dati inseriti}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{SD001.pdf}}%
+    \put(0.34128878,0.62920334){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Dati corretti}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{SD001.pdf}}%
+    \put(0.41288783,0.87502673){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Dati errati}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{SD001.pdf}}%
+    \put(0.51312649,0.26046833){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Utenza esistente -> Login}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{SD001.pdf}}%
+    \put(0.15990453,0.38337995){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Utenza non esistente}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{SD001.pdf}}%
+    \put(0.34128878,0.13755664){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Login}}}%
+  \end{picture}%
+\endgroup%

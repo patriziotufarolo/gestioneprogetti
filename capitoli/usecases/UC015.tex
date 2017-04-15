@@ -1,26 +1,31 @@
 \documentclass[../../main.tex]{subfiles}
 \begin{document}
-\subsection{Caso d’uso UC015: Logout di un utente }
+\subsection{Caso d’uso UC015: Join di una sessione di lavoro tramite invite link }
 \begin{tabularx}{150mm}{|l|X|}
     \hline
     ID                                  & \textbf{UC015}\\
     \hline
-    Titolo                              & Logout di un utente \\
+    Titolo                              & Join di una sessione di lavoro tramite invite link \\
     \hline
-    Descrizione breve                   & L'utente effettua il logout dal sistema   \\
+    Descrizione breve                   & L'utente partecipa a una sessione di lavoro tramite link  \\
     \hline
     Attore primario                     & Utente del sistema   \\
     \hline
-    Eventuali altri attori              & -   \\
+    Eventuali altri attori              & Supervisore di sessione   \\
     \hline
-    Stakeholders e rispettivi interessi & L'utente vuole terminare la propria sessione di login   \\
+    Stakeholders e rispettivi interessi & L'utente del sistema vuole effettuare il join alla sessione di lavoro e accedere all'ambiente  \\
     \hline
-    Pre-condizioni                      & L'utente è autenticato nel sistema   \\
+    Pre-condizioni                      & La sessione lavoro deve esistere, il link deve essere valido e non scaduto  \\
     \hline
-    Post-condizioni                     & L'utente è offline sul sistema    \\
+    Post-condizioni                     & L'utente può accedere alla sessione di lavoro   \\
     \hline
-    Scenario principale                 & L'utente clicca sul tasto "Logout" presente in ogni pagina   \\
-    \hline
+    Scenario principale                 &
+    \begin{enumerate}
+        \item L'utente inserisce il link nel browser
+        \item L'utente effettua il login
+        \item L'utente è associato alla sessione di lavoro 
+    \end{enumerate} \\
+            \hline
     Scenari alternativi                 & -   \\
     \hline
     Requisiti speciali                  & -   \\
@@ -28,4 +33,5 @@
     Eventuali punti aperti              & -   \\
     \hline
 \end{tabularx}
+\newpage
 \end{document}

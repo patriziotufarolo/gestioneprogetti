@@ -1,0 +1,84 @@
+
+  ┌─┐
+  ║"│
+  └┬┘
+  ┌┼┐
+   │                            ┌─────┐                   ┌──────────┐                ┌────────┐
+  ┌┴┐                           │WebUI│                   │WebService│                │Database│
+Utente                          └──┬──┘                   └────┬─────┘                └───┬────┘
+  │    1 get(createDeviceForm)    ┌┴┐                          │                          │
+  │ ─────────────────────────────>│ │                          │                          │
+  │                               │ │                          │                          │
+  │      2 show(CDeviceForm)      │ │                          │                          │
+  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │                          │                          │
+  │                               └┬┘                          │                          │
+  │────┐                           │                           │                          │
+  │    │ <b>3</b>                  │                           │                          │
+  │<───┘ fillForm                  │                           │                          │
+  │      (name,                    │                           │                          │
+  │      type,                     │                           │                          │
+  │      properties)               │                           │                          │
+  │                                │                           │                          │
+  │                                │                           │                          │
+  │      4 do(createDevice)       ┌┴┐                          │                          │
+  │ ─────────────────────────────>│ │                          │                          │
+  │                               │ │                          │                          │
+  │                               │ │    5 do(createDevice)    ┌┴┐                        │
+  │                               │ │ ────────────────────────>│ │                        │
+  │                               └┬┘                          │ │                        │
+  │                                │                           │ │    6 createDevice     ┌┴┐
+  │                                │                           │ │    (name,             │ │
+  │                                │                           │ │    type,              │ │
+  │                                │                           │ │    properties)        │ │
+  │                                │                           │ │ ─────────────────────>│ │
+  │                                │                           └┬┘                       │ │
+  │                                │                           │ 7 return(deviceCreated) │ │
+  │                                │                           │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │
+  │                                │                           │                         └┬┘
+  │                               ┌┴┐  8 return(deviceCreated) │                          │
+  │                               │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─                          │
+  │                               │ │                          │                          │
+  │                               │ │────┐                     │                          │
+  │                               │ │    │ <b>9</b>            │                          │
+  │                               │ │<───┘ show(deviceInCanvas)│                          │
+  │                               │ │                          │                          │
+  │                               │ │                          │                          │
+  │ 10 show(deviceCreatedMessage) │ │                          │                          │
+  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │                          │                          │
+  │                               └┬┘                          │                          │
+
+@startuml
+hide footbox
+autonumber
+
+skinparam shadowing false
+skinparam sequenceMessageAlign center
+skinparam monochrome true
+
+Actor Utente as u
+Participant WebUI as ui
+Participant WebService as ws
+Participant Database as d
+u -> ui : get(createDeviceForm)
+activate ui
+u <-- ui : show(CDeviceForm)
+deactivate ui
+u -> u : fillForm\n(name,\ntype,\nproperties)
+u -> ui : do(createDevice)
+activate ui
+ui -> ws : do(createDevice)
+deactivate ui
+activate ws
+ws -> d : createDevice\n(name,\ntype,\nproperties)
+deactivate ws
+activate d
+ws <-- d : return(deviceCreated)
+deactivate d
+activate ws
+ui <-- ws : return(deviceCreated)
+deactivate ws
+activate ui
+ui -> ui : show(deviceInCanvas)
+u <-- ui : show(deviceCreatedMessage)
+deactivate ui
+@enduml

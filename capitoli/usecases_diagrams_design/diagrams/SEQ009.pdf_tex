@@ -1,0 +1,136 @@
+%% Creator: Inkscape inkscape 0.92.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'SEQ009.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{782.25bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.80824545)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{SEQ009.pdf}}%
+    \put(0.00767018,0.73250709){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Utente}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{SEQ009.pdf}}%
+    \put(0.20949185,0.74017728){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{WebUI}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{SEQ009.pdf}}%
+    \put(0.39693193,0.74017728){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{WebService}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{SEQ009.pdf}}%
+    \put(0.62559923,0.74017728){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Database}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{SEQ009.pdf}}%
+    \put(0.71380633,0.74017728){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{ContainerEngine}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{SEQ009.pdf}}%
+    \put(0.91946309,0.74017728){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Kernel}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{SEQ009.pdf}}%
+    \put(0.10019175,0.70434918){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{1}}}}%
+    \put(0.1126558,0.70434918){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{deploy()}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{SEQ009.pdf}}%
+    \put(0.27372963,0.67641745){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{2}}}}%
+    \put(0.28619367,0.67641745){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{deployTopology()}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{SEQ009.pdf}}%
+    \put(0.38542665,0.64465063){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{deploy devices}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{SEQ009.pdf}}%
+    \put(0.44918504,0.62534784){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{3}}}}%
+    \put(0.46164909,0.62534784){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{retrieveDevicesForTopology()}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{SEQ009.pdf}}%
+    \put(0.49424736,0.5974161){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{4}}}}%
+    \put(0.50671141,0.5974161){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{return(devices)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{SEQ009.pdf}}%
+    \put(0.39501438,0.56564928){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{loop}}}}%
+    \put(0.46788111,0.56647037){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{[devices as device]}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{SEQ009.pdf}}%
+    \put(0.52133269,0.54634649){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{5}}}}%
+    \put(0.53379674,0.54634649){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{deployContainer(device)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{SEQ009.pdf}}%
+    \put(0.71188878,0.51457959){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{par}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{SEQ009.pdf}}%
+    \put(0.80584851,0.4952768){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{6}}}}%
+    \put(0.81831256,0.4952768){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{createNetNS()}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{SEQ009.pdf}}%
+    \put(0.81831256,0.46734505){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{7}}}}%
+    \put(0.83077661,0.46734505){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{createFS()}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{SEQ009.pdf}}%
+    \put(0.71188878,0.42886683){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{par}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{SEQ009.pdf}}%
+    \put(0.80680729,0.40956404){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{8}}}}%
+    \put(0.81927133,0.40956404){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{return(NetNS)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{SEQ009.pdf}}%
+    \put(0.81927133,0.38163232){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{9}}}}%
+    \put(0.83173538,0.38163232){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{return(FS)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{SEQ009.pdf}}%
+    \put(0.78235858,0.34698916){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{10}}}}%
+    \put(0.80345158,0.34698916){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{associate(NetNS,FS)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{SEQ009.pdf}}%
+    \put(0.56255992,0.31905742){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{11}}}}%
+    \put(0.58365292,0.31905742){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{return(ok)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{SEQ009.pdf}}%
+    \put(0.38542665,0.27386767){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{deploy links}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{SEQ009.pdf}}%
+    \put(0.45349952,0.25456494){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{12}}}}%
+    \put(0.47459252,0.25456494){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{retrieveLinksForTopology()}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{SEQ009.pdf}}%
+    \put(0.49904123,0.22663319){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{13}}}}%
+    \put(0.52013423,0.22663319){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{return(links)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{SEQ009.pdf}}%
+    \put(0.39501438,0.19486635){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{loop}}}}%
+    \put(0.46788111,0.19568755){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{[links as link]}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{SEQ009.pdf}}%
+    \put(0.62823586,0.17556356){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{14}}}}%
+    \put(0.64932886,0.17556356){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{createVethPair()}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{SEQ009.pdf}}%
+    \put(0.63446788,0.14763181){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{15}}}}%
+    \put(0.65556088,0.14763181){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{return(VethID)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{SEQ009.pdf}}%
+    \put(0.55728667,0.11970012){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{16}}}}%
+    \put(0.57837967,0.11970012){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{associateVethID(link.peer1, link.peer2)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{SEQ009.pdf}}%
+    \put(0.6478907,0.09176838){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{17}}}}%
+    \put(0.6689837,0.09176838){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{return(ok)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=30]{SEQ009.pdf}}%
+    \put(0.2430489,0.05041369){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{18}}}}%
+    \put(0.2641419,0.05041369){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{return(deployedTopology)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=31]{SEQ009.pdf}}%
+    \put(0.04458293,0.022482){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{19}}}}%
+    \put(0.06567593,0.022482){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{show(deployedMessage)}}}%
+  \end{picture}%
+\endgroup%

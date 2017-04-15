@@ -1,0 +1,18 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+
+state "Modalità modifica topologia" as sm {
+state "Visualizzazione canvas" as s1 : Attesa eventi
+state "Finestra di configurazione" as s2
+state "Salvataggio nel database" as s3
+state "Messaggio di errore" as s4
+[*] --> s1
+s1 --> s2 : Configura dispositivo 
+s2 --> s2 : Inserimento dati
+s2 --> s3 : Ok
+s2 --> s1 : Annulla
+s3 --> s4 : Errore
+s3 --> [*] : Configurazione salvata
+}
+@enduml

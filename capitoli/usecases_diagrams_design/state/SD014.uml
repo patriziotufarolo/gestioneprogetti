@@ -1,0 +1,12 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+state "Visualizzazione area di amministrazione" as s1 : Attesa eventi
+state "Pagina sessione di lavoro" as s2
+state "Visualizzazione link" as s3
+[*] --> s1
+s1 --> s2 : Richiesta pagina Sessione di lavoro
+s2 --> s3 : Click genera link
+s3 --> [*]
+@enduml
+

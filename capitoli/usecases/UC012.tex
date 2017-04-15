@@ -1,40 +1,40 @@
 \documentclass[../../main.tex]{subfiles}
 \begin{document}
-\subsection{Caso d’uso UC012: Associazione di utenti a una sessione di lavoro }
+\subsection{Caso d’uso UC012: Creazione di una sessione di lavoro }
 \begin{tabularx}{150mm}{|l|X|}
     \hline
-    ID                                  & \textbf{UC012}\\
+    ID                                  & \textbf{UC012} \\
     \hline
-    Titolo                              & Associazione di utenti a una sessione di lavoro \\
+    Titolo                              & Creazione di una sessione di lavoro \\
     \hline
-    Descrizione breve                   & Il supervisore associa gli utenti del sistema a una sessione di lavoro   \\
+    Descrizione breve                   & Il supervisore crea una nuova sessione di lavoro   \\
     \hline
-    Attore primario                     & Supervisore del sistema   \\
+    Attore primario                     & Supervisore di sessione   \\
     \hline
     Eventuali altri attori              & Utente del sistema   \\
     \hline
-    Stakeholders e rispettivi interessi & Il supervisore del sistema vuole permettere agli utenti di lavorare   \\ & Gli utenti vogliono disegnare le topologie ed eseguire esperimenti su di esse   \\
+    Stakeholders e rispettivi interessi & Il supervisore vuole creare una nuova sessione. Gli utenti del sistema vogliono partecipare alla sessione di lavoro del supervisore per utilizzare l'ambiente selezionato \\
     \hline
-    Pre-condizioni                      & Il supervisore ha creato la sessione di lavoro   \\
+    Pre-condizioni                      & L'utente ha fatto login \\ & L'utente ha i privilegi di supervisore di sistema   \\
     \hline
-    Post-condizioni                     & Gli utenti sono associati alla sessione di lavoro e possono utilizzare l'ambiente   \\
+    Post-condizioni                     & La sessione di lavoro è esistente e può essere effettuato il join degli utenti alla sessione.  
+    \\ & Il supervisore è automaticamente associato alla sessione da lui creata. \\
     \hline
-    Scenario principale                 & 
-    \begin{enumerate}
-        \item Il supervisore di sistema apre la pagina "Sessioni di lavoro"
-        \item Il supervisore fa click sul pulsante "Dettagli" relativo alla sessione di lavoro interessata
-        \item Il supervisore sceglie gli utenti del sistema tra le identità disponibili nel database LDAP
-        \item Il supervisore fa click sul pulsante "Applica associazione utenti"
-        \item Il sistema elimina le eventuali utente non selezionate (se precedentemente esistenti) e crea le associazioni specificate
-        \item Il sistema mostra all'utente un avviso di conferma
-    \end{enumerate}
-    \\
+    Scenario principale                 &
+    \begin {enumerate}
+\item Il supervisore di sistema fa login
+\item Il supervisore clicca sul link "Crea una sessione"
+\item Il supervisore da un nome alla sessione
+\item La sessione viene salvata sul database
+\item Viene mostrato un messaggio di conferma al supervisore
+    \end {enumerate}
+\\
     \hline
-    Scenari alternativi                 &    L'associazione può avvenire come da UC013 e UC014\\
+    Scenari alternativi                 & -   \\
     \hline
-    Requisiti speciali                  &    -\\
+    Requisiti speciali                  & -   \\
     \hline
-    Eventuali punti aperti              &    -\\
+    Eventuali punti aperti              & -   \\
     \hline
 \end{tabularx}
 \vfill\newpage

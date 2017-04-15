@@ -1,0 +1,82 @@
+%% Creator: Inkscape inkscape 0.92.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'SEQ016.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{463.5bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.51779935)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{SEQ016.pdf}}%
+    \put(0.01294498,0.38997556){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Utente}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{SEQ016.pdf}}%
+    \put(0.35841424,0.40292055){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{WebUI}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{SEQ016.pdf}}%
+    \put(0.60355987,0.40292055){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{WebService}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{SEQ016.pdf}}%
+    \put(0.87783172,0.40292055){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Database}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{SEQ016.pdf}}%
+    \put(0.0671521,0.3424534){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{1}}}}%
+    \put(0.0881877,0.3424534){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{get(logout)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{SEQ016.pdf}}%
+    \put(0.40695793,0.29531295){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{2}}}}%
+    \put(0.42799353,0.29531295){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{deleteSession(user)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{SEQ016.pdf}}%
+    \put(0.68365696,0.2481725){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{3}}}}%
+    \put(0.70469256,0.2481725){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{deleteToken(user)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{SEQ016.pdf}}%
+    \put(0.7079288,0.20103203){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{4}}}}%
+    \put(0.7289644,0.20103203){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{return(ok)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{SEQ016.pdf}}%
+    \put(0.43122977,0.15389158){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{5}}}}%
+    \put(0.45226537,0.15389158){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{sessionDelete()}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{SEQ016.pdf}}%
+    \put(0.41504854,0.10675113){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{6}}}}%
+    \put(0.43608414,0.10675113){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{deleteToken()}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{SEQ016.pdf}}%
+    \put(0.08333333,0.03857506){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{7}}}}%
+    \put(0.10436893,0.03857506){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{show(loggedOutMessage)}}}%
+  \end{picture}%
+\endgroup%

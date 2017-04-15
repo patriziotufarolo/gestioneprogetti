@@ -1,0 +1,40 @@
+
+,-----.
+|WebUI|
+|-----|
+|-----|
+`-----'
+
+@startuml
+left to right direction
+skinparam shadowing false
+skinparam monochrome true 
+node PCUtente {
+    node WebBrowser {
+        node WebUI
+    }
+}
+
+folder CiViElInfrastructure {
+    node WebService
+    component DAO
+    database Database
+    component ContainerEngine
+    component TerminalProxy
+    component KernelLinux
+    WebService -- DAO
+    DAO -- Database
+    WebService -- ContainerEngine 
+    TerminalProxy -- KernelLinux
+    ContainerEngine -- KernelLinux
+}
+
+database LDAPServer
+
+WebUI -- WebService
+WebUI -- TerminalProxy
+WebService -- LDAPServer
+
+
+@enduml
+

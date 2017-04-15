@@ -1,0 +1,29 @@
+
+ ,-------------------.
+ |Esperimento avviato|
+ |-------------------|
+ |Attesa eventi      |
+ |-------------------|
+ `-------------------'
+            |
+            |
+,----------------------.
+|Visualizzazione canvas|
+|----------------------|
+|Attesa eventi         |
+|----------------------|
+`----------------------'
+
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+
+state "Modalità modifica topologia" as sm {
+state "Visualizzazione canvas" as s1 : Attesa eventi
+}
+
+state "Modalità esperimento" as se {
+    state "Esperimento avviato" as s2: Attesa eventi
+}
+s2 --> s1 : Termina esperimento
+@enduml

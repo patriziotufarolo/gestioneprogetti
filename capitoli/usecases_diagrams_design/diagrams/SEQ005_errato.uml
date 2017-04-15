@@ -1,0 +1,122 @@
+
+             ┌─┐
+             ║"│
+             └┬┘
+             ┌┼┐
+              │                          ┌─────┐                      ┌──────────┐             ┌──────┐
+             ┌┴┐                         │WebUI│                      │WebService│             │Kernel│
+           Utente                        └──┬──┘                      └────┬─────┘             └──┬───┘
+             │          1 addLink          ┌┴┐                             │                      │
+             │ ───────────────────────────>│ │                             │                      │
+             │                             │ │                             │                      │
+             │ 2 returnDeviceSelectionMode │ │                             │                      │
+             │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │                             │                      │
+             │                             └┬┘                             │                      │
+             │                              │                              │                      │
+╔════════════╪═════╤════════════════════════╪════════════╗                 │                      │
+║ DEVICESELECTION  │                        │            ║                 │                      │
+╟─────────────────┐                         │            ║                 │                      │
+║            │    │ <b>3</b>                │            ║                 │                      │
+║            │<───┘ selectDevice(d1, device)│            ║                 │                      │
+║            │                              │            ║                 │                      │
+║            │                              │            ║                 │                      │
+║            │────┐                         │            ║                 │                      │
+║            │    │ <b>4</b>                │            ║                 │                      │
+║            │<───┘ selectDevice(d2, device)│            ║                 │                      │
+║            │                              │            ║                 │                      │
+║            │                              │            ║                 │                      │
+║            │      5 deviceSelected       ┌┴┐           ║                 │                      │
+║            │ ───────────────────────────>│ │           ║                 │                      │
+╚════════════╪═════════════════════════════╪═╪═══════════╝                 │                      │
+             │                             │ │                             │                      │
+             │                             │ │                             │                      │
+             │                 ╔═══════════╪═╪═╤═══════════════════════════╪══════════════════════╪═════════════╗
+             │                 ║ LINKCREATION  │                           │                      │             ║
+             │                 ╟───────────────┘  6 createLink(d1, d2)     ┌┴┐                    │             ║
+             │                 ║           │ │ ───────────────────────────>│ │                    │             ║
+             │                 ║           └┬┘                             │ │                    │             ║
+             │                 ║            │                              │ │  7 createVethPair  ┌┴┐           ║
+             │                 ║            │                              │ │ ──────────────────>│ │           ║
+             │                 ║            │                              └┬┘                    │ │           ║
+             │                 ║            │                              │    8 return veth     │ │           ║
+             │                 ║            │                              │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │           ║
+             │                 ║            │                              │                      └┬┘           ║
+             │                 ║            │                              │ 9 movePeer(veth, d1) │             ║
+             │                 ║            │                              │ ─────────────────────>             ║
+             │                 ║            │                              │                      │             ║
+             │                 ║            │                              │    10 return true    │             ║
+             │                 ║            │                              │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─             ║
+             │                 ║            │                              │                      │             ║
+             │                 ║            │                              │ 11 movePeer(veth, d2)│             ║
+             │                 ║            │                              │ ─────────────────────>             ║
+             │                 ║            │                              │                      │             ║
+             │                 ║            │                              │    12 return true    │             ║
+             │                 ║            │                              │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─             ║
+             │                 ║            │                              │                      │             ║
+             │                 ║           ┌┴┐    13 return linkCreated    │                      │             ║
+             │                 ║           │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─                       │             ║
+             │                 ╚═══════════╪═╪═════════════════════════════╪══════════════════════╪═════════════╝
+             │                             │ │                             │                      │
+             │                             │ │────┐                        │                      │
+             │                             │ │    │ <b>14</b>              │                      │
+             │                             │ │<───┘ exitDeviceSelectionMode│                      │
+             │                             │ │                             │                      │
+             │                             │ │                             │                      │
+             │     15 showLinkCreated      │ │                             │                      │
+             │ <───────────────────────────│ │                             │                      │
+             │                             └┬┘                             │                      │
+
+@startuml
+hide footbox
+autonumber
+
+skinparam shadowing false
+skinparam sequenceMessageAlign center
+skinparam monochrome true
+
+
+Actor Utente as u
+participant WebUI as ui
+participant WebService as ws
+participant Kernel as k
+
+u -> ui : addLink
+activate ui
+u <-- ui : returnDeviceSelectionMode
+deactivate ui
+group deviceSelection
+u -> u : selectDevice(d1, device)
+u -> u : selectDevice(d2, device)
+u -> ui : deviceSelected
+activate ui
+end
+group linkCreation
+ui -> ws : createLink(d1, d2)
+deactivate ui
+activate ws
+ws -> k : createVethPair
+deactivate ws
+activate k
+ws <-- k : return veth
+deactivate k
+activate ws
+ws -> k : movePeer(veth, d1)
+deactivate ws
+activate k
+ws <-- k: return true
+deactivate k
+activate ws
+ws -> k : movePeer(veth, d2)
+deactivate ws
+activate k
+ws <-- k: return true
+deactivate k
+activate ws
+ui <-- ws : return linkCreated
+deactivate ws
+activate ui
+end
+ui -> ui : exitDeviceSelectionMode
+u <- ui : showLinkCreated
+deactivate ui
+@enduml

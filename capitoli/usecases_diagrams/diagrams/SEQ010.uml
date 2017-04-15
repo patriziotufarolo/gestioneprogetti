@@ -1,45 +1,54 @@
 
-    ┌─┐
-    ║"│
-    └┬┘
-    ┌┼┐
-     │                               ┌──┐                             ┌───────┐
-    ┌┴┐                              │UI│                             │Sistema│
-Supervisore                          └┬─┘                             └───┬───┘
-    ┌┴┐1 Doppio click sul dispositivo┌┴┐                                  │
-    │ │ ────────────────────────────>│ │                                  │
-    └┬┘                              │ │                                  │
-     │                               │ │ 2 Richiedi sessione terminale   ┌┴┐
-     │                               │ │ ──────────────────────────────> │ │
-     │                               └┬┘                                 │ │
-     │                                │ 3 Restituisci sessione terminale │ │
-     │                                │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │
-     │                                │                                  └┬┘
-    ┌┴┐     4 Visualizza terminale    │                                   │
-    │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─                                    │
-    │ │                               │                                   │
-    └┬┘
+  ┌─┐
+  ║"│
+  └┬┘
+  ┌┼┐
+   │                             ┌──┐                  ┌───────┐
+  ┌┴┐                            │UI│                  │Sistema│
+Utente                           └┬─┘                  └───┬───┘
+  │1 Click sul pulsante "Termina"┌┴┐                       │
+  │ ────────────────────────────>│ │                       │
+  │                              │ │                       │
+  │                              │ │2 Termina esperimento ┌┴┐
+  │                              │ │ ───────────────────> │ │
+  │                              └┬┘                      │ │
+  │                               │                       │ │────┐
+  │                               │                       │ │    │ <b>3</b>
+  │                               │                       │ │<───┘ Rimuovi device e link
+  │                               │                       │ │
+  │                               │                       │ │
+  │                              ┌┴┐ 4 Notifica di        │ │
+  │                              │ │ chiusura completata  │ │
+  │                              │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │
+  │                              │ │                      └┬┘
+  │     5 Messaggio di           │ │                       │
+  │      chiusura completata     │ │                       │
+  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │                       │
+  │                              └┬┘                       │
 
 @startuml
-autonumber
 hide footbox
+autonumber
+
 skinparam shadowing false
 skinparam sequenceMessageAlign center
 skinparam monochrome true
 
 
-Actor Supervisore   as  Utente 
+Actor Utente
 
-Utente -> UI   :   Doppio click sul dispositivo
+Utente -> UI   :   Click sul pulsante "Termina"
 
 activate UI
-UI -> Sistema  :   Richiedi sessione terminale
+UI -> Sistema  :   Termina esperimento
 deactivate UI
 activate Sistema
-UI <-- Sistema : Restituisci sessione terminale
-deactivate Sistema
+Sistema -> Sistema :  Rimuovi device e link
+UI <-- Sistema  :   Notifica di\nchiusura completata
+deactivate Sistema 
 activate UI
-Utente <-- UI : Visualizza terminale
+Utente <-- UI  : Messaggio di\n chiusura completata
 deactivate UI
+
 
 @enduml

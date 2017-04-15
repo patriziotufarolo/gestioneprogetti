@@ -3,35 +3,48 @@
     ║"│
     └┬┘
     ┌┼┐
-     │                                        ┌──┐                        ┌───────┐
-    ┌┴┐                                       │UI│                        │Sistema│
-Supervisore                                   └┬─┘                        └───┬───┘
-    ┌┴┐1 Richiesta pagina "Sessioni di lavoro"┌┴┐                             │
-    │ │ ─────────────────────────────────────>│ │                             │
-    └┬┘                                       │ │                             │
-     │    2 Visualizzazione della pagina      │ │                             │
-     │    "Sessioni di lavoro"                │ │                             │
-     │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │                             │
-     │                                        └┬┘                             │
-     │       3 Apertura di una sessione        │                              │
-     │       di lavoro esistente               │                              │
-     │────────────────────────────────────────>│                              │
-     │                                         │                              │
-     │ 4 Visualizzazione "sessione di lavoro"  │                              │
-     │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │                              │
-     │                                         │                              │
-     │   5 Click sul pulsante "Genera link"    │                              │
-     │────────────────────────────────────────>│                              │
-     │                                         │                              │
-     │                                         │6 Richiedi nuovo link di join┌┴┐
-     │                                         │ ───────────────────────────>│ │
-     │                                         │                             │ │
-     │                                         │ 7 Restituisci link di join  │ │
-     │                                         │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │
-     │                                         │                             └┬┘
-    ┌┴┐          8 Mostra link di join         │                              │
-    │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─                              │
-    └┬┘                                        │                              │
+     │                                        ┌──┐                    ┌───────┐
+    ┌┴┐                                       │UI│                    │Sistema│
+Supervisore                                   └┬─┘                    └───┬───┘
+    ┌┴┐1 Richiesta pagina "Sessioni di lavoro"┌┴┐                         │
+    │ │ ─────────────────────────────────────>│ │                         │
+    └┬┘                                       │ │                         │
+     │    2 Visualizzazione della pagina      │ │                         │
+     │    "Sessioni di lavoro"                │ │                         │
+     │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │                         │
+     │                                        └┬┘                         │
+     │       3 Apertura di una sessione        │                          │
+     │       di lavoro esistente               │                          │
+     │────────────────────────────────────────>│                          │
+     │                                         │                          │
+     │ 4 Visualizzazione "sessione di lavoro"  │                          │
+     │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │                          │
+     │                                         │                          │
+     ────┐                                     │                          │
+         │ <b>5</b>                            │                          │
+     <───┘ Selezione degli utenti              │                          │
+           da associare                        │                          │
+                                               │                          │
+     │                                         │                          │
+     │     6 Click sul pulsante associa       ┌┴┐                         │
+     │───────────────────────────────────────>│ │                         │
+     │                                        │ │                         │
+     │                                        │ │   7 Associa utenti     ┌┴┐
+     │                                        │ │ ─────────────────────> │ │
+     │                                        └┬┘                        │ │
+     │                                         │                         │ │────┐
+     │                                         │                         │ │    │ <b>8</b>
+     │                                         │                         │ │<───┘ Associazione utenti
+     │                                         │                         │ │
+     │                                         │                         │ │
+     │                                        ┌┴┐9 Notifica associazione │ │
+     │                                        │ │completata              │ │
+     │                                        │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │
+     │                                        │ │                        └┬┘
+    ┌┴┐    10 Messaggio "Utenti associati     │ │                         │
+    │ │    con successo"                      │ │                         │
+    │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │                         │
+    └┬┘                                       └┬┘                         │
 
 @startuml
 autonumber
@@ -53,16 +66,18 @@ activate UI
 UI --> Utente  :   Visualizzazione "sessione di lavoro"
 deactivate UI
 
-Utente -> UI   :   Click sul pulsante "Genera link"
+Utente -> Utente   :   Selezione degli utenti\nda associare
+Utente -> UI   :   Click sul pulsante associa
 
 activate UI
-UI -> Sistema  :   Richiedi nuovo link di join
+UI -> Sistema  :   Associa utenti
 deactivate UI
 activate Sistema
-Sistema --> UI : Restituisci link di join
+Sistema -> Sistema : Associazione utenti
+Sistema --> UI : Notifica associazione\ncompletata
 deactivate Sistema
 activate UI
-UI --> Utente  : Mostra link di join 
+UI --> Utente  : Messaggio "Utenti associati\ncon successo"
 deactivate UI
 
 

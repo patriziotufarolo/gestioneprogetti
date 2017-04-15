@@ -1,0 +1,88 @@
+%% Creator: Inkscape inkscape 0.92.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'SEQ012.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{541.5bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.52354571)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{SEQ012.pdf}}%
+    \put(0.01108033,0.41413421){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Supervisore}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{SEQ012.pdf}}%
+    \put(0.37742382,0.42521454){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{WebUI}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{SEQ012.pdf}}%
+    \put(0.61357341,0.42521454){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{WebService}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{SEQ012.pdf}}%
+    \put(0.88227147,0.42521454){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Databasea}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{SEQ012.pdf}}%
+    \put(0.12188366,0.37345734){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{1}}}}%
+    \put(0.1398892,0.37345734){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{get(createSessionForm)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{SEQ012.pdf}}%
+    \put(0.11634349,0.33310721){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{2}}}}%
+    \put(0.13434903,0.33310721){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{show(createSessionForm)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{SEQ012.pdf}}%
+    \put(0.08379501,0.29275707){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{3}}}}%
+    \put(0.10180055,0.29275707){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{compile session form}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{SEQ012.pdf}}%
+    \put(0.17105263,0.23440138){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{4}}}}%
+    \put(0.18905817,0.23440138){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{send session}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{SEQ012.pdf}}%
+    \put(0.45844875,0.19405124){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{5}}}}%
+    \put(0.47645429,0.19405124){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{createSession()}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{SEQ012.pdf}}%
+    \put(0.72160665,0.15370111){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{6}}}}%
+    \put(0.73961219,0.15370111){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{createSession()}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{SEQ012.pdf}}%
+    \put(0.69598338,0.11335095){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{7}}}}%
+    \put(0.71398892,0.11335095){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{return(createdSession)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{SEQ012.pdf}}%
+    \put(0.43282548,0.07300071){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{8}}}}%
+    \put(0.45083102,0.07300071){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{return(createdSession)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{SEQ012.pdf}}%
+    \put(0.09418283,0.03265055){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{9}}}}%
+    \put(0.11218837,0.03265055){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{show(createdSessionMessage)}}}%
+  \end{picture}%
+\endgroup%

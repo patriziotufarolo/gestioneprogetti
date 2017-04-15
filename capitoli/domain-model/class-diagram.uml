@@ -1,0 +1,50 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+
+class Utente {
+    Identificativo
+    Login
+    Password
+    Nome
+    Cognome
+}
+
+class SessioneDiLavoro {
+    Identificativo
+    Nome sessione
+}
+
+class InviteLink {
+    URL
+    Scadenza
+}
+
+class SupervisoreDiSessione {
+}
+
+class Dispositivo {
+    Identificativo
+    Nome
+    Tipologia
+    Configurazione
+}
+
+class Link {
+    Identificativo
+    Proprietà
+}
+
+class Canvas {
+}
+
+
+SessioneDiLavoro "1" --* "0..n" Canvas
+Canvas "1" --* "0..n" Dispositivo
+Canvas "1" --* "0..n" Link
+SessioneDiLavoro "1" --o "0..n" InviteLink
+Link "1" --o "2" Dispositivo
+SupervisoreDiSessione "1" --o "0..*" SessioneDiLavoro
+SupervisoreDiSessione --|> Utente
+Utente "1" o-- "1" Canvas 
+@enduml

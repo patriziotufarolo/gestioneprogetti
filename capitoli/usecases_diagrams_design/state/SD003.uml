@@ -1,0 +1,14 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+state "Modalità modifica topologia" as sm {
+state "Visualizzazione pagina web" as s1 : Attesa eventi
+state "Validazione" as s2
+state "Errore" as s3
+[*] --> s1
+s1 --> s2 : Scelta sessione
+s2 --> [*] : Utente associato\nalla sessione
+s2 --> s3 : Utente non associato\nalla sessione
+s3 --> s1: Vai alla pagina di\nscelta sessione
+}
+@enduml

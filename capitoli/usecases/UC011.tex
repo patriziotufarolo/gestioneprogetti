@@ -1,36 +1,27 @@
 \documentclass[../../main.tex]{subfiles}
 \begin{document}
-\subsection{Caso d’uso UC011: Creazione di una sessione di lavoro }
+\subsection{Caso d’uso UC011: Apertura del terminale di un dispositivo }
 \begin{tabularx}{150mm}{|l|X|}
     \hline
-    ID                                  & \textbf{UC011} \\
+    ID                                  & \textbf{UC011}\\
     \hline
-    Titolo                              & Creazione di una sessione di lavoro \\
+    Titolo                              & Apertura del terminale di un dispositivo \\
     \hline
-    Descrizione breve                   & Il supervisore crea una nuova sessione di lavoro   \\
+    Descrizione breve                   & L'utente accede a un dispositivo simulato \\ 
     \hline
-    Attore primario                     & Supervisore di sessione   \\
+    Attore primario                     & Utente del sistema   \\
     \hline
-    Eventuali altri attori              & Utente del sistema   \\
+    Eventuali altri attori              & -   \\
     \hline
-    Stakeholders e rispettivi interessi & Il supervisore vuole creare una nuova sessione. Gli utenti del sistema vogliono partecipare alla sessione di lavoro del supervisore per utilizzare l'ambiente selezionato \\
+    Stakeholders e rispettivi interessi & L'utente vuole accedere al sistema simulato per eseguire comandi, installare ed eseguire software, ecc.   \\
     \hline
-    Pre-condizioni                      & L'utente ha fatto login \\ & L'utente ha i privilegi di supervisore di sistema   \\
+    Pre-condizioni                      & La topologia deve essere avviata   \\
     \hline
-    Post-condizioni                     & La sessione di lavoro è esistente e può essere effettuato il join degli utenti alla sessione.  
-    \\ & Il supervisore è automaticamente associato alla sessione da lui creata. \\
+    Post-condizioni                     & Il terminale relativo al dispositivo viene aperto   \\
     \hline
-    Scenario principale                 &
-    \begin {enumerate}
-\item Il supervisore di sistema fa login
-\item Il supervisore clicca sul link "Crea una sessione"
-\item Il supervisore da un nome alla sessione
-\item La sessione viene salvata sul database
-\item Viene mostrato un messaggio di conferma al supervisore
-    \end {enumerate}
-\\
+    Scenario principale                 & L'utente clicca sul pulsante "Apri terminale"   \\
     \hline
-    Scenari alternativi                 & -   \\
+    Scenari alternativi                 & L'utente fa doppio click sul dispositivo   \\
     \hline
     Requisiti speciali                  & -   \\
     \hline

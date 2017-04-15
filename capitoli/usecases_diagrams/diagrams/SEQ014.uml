@@ -1,47 +1,69 @@
 
-  ┌─┐
-  ║"│
-  └┬┘
-  ┌┼┐
-   │                         ┌──┐                      ┌───────┐
-  ┌┴┐                        │UI│                      │Sistema│
-Utente                       └┬─┘                      └───┬───┘
-  │────┐                                                   │
-  │    │ <b>1</b>                                          │
-  │<───┘ Click sull'invite link                            │
-  │                                                        │
-  │                           │                            │
-  │               2 Richiesta della sessione               │
-  │               di lavoro corrispondente                 │
-  │               all'invite link                          │
-  │ ───────────────────────────────────────────────────────>
-  │                           │                            │
-  │                           │                            │────┐
-  │                           │                            │    │ <b>3</b>
-  │                           │                            │<───┘ Join dell'utente alla sessione di lavoro
-  │                           │                            │
-  │                           │                            │
-  │                           │ 4 Join dell'utente avvenuto│
-  │                           │ <───────────────────────────
-  │                           │                            │
-  │  5 Messaggio di benvenuto │                            │
-  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─                             │
-  │                           │                            │
+    ┌─┐
+    ║"│
+    └┬┘
+    ┌┼┐
+     │                                        ┌──┐                        ┌───────┐
+    ┌┴┐                                       │UI│                        │Sistema│
+Supervisore                                   └┬─┘                        └───┬───┘
+    ┌┴┐1 Richiesta pagina "Sessioni di lavoro"┌┴┐                             │
+    │ │ ─────────────────────────────────────>│ │                             │
+    └┬┘                                       │ │                             │
+     │    2 Visualizzazione della pagina      │ │                             │
+     │    "Sessioni di lavoro"                │ │                             │
+     │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │                             │
+     │                                        └┬┘                             │
+     │       3 Apertura di una sessione        │                              │
+     │       di lavoro esistente               │                              │
+     │────────────────────────────────────────>│                              │
+     │                                         │                              │
+     │ 4 Visualizzazione "sessione di lavoro"  │                              │
+     │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │                              │
+     │                                         │                              │
+     │   5 Click sul pulsante "Genera link"    │                              │
+     │────────────────────────────────────────>│                              │
+     │                                         │                              │
+     │                                         │6 Richiedi nuovo link di join┌┴┐
+     │                                         │ ───────────────────────────>│ │
+     │                                         │                             │ │
+     │                                         │ 7 Restituisci link di join  │ │
+     │                                         │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │
+     │                                         │                             └┬┘
+    ┌┴┐          8 Mostra link di join         │                              │
+    │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─                              │
+    └┬┘                                        │                              │
 
 @startuml
-hide footbox
 autonumber
-
+hide footbox
 skinparam shadowing false
-skinparam sequenceMessageAlign center
+skinparam sequenceMessageAlign cener
 skinparam monochrome true
+Actor Supervisore as Utente
 
-Actor Utente
-participant UI
-Utente -> Utente    :   Click sull'invite link
-Utente -> Sistema   :   Richiesta della sessione\ndi lavoro corrispondente\nall'invite link
+Utente -> UI   :   Richiesta pagina "Sessioni di lavoro"
 
-Sistema -> Sistema  :   Join dell'utente alla sessione di lavoro
-Sistema -> UI       :   Join dell'utente avvenuto
-UI --> Utente        :   Messaggio di benvenuto
+activate UI
+UI --> Utente  :   Visualizzazione della pagina\n"Sessioni di lavoro"
+deactivate UI
+
+Utente -> UI   :   Apertura di una sessione\ndi lavoro esistente
+
+activate UI
+UI --> Utente  :   Visualizzazione "sessione di lavoro"
+deactivate UI
+
+Utente -> UI   :   Click sul pulsante "Genera link"
+
+activate UI
+UI -> Sistema  :   Richiedi nuovo link di join
+deactivate UI
+activate Sistema
+Sistema --> UI : Restituisci link di join
+deactivate Sistema
+activate UI
+UI --> Utente  : Mostra link di join 
+deactivate UI
+
+
 @enduml

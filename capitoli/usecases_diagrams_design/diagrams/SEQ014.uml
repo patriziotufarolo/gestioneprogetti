@@ -1,0 +1,96 @@
+
+    ┌─┐
+    ║"│
+    └┬┘
+    ┌┼┐
+     │                  ┌─────┐          ┌──────────┐            ┌────────┐
+    ┌┴┐                 │WebUI│          │WebService│            │Database│
+Supervisore             └──┬──┘          └────┬─────┘            └───┬────┘
+     │1 get(sessionPage)  ┌┴┐                 │                      │
+     │───────────────────>│ │                 │                      │
+     │                    │ │                 │                      │
+     │                    │ │ 2 getSession()  ┌┴┐                    │
+     │                    │ │ ──────────────> │ │                    │
+     │                    └┬┘                 │ │                    │
+     │                     │                  │ │3 retrieveSession() ┌┴┐
+     │                     │                  │ │ ──────────────────>│ │
+     │                     │                  └┬┘                    │ │
+     │                     │                  │  4 return(session)   │ │
+     │                     │                  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │
+     │                     │                  │                      └┬┘
+     │                    ┌┴┐5 return(session)│                      │
+     │                    │ │ <─ ─ ─ ─ ─ ─ ─ ─                       │
+     │                    │ │                 │                      │
+     │6 show(sessionPage) │ │                 │                      │
+     │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │                 │                      │
+     │                    └┬┘                 │                      │
+     │ 7 do(generateLink)  │                  │                      │
+     │────────────────────>│                  │                      │
+     │                     │                  │                      │
+     │                     │ 8 generateLink() ┌┴┐                    │
+     │                     │ ────────────────>│ │                    │
+     │                     │                  │ │                    │
+     │                     │                  │ │────┐               │
+     │                     │                  │ │    │ <b>9</b>      │
+     │                     │                  │ │<───┘ generateLink()│
+     │                     │                  │ │                    │
+     │                     │                  │ │                    │
+     │                     │                  │ │   10 storeLink()   ┌┴┐
+     │                     │                  │ │ ──────────────────>│ │
+     │                     │                  └┬┘                    │ │
+     │                     │                  │    11 return(ok)     │ │
+     │                     │                  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │
+     │                     │                  │                      └┬┘
+     │                    ┌┴┐ 12 return(link) │                      │
+     │                    │ │ <─ ─ ─ ─ ─ ─ ─ ─                       │
+     │                    │ │                 │                      │
+     │   13 show(link)    │ │                 │                      │
+     │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │                 │                      │
+     │                    └┬┘                 │                      │
+
+@startuml
+autonumber
+hide footbox
+skinparam shadowing false
+skinparam sequenceMessageAlign cener
+skinparam monochrome true
+
+actor Supervisore as u
+participant WebUI as ui
+participant WebService as ws
+participant Database as db
+
+u -> ui : get(sessionPage)
+activate ui
+ui -> ws: getSession()
+deactivate ui
+activate ws
+ws -> db: retrieveSession()
+deactivate ws
+activate db
+ws <-- db: return(session)
+deactivate db
+activate ws
+ui <-- ws: return(session)
+deactivate ws
+activate ui
+u <-- ui : show(sessionPage)
+deactivate ui
+u -> ui : do(generateLink)
+activate ui
+ui -> ws : generateLink()
+deactivate ui
+activate ws
+ws -> ws : generateLink()
+ws -> db : storeLink()
+deactivate ws
+activate db
+ws <-- db: return(ok)
+deactivate db
+activate ws
+ui <-- ws: return(link)
+deactivate ws
+activate ui
+u <-- ui : show(link)
+deactivate ui
+@enduml

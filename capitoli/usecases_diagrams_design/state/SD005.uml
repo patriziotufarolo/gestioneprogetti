@@ -1,0 +1,21 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+state "Modalità modifica topologia" as sm {
+state "Visualizzazione canvas" as s1 : Attesa eventi
+state "Modalità selezione" as s2
+state "Primo dispositivo selezionato" as s3
+state "Secondo dispositivo selezionato" as s4: Messaggio di conferma
+state "Creazione del dispositivo nel database" as  s5
+state "Messaggio di errore" as s6
+[*] --> s1
+s1 --> s2 : Aggiungi link
+s2 --> s3 : Seleziona primo dispositivo
+s3 --> s4 : Seleziona secondo dispositivo
+s4 --> s5 : Ok
+s4 --> s1 : Annulla
+s5 --> s6 : Creato
+s5 --> s6 : Errore
+s6 --> [*]
+}
+@enduml

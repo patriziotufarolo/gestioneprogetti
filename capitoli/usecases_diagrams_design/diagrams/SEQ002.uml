@@ -1,0 +1,85 @@
+
+             ┌─┐
+             ║"│
+             └┬┘
+             ┌┼┐
+              │                      ┌─────┐                          ┌──────────┐
+             ┌┴┐                     │WebUI│                          │WebService│
+           Utente                    └──┬──┘                          └────┬─────┘
+             │                          │                                  │
+╔════════════╪══════╤═══════════════════╪══════════════════════════════════╪═══════════════╗
+║ ENVIRONMENTSPAGE  │                   │                                  │               ║
+╟──────────────1 get(environmentsPage) ┌┴┐                                 │               ║
+║            │ ───────────────────────>│ │                                 │               ║
+║            │                         │ │                                 │               ║
+║            │                         │ │      2 getEnvironments()       ┌┴┐              ║
+║            │                         │ │ ──────────────────────────────>│ │              ║
+║            │                         └┬┘                                │ │              ║
+║            │                          │     3 return(environments)      │ │              ║
+║            │                          │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │              ║
+║            │                          │                                 └┬┘              ║
+║            │                          │────┐                             │               ║
+║            │                          │    │ <b>4</b>                    │               ║
+║            │                          │<───┘ populate(environments)      │               ║
+║            │                          │                                  │               ║
+║            │                          │                                  │               ║
+║            │ 5 show(environmentsPage) │                                  │               ║
+║            │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─                                  │               ║
+╚════════════╪══════════════════════════╪══════════════════════════════════╪═══════════════╝
+             │                          │                                  │
+             │                          │                                  │
+╔════════════╪═══════╤══════════════════╪══════════════════════════════════╪══╗
+║ SELECTENVIRONMENT  │                  │                                  │  ║
+╟─────────────6 do(selectEnvironment())┌┴┐                                 │  ║
+║            │ ───────────────────────>│ │                                 │  ║
+║            │                         │ │                                 │  ║
+║            │                         │ │────┐                            │  ║
+║            │                         │ │    │ <b>7</b>                   │  ║
+║            │                         │ │<───┘ store(selectedEnvironment) │  ║
+║            │                         │ │                                 │  ║
+║            │                         │ │                                 │  ║
+║            │ 8 show(confirmMessage)  │ │                                 │  ║
+║            │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │                                 │  ║
+╚════════════╪═════════════════════════════════════════════════════════════╪══╝
+             │                          │                                  │
+             │           ╔══════════════╧══════════════════════════════════╧════════════════╗
+             │           ║Stored environment will be sent in each request and will be used ░║
+             │           ║by the webservice for request validation, through a middleware    ║
+             │           ╚══════════════╤══════════════════════════════════╤════════════════╝
+
+@startuml
+hide footbox
+autonumber
+
+skinparam shadowing false
+skinparam sequenceMessageAlign center
+skinparam monochrome true
+
+Actor Utente
+participant WebUI
+participant WebService
+group environmentsPage
+Utente -> WebUI : get(environmentsPage)
+activate WebUI
+WebUI -> WebService : getEnvironments()
+deactivate WebUI
+activate WebService
+WebUI <-- WebService : return(environments)
+deactivate WebService
+activate WebUI
+WebUI -> WebUI : populate(environments)
+Utente <-- WebUI : show(environmentsPage)
+deactivate WebUI
+end
+group selectEnvironment
+    Utente -> WebUI: do(selectEnvironment())
+activate WebUI
+WebUI -> WebUI : store(selectedEnvironment)
+Utente <-- WebUI : show(confirmMessage)
+deactivate WebUI
+end
+note over WebUI, WebService
+    Stored environment will be sent in each request and will be used
+    by the webservice for request validation, through a middleware 
+end note
+@enduml

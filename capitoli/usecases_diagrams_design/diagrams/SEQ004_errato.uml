@@ -1,0 +1,117 @@
+
+  ┌─┐
+  ║"│
+  └┬┘
+  ┌┼┐
+   │                   ┌─────┐                ┌──────────┐          ┌───────────────┐          ┌──────┐
+  ┌┴┐                  │WebUI│                │WebService│          │ContainerEngine│          │Kernel│
+Utente                 └──┬──┘                └────┬─────┘          └───────┬───────┘          └──┬───┘
+  │1 getCreateDeviceForm ┌┴┐                       │                        │                     │
+  │ ────────────────────>│ │                       │                        │                     │
+  │                      │ │                       │                        │                     │
+  │ 2 returnCDeviceForm  │ │                       │                        │                     │
+  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │                       │                        │                     │
+  │                      └┬┘                       │                        │                     │
+  │────┐                  │                        │                        │                     │
+  │    │ <b>3</b>         │                        │                        │                     │
+  │<───┘ fillForm         │                        │                        │                     │
+  │      (name,           │                        │                        │                     │
+  │      type,            │                        │                        │                     │
+  │      properties)      │                        │                        │                     │
+  │                       │                        │                        │                     │
+  │                       │                        │                        │                     │
+  │    4 createDevice    ┌┴┐                       │                        │                     │
+  │ ────────────────────>│ │                       │                        │                     │
+  │                      │ │                       │                        │                     │
+  │                      │ │    5 createDevice    ┌┴┐                       │                     │
+  │                      │ │ ────────────────────>│ │                       │                     │
+  │                      └┬┘                      │ │                       │                     │
+  │                       │                       │ │  6 createContainer   ┌┴┐                    │
+  │                       │                       │ │  (name,              │ │                    │
+  │                       │                       │ │  type,               │ │                    │
+  │                       │                       │ │  properties)         │ │                    │
+  │                       │                       │ │ ───────────────────> │ │                    │
+  │                       │                       └┬┘                      │ │                    │
+  │                       │                        │                       │ │                    │
+  │                       │                        │      ╔══════╤═════════╪═╪════════════════════╪═════════════╗
+  │                       │                        │      ║ PAR  │         │ │                    │             ║
+  │                       │                        │      ╟──────┘         │ │   7 createNetNS   ┌┴┐            ║
+  │                       │                        │      ║                │ │ ─────────────────>│ │            ║
+  │                       │                        │      ║                │ │                   │ │            ║
+  │                       │                        │      ║                │ │    8 createFS     │ │            ║
+  │                       │                        │      ║                │ │ ─────────────────>│ │            ║
+  │                       │                        │      ╚════════════════╪═╪═══════════════════╪═╪════════════╝
+  │                       │                        │                       └┬┘                   │ │
+  │                       │                        │                        │                    │ │
+  │                       │                        │      ╔══════╤══════════╪════════════════════╪═╪════════════╗
+  │                       │                        │      ║ PAR  │          │                    │ │            ║
+  │                       │                        │      ╟──────┘          │   9 returnNetNS    │ │            ║
+  │                       │                        │      ║                 │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │            ║
+  │                       │                        │      ║                 │                    │ │            ║
+  │                       │                        │      ║                ┌┴┐    10 returnFS    │ │            ║
+  │                       │                        │      ║                │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─│ │            ║
+  │                       │                        │      ╚════════════════╪═╪══════════════════════════════════╝
+  │                       │                        │                       │ │                    │
+  │                       │                       ┌┴┐11 returnContainerID  │ │                    │
+  │                       │                       │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │                    │
+  │                       │                       │ │                      └┬┘                    │
+  │                      ┌┴┐12 returnDeviceCreated│ │                       │                     │
+  │                      │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │                       │                     │
+  │                      │ │                      └┬┘                       │                     │
+  │                      │ │────┐                  │                        │                     │
+  │                      │ │    │ <b>13</b>        │                        │                     │
+  │                      │ │<───┘ colorDeviceGreen │                        │                     │
+  │                      │ │                       │                        │                     │
+  │                      │ │                       │                        │                     │
+  │ 14 showDeviceCreated │ │                       │                        │                     │
+  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │                       │                        │                     │
+  │                      └┬┘                       │                        │                     │
+
+@startuml
+hide footbox
+autonumber
+
+skinparam shadowing false
+skinparam sequenceMessageAlign center
+skinparam monochrome true
+
+Actor Utente as u
+Participant WebUI as ui
+Participant WebService as ws
+Participant ContainerEngine as c
+Participant Kernel as k
+u -> ui : getCreateDeviceForm
+activate ui
+u <-- ui : returnCDeviceForm
+deactivate ui
+u -> u : fillForm\n(name,\ntype,\nproperties)
+u -> ui : createDevice
+activate ui
+ui -> ws : createDevice
+deactivate ui
+activate ws
+ws -> c : createContainer\n(name,\ntype,\nproperties)
+deactivate ws
+activate c
+group par
+c -> k: createNetNS
+activate k
+c -> k: createFS
+end
+deactivate c
+group par
+c <-- k : returnNetNS
+c <-- k : returnFS
+deactivate k
+activate c
+end
+ws <-- c : returnContainerID
+deactivate c
+activate ws
+ui <-- ws : returnDeviceCreated
+deactivate ws
+activate ui
+ui -> ui : colorDeviceGreen
+u <-- ui : showDeviceCreated
+deactivate ui
+@enduml

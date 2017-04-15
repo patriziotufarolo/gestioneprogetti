@@ -1,0 +1,21 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+
+state "Modalità modifica topologia" as sm {
+state "Visualizzazione pagina web" as s1 : Attesa eventi
+state "Form di login" as s2
+state "Autenticazione LDAP" as s3
+state "Controllo utenza esistente" as s4 
+state "Creazione utenza" as s5
+[*] --> s1
+s1 --> s2 : Login
+s2 --> s2 : Inserimento credenziali
+s2 --> s3 : Dati inseriti
+s3 --> s4 : Dati corretti
+s3 --> s2 : Dati errati
+s4 --> [*] : Utenza esistente -> Login
+s4 --> s5 : Utenza non esistente 
+s5 --> [*] : Login
+}
+@enduml

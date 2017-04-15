@@ -1,0 +1,115 @@
+%% Creator: Inkscape inkscape 0.92.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'diagramma-casi-d-uso.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{617.25bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.67800729)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{diagramma-casi-d-uso.pdf}}%
+    \put(0.31166464,0.73633643){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Utente}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{diagramma-casi-d-uso.pdf}}%
+    \put(0.0072904,0.67983582){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Supervisore}}}%
+    \put(0.0072904,0.66003403){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{di sessione}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{diagramma-casi-d-uso.pdf}}%
+    \put(0.69969613,1.40511738){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{UC001 Login di un utente alla}}}%
+    \put(0.77563781,1.38531555){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{piattaforma}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{diagramma-casi-d-uso.pdf}}%
+    \put(0.73335083,1.26228772){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{UC002 Selezione dell'}}}%
+    \put(0.7855987,1.24248589){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{ambiente}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{diagramma-casi-d-uso.pdf}}%
+    \put(0.73021007,1.11967923){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{UC003 Selezione della}}}%
+    \put(0.74965114,1.09987751){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{sessione di lavoro}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{diagramma-casi-d-uso.pdf}}%
+    \put(0.68519891,0.60712975){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{UC004 Aggiunta di un dispositivo}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{diagramma-casi-d-uso.pdf}}%
+    \put(0.73352088,0.50360775){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{UC005 Aggiunta di un}}}%
+    \put(0.77847835,0.4838061){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{link tra due}}}%
+    \put(0.78455369,0.46400424){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{dispositivi}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{diagramma-casi-d-uso.pdf}}%
+    \put(0.67302443,0.36910295){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{UC006 Eliminazione di un elemento}}}%
+    \put(0.78055785,0.34930116){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{dal canvas}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{diagramma-casi-d-uso.pdf}}%
+    \put(0.73003802,0.26832034){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{UC007 Configurazione}}}%
+    \put(0.75737702,0.24851854){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{di un dispositivo}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{diagramma-casi-d-uso.pdf}}%
+    \put(0.73006049,0.16502067){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{UC008 Configurazione}}}%
+    \put(0.78777616,0.14521888){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{di un link}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{diagramma-casi-d-uso.pdf}}%
+    \put(0.66854432,1.00122627){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{UC009 Deploy della topologia di rete}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{diagramma-casi-d-uso.pdf}}%
+    \put(0.6819943,0.8453163){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{UC010 Chiusura dell'esperimento}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{diagramma-casi-d-uso.pdf}}%
+    \put(0.7577281,0.06084753){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{UC011 Apertura}}}%
+    \put(0.76927124,0.04104573){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{del terminale}}}%
+    \put(0.7577281,0.02124394){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{di un dispositivo}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{diagramma-casi-d-uso.pdf}}%
+    \put(0.2652254,0.65683729){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{UC012 Creazione}}}%
+    \put(0.27373087,0.6370355){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{di una sessione}}}%
+    \put(0.30228494,0.61723363){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{di lavoro}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{diagramma-casi-d-uso.pdf}}%
+    \put(0.21576719,0.5310129){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{UC013 Associazione di utenti}}}%
+    \put(0.23642333,0.51121104){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{a una sessione di lavoro}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{diagramma-casi-d-uso.pdf}}%
+    \put(0.74042564,1.64361908){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{UC014 Generazione}}}%
+    \put(0.76168931,1.62381725){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{di un invite link}}}%
+    \put(0.69850583,1.60401555){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{per l'associazione degli utenti}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{diagramma-casi-d-uso.pdf}}%
+    \put(0.78034864,0.75076194){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{UC015 Join}}}%
+    \put(0.76090757,0.73096029){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{di una sessione}}}%
+    \put(0.75179457,0.71115843){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{tramite invite link}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{diagramma-casi-d-uso.pdf}}%
+    \put(0.71191814,1.5051881){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{UC016 Logout di un utente}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{diagramma-casi-d-uso.pdf}}%
+    \put(0.77703524,1.327683){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{«import»}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{diagramma-casi-d-uso.pdf}}%
+    \put(0.77703524,1.18460888){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{«import»}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{diagramma-casi-d-uso.pdf}}%
+    \put(0.77035237,0.92185067){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{«includes»}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{diagramma-casi-d-uso.pdf}}%
+    \put(0.53341434,1.05216659){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{«extends»}}}%
+  \end{picture}%
+\endgroup%

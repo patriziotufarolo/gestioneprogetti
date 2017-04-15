@@ -1,0 +1,14 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+state "Modalità modifica topologia" as sm {
+state "Visualizzazione pagina web" as s1 : Attesa eventi
+state "Validazione" as s2
+state "Errore" as s3
+[*] --> s1
+s1 --> s2 : Scelta ambiente
+s2 --> [*] : Ambiente valido
+s2 --> s3 : Ambiente non valido
+s3 --> s1: Torna a scelta ambiente
+}
+@enduml

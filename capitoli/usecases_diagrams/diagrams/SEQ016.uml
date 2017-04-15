@@ -1,0 +1,41 @@
+
+  ┌─┐
+  ║"│
+  └┬┘
+  ┌┼┐
+   │                               ┌──┐              ┌───────┐
+  ┌┴┐                              │UI│              │Sistema│
+Utente                             └┬─┘              └───┬───┘
+  │   1 Click sul pulsante logout   │                    │
+  │ ────────────────────────────────>                    │
+  │                                 │                    │
+  │                                 │   2 Invio logout   │
+  │                                 │ ───────────────────>
+  │                                 │                    │
+  │                                 │                    │────┐
+  │                                 │                    │    │ <b>3</b>
+  │                                 │                    │<───┘ Logout utente
+  │                                 │                    │
+  │                                 │                    │
+  │                                 │ 4 Logout effettuato│
+  │                                 │ <───────────────────
+  │                                 │                    │
+  │ 5 Messaggio di logout effettuato│                    │
+  │ <────────────────────────────────                    │
+  │                                 │                    │
+
+@startuml
+hide footbox
+autonumber
+
+skinparam shadowing false
+skinparam sequenceMessageAlign center
+skinparam monochrome true
+
+Actor Utente
+Utente -> UI   :  Click sul pulsante logout
+UI -> Sistema  :  Invio logout
+Sistema -> Sistema : Logout utente
+Sistema -> UI : Logout effettuato
+UI -> Utente  : Messaggio di logout effettuato
+@enduml

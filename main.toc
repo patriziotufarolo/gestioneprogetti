@@ -1,93 +1,139 @@
 \select@language {italian}
 \select@language {italian}
-\contentsline {chapter}{\numberline {1}Introduzione}{3}{chapter.1}
-\contentsline {section}{\numberline {1.1}Richiesta}{3}{section.1.1}
-\contentsline {paragraph}{Disegno della topologia}{3}{section*.2}
-\contentsline {paragraph}{Deployment della topologia}{3}{section*.3}
-\contentsline {paragraph}{Informazioni aggiuntive alla richiesta}{4}{section*.4}
-\contentsline {section}{\numberline {1.2}Elicitazione}{4}{section.1.2}
-\contentsline {part}{\@mypartnumtocformat {I}{Fase di analisi}}{5}{part.1}
-\contentsline {chapter}{\numberline {2}Catalogo dei requisiti}{7}{chapter.2}
-\contentsline {section}{\numberline {2.1}Requisiti funzionali}{7}{section.2.1}
-\contentsline {paragraph}{Modalit\IeC {\`a} utente}{7}{section*.5}
-\contentsline {paragraph}{Funzionalit\IeC {\`a} aggiuntive modalit\IeC {\`a} supervisore}{8}{section*.6}
-\contentsline {paragraph}{Funzionalit\IeC {\`a} ulteriori}{8}{section*.7}
-\contentsline {section}{\numberline {2.2}Requisiti non funzionali}{8}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Requisiti di prodotto}{8}{subsection.2.2.1}
-\contentsline {subsubsection}{Requisiti di usabilit\IeC {\`a}}{8}{section*.8}
-\contentsline {subsubsection}{Requisiti di efficienza e performance}{8}{section*.9}
-\contentsline {subsubsection}{Requisiti di dependability}{8}{section*.10}
-\contentsline {paragraph}{Requisiti inversi (reliability)}{8}{section*.11}
-\contentsline {paragraph}{Requisiti di availability}{8}{section*.12}
-\contentsline {subsubsection}{Requisiti di sicurezza}{9}{section*.13}
-\contentsline {subsection}{\numberline {2.2.2}Requisiti organizzativi}{9}{subsection.2.2.2}
-\contentsline {subsubsection}{Requisiti ambientali}{9}{section*.14}
-\contentsline {subsubsection}{Requisiti operazionali}{9}{section*.15}
-\contentsline {subsubsection}{Requisiti di sviluppo}{9}{section*.16}
-\contentsline {subsection}{\numberline {2.2.3}Requisiti esterni}{9}{subsection.2.2.3}
-\contentsline {chapter}{\numberline {3}Casi d'uso}{11}{chapter.3}
-\contentsline {section}{\numberline {3.1}Catalogo dei casi d'uso}{11}{section.3.1}
-\contentsline {section}{\numberline {3.2}Diagramma dei casi d'uso}{12}{section.3.2}
-\contentsline {section}{\numberline {3.3}Schede dei casi d'uso}{13}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Caso d\IeC {\textquoteright }uso UC001: Login alla piattaforma}{13}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Caso d\IeC {\textquoteright }uso UC002: Selezione dell'ambiente }{14}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Caso d\IeC {\textquoteright }uso UC003: Selezione della sessione di lavoro }{15}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Caso d\IeC {\textquoteright }uso UC004: Aggiunta di un dispositivo }{16}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}Caso d\IeC {\textquoteright }uso UC005: Aggiunta di un link tra due dispositivi }{17}{subsection.3.3.5}
-\contentsline {subsection}{\numberline {3.3.6}Caso d\IeC {\textquoteright }uso UC006: Eliminazione di un elemento dal canvas}{18}{subsection.3.3.6}
-\contentsline {subsection}{\numberline {3.3.7}Caso d\IeC {\textquoteright }uso UC007: Configurazione di un dispositivo }{19}{subsection.3.3.7}
-\contentsline {subsection}{\numberline {3.3.8}Caso d\IeC {\textquoteright }uso UC008: Configurazione di un link }{20}{subsection.3.3.8}
-\contentsline {subsection}{\numberline {3.3.9}Caso d\IeC {\textquoteright }uso UC009: Deploy della topologia di rete }{21}{subsection.3.3.9}
-\contentsline {subsection}{\numberline {3.3.10}Caso d\IeC {\textquoteright }uso UC010: Apertura del terminale di un dispositivo }{22}{subsection.3.3.10}
-\contentsline {subsection}{\numberline {3.3.11}Caso d\IeC {\textquoteright }uso UC011: Creazione di una sessione di lavoro }{23}{subsection.3.3.11}
-\contentsline {subsection}{\numberline {3.3.12}Caso d\IeC {\textquoteright }uso UC012: Associazione di utenti a una sessione di lavoro }{24}{subsection.3.3.12}
-\contentsline {subsection}{\numberline {3.3.13}Caso d\IeC {\textquoteright }uso UC013: Generazione di un invite link per l'associazione degli utenti }{25}{subsection.3.3.13}
-\contentsline {subsection}{\numberline {3.3.14}Caso d\IeC {\textquoteright }uso UC014: Join di una sessione di lavoro tramite invite link }{26}{subsection.3.3.14}
-\contentsline {subsection}{\numberline {3.3.15}Caso d\IeC {\textquoteright }uso UC015: Logout di un utente }{27}{subsection.3.3.15}
-\contentsline {chapter}{\numberline {4}Diagrammi di sequenza per la fase di analisi}{29}{chapter.4}
-\contentsline {section}{\numberline {4.1}Blackbox SEQ001 - Login alla piattaforma }{29}{section.4.1}
-\contentsline {section}{\numberline {4.2}Blackbox SEQ002 - Selezione dell'ambiente }{30}{section.4.2}
-\contentsline {section}{\numberline {4.3}Blackbox SEQ003 - Selezione della sessione di lavoro }{31}{section.4.3}
-\contentsline {section}{\numberline {4.4}Blackbox SEQ004 - Aggiunta di un dispositivo }{32}{section.4.4}
-\contentsline {section}{\numberline {4.5}Blackbox SEQ005 - Aggiunta di un link tra due dispositivi }{33}{section.4.5}
-\contentsline {section}{\numberline {4.6}Blackbox SEQ006 - Eliminazione di un elemento dal canvas }{34}{section.4.6}
-\contentsline {section}{\numberline {4.7}Blackbox SEQ007 - Configurazione di un dispositivo }{35}{section.4.7}
-\contentsline {section}{\numberline {4.8}Blackbox SEQ008 - Configurazione di un link }{36}{section.4.8}
-\contentsline {section}{\numberline {4.9}Blackbox SEQ009 - Deploy della topologia di rete }{37}{section.4.9}
-\contentsline {section}{\numberline {4.10}Blackbox SEQ010 - Apertura del terminale di un dispositivo }{38}{section.4.10}
-\contentsline {section}{\numberline {4.11}Blackbox SEQ011 - Creazione di una sessione di lavoro }{39}{section.4.11}
-\contentsline {section}{\numberline {4.12}Blackbox SEQ012 - Associazione di utenti a una sessione di lavoro }{40}{section.4.12}
-\contentsline {section}{\numberline {4.13}Blackbox SEQ013 - Generazione di un invite link per l'associazione degli utenti }{41}{section.4.13}
-\contentsline {section}{\numberline {4.14}Blackbox SEQ014 - Join di una sessione di lavoro tramite invite link }{42}{section.4.14}
-\contentsline {section}{\numberline {4.15}Blackbox SEQ015 - Logout di un utente }{43}{section.4.15}
-\contentsline {part}{\@mypartnumtocformat {II}{}}{45}{part.2}
-\contentsline {chapter}{\numberline {5}Text Chapter}{47}{chapter.5}
-\contentsline {section}{\numberline {5.1}Paragraphs of Text}{47}{section.5.1}
-\contentsline {section}{\numberline {5.2}Citation}{48}{section.5.2}
-\contentsline {section}{\numberline {5.3}Lists}{48}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Numbered List}{48}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Bullet Points}{48}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Descriptions and Definitions}{48}{subsection.5.3.3}
-\contentsline {chapter}{\numberline {6}In-text Elements}{49}{chapter.6}
-\contentsline {section}{\numberline {6.1}Theorems}{49}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Several equations}{49}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Single Line}{49}{subsection.6.1.2}
-\contentsline {section}{\numberline {6.2}Definitions}{49}{section.6.2}
-\contentsline {section}{\numberline {6.3}Notations}{50}{section.6.3}
-\contentsline {section}{\numberline {6.4}Remarks}{50}{section.6.4}
-\contentsline {section}{\numberline {6.5}Corollaries}{50}{section.6.5}
-\contentsline {section}{\numberline {6.6}Propositions}{50}{section.6.6}
-\contentsline {subsection}{\numberline {6.6.1}Several equations}{50}{subsection.6.6.1}
-\contentsline {subsection}{\numberline {6.6.2}Single Line}{50}{subsection.6.6.2}
-\contentsline {section}{\numberline {6.7}Examples}{50}{section.6.7}
-\contentsline {subsection}{\numberline {6.7.1}Equation and Text}{50}{subsection.6.7.1}
-\contentsline {subsection}{\numberline {6.7.2}Paragraph of Text}{51}{subsection.6.7.2}
-\contentsline {section}{\numberline {6.8}Exercises}{51}{section.6.8}
-\contentsline {section}{\numberline {6.9}Problems}{51}{section.6.9}
-\contentsline {section}{\numberline {6.10}Vocabulary}{51}{section.6.10}
-\contentsline {part}{\@mypartnumtocformat {III}{Part Two}}{53}{part.3}
-\contentsline {chapter}{\numberline {7}Presenting Information}{55}{chapter.7}
-\contentsline {section}{\numberline {7.1}Table}{55}{section.7.1}
-\contentsline {section}{\numberline {7.2}Figure}{55}{section.7.2}
-\contentsline {chapter}{\leavevmode {\color {myblue}Index}}{57}{section*.35}
+\contentsline {chapter}{\numberline {1}Introduzione}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Richiesta}{1}{section.1.1}
+\contentsline {paragraph}{Disegno della topologia}{1}{section*.2}
+\contentsline {paragraph}{Deployment della topologia}{1}{section*.3}
+\contentsline {paragraph}{Informazioni aggiuntive alla richiesta}{2}{section*.4}
+\contentsline {section}{\numberline {1.2}Elicitazione}{2}{section.1.2}
+\contentsline {part}{\@mypartnumtocformat {I}{Fase di analisi}}{3}{part.1}
+\contentsline {chapter}{\numberline {2}Catalogo dei requisiti}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Requisiti funzionali}{5}{section.2.1}
+\contentsline {paragraph}{Modalit\IeC {\`a} utente}{5}{section*.5}
+\contentsline {paragraph}{Funzionalit\IeC {\`a} aggiuntive modalit\IeC {\`a} supervisore}{6}{section*.6}
+\contentsline {paragraph}{Funzionalit\IeC {\`a} ulteriori}{6}{section*.7}
+\contentsline {section}{\numberline {2.2}Requisiti non funzionali}{6}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Requisiti di prodotto}{6}{subsection.2.2.1}
+\contentsline {subsubsection}{Requisiti di usabilit\IeC {\`a}}{6}{section*.8}
+\contentsline {subsubsection}{Requisiti di efficienza e performance}{6}{section*.9}
+\contentsline {subsubsection}{Requisiti di dependability}{6}{section*.10}
+\contentsline {paragraph}{Requisiti inversi (reliability)}{6}{section*.11}
+\contentsline {paragraph}{Requisiti di availability}{6}{section*.12}
+\contentsline {subsubsection}{Requisiti di sicurezza}{7}{section*.13}
+\contentsline {subsection}{\numberline {2.2.2}Requisiti organizzativi}{7}{subsection.2.2.2}
+\contentsline {subsubsection}{Requisiti ambientali}{7}{section*.14}
+\contentsline {subsubsection}{Requisiti operazionali}{7}{section*.15}
+\contentsline {subsubsection}{Requisiti di sviluppo}{7}{section*.16}
+\contentsline {subsection}{\numberline {2.2.3}Requisiti esterni}{7}{subsection.2.2.3}
+\contentsline {chapter}{\numberline {3}Casi d'uso}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}Catalogo dei casi d'uso}{9}{section.3.1}
+\contentsline {section}{\numberline {3.2}Diagramma dei casi d'uso}{10}{section.3.2}
+\contentsline {section}{\numberline {3.3}Schede dei casi d'uso}{11}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Caso d\IeC {\textquoteright }uso UC001: Login alla piattaforma}{11}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Caso d\IeC {\textquoteright }uso UC002: Selezione dell'ambiente }{12}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Caso d\IeC {\textquoteright }uso UC003: Selezione della sessione di lavoro }{13}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Caso d\IeC {\textquoteright }uso UC004: Aggiunta di un dispositivo }{14}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Caso d\IeC {\textquoteright }uso UC005: Aggiunta di un link tra due dispositivi }{15}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}Caso d\IeC {\textquoteright }uso UC006: Eliminazione di un elemento dal canvas}{16}{subsection.3.3.6}
+\contentsline {subsection}{\numberline {3.3.7}Caso d\IeC {\textquoteright }uso UC007: Configurazione di un dispositivo }{17}{subsection.3.3.7}
+\contentsline {subsection}{\numberline {3.3.8}Caso d\IeC {\textquoteright }uso UC008: Configurazione di un link }{18}{subsection.3.3.8}
+\contentsline {subsection}{\numberline {3.3.9}Caso d\IeC {\textquoteright }uso UC009: Deploy della topologia di rete }{19}{subsection.3.3.9}
+\contentsline {subsection}{\numberline {3.3.10}Caso d\IeC {\textquoteright }uso UC010: Chiusura di un esperimento }{20}{subsection.3.3.10}
+\contentsline {subsection}{\numberline {3.3.11}Caso d\IeC {\textquoteright }uso UC011: Apertura del terminale di un dispositivo }{21}{subsection.3.3.11}
+\contentsline {subsection}{\numberline {3.3.12}Caso d\IeC {\textquoteright }uso UC012: Creazione di una sessione di lavoro }{22}{subsection.3.3.12}
+\contentsline {subsection}{\numberline {3.3.13}Caso d\IeC {\textquoteright }uso UC013: Associazione di utenti a una sessione di lavoro }{23}{subsection.3.3.13}
+\contentsline {subsection}{\numberline {3.3.14}Caso d\IeC {\textquoteright }uso UC014: Generazione di un invite link per l'associazione degli utenti }{24}{subsection.3.3.14}
+\contentsline {subsection}{\numberline {3.3.15}Caso d\IeC {\textquoteright }uso UC015: Join di una sessione di lavoro tramite invite link }{25}{subsection.3.3.15}
+\contentsline {subsection}{\numberline {3.3.16}Caso d\IeC {\textquoteright }uso UC016: Logout di un utente }{26}{subsection.3.3.16}
+\contentsline {section}{\numberline {3.4}Diagrammi di sequenza per la fase di analisi}{27}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Blackbox SEQ001 - Login alla piattaforma }{27}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Blackbox SEQ002 - Selezione dell'ambiente }{28}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Blackbox SEQ003 - Selezione della sessione di lavoro }{29}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Blackbox SEQ004 - Aggiunta di un dispositivo }{30}{subsection.3.4.4}
+\contentsline {subsection}{\numberline {3.4.5}Blackbox SEQ005 - Aggiunta di un link tra due dispositivi }{31}{subsection.3.4.5}
+\contentsline {subsection}{\numberline {3.4.6}Blackbox SEQ006 - Eliminazione di un elemento dal canvas }{32}{subsection.3.4.6}
+\contentsline {subsection}{\numberline {3.4.7}Blackbox SEQ007 - Configurazione di un dispositivo }{33}{subsection.3.4.7}
+\contentsline {subsection}{\numberline {3.4.8}Blackbox SEQ008 - Configurazione di un link }{34}{subsection.3.4.8}
+\contentsline {subsection}{\numberline {3.4.9}Blackbox SEQ009 - Deploy della topologia di rete }{35}{subsection.3.4.9}
+\contentsline {subsection}{\numberline {3.4.10}Blackbox SEQ010 - Chiusura di un esperimento }{36}{subsection.3.4.10}
+\contentsline {subsection}{\numberline {3.4.11}Blackbox SEQ011 - Apertura del terminale di un dispositivo }{37}{subsection.3.4.11}
+\contentsline {subsection}{\numberline {3.4.12}Blackbox SEQ012 - Creazione di una sessione di lavoro }{38}{subsection.3.4.12}
+\contentsline {subsection}{\numberline {3.4.13}Blackbox SEQ013 - Associazione di utenti a una sessione di lavoro }{39}{subsection.3.4.13}
+\contentsline {subsection}{\numberline {3.4.14}Blackbox SEQ014 - Generazione di un invite link per l'associazione degli utenti }{40}{subsection.3.4.14}
+\contentsline {subsection}{\numberline {3.4.15}Blackbox SEQ015 - Join di una sessione di lavoro tramite invite link }{41}{subsection.3.4.15}
+\contentsline {subsection}{\numberline {3.4.16}Blackbox SEQ016 - Logout di un utente }{42}{subsection.3.4.16}
+\contentsline {chapter}{\numberline {4}Modello di dominio}{43}{chapter.4}
+\contentsline {section}{\numberline {4.1}Diagramma delle classi per la fase di analisi}{44}{section.4.1}
+\contentsline {section}{\numberline {4.2}Regole di dominio}{45}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Catalogo delle regole di dominio}{45}{subsection.4.2.1}
+\contentsline {part}{\@mypartnumtocformat {II}{Fase di design}}{47}{part.2}
+\contentsline {chapter}{\numberline {5}Architettura del sistema}{49}{chapter.5}
+\contentsline {section}{\numberline {5.1}Diagramma di deployment}{50}{section.5.1}
+\contentsline {chapter}{\numberline {6}Modello di Sistema}{51}{chapter.6}
+\contentsline {section}{\numberline {6.1}Diagrammi di sequenza per la fase di design}{52}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}SEQ001 - Login alla piattaforma }{52}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}SEQ002 - Selezione dell'ambiente }{53}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}SEQ003 - Selezione della sessione di lavoro }{54}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.4}SEQ004 - Aggiunta di un dispositivo }{55}{subsection.6.1.4}
+\contentsline {subsection}{\numberline {6.1.5}SEQ005 - Aggiunta di un link tra due dispositivi }{56}{subsection.6.1.5}
+\contentsline {subsection}{\numberline {6.1.6}SEQ006 - Eliminazione di un elemento dal canvas }{57}{subsection.6.1.6}
+\contentsline {subsection}{\numberline {6.1.7}SEQ007 - Configurazione di un dispositivo }{58}{subsection.6.1.7}
+\contentsline {subsection}{\numberline {6.1.8}SEQ008 - Configurazione di un link }{59}{subsection.6.1.8}
+\contentsline {subsection}{\numberline {6.1.9}SEQ009 - Deploy della topologia di rete }{60}{subsection.6.1.9}
+\contentsline {subsection}{\numberline {6.1.10}SEQ010 - Chiusura dell'esperimento }{61}{subsection.6.1.10}
+\contentsline {subsection}{\numberline {6.1.11}SEQ011 - Apertura del terminale di un dispositivo }{62}{subsection.6.1.11}
+\contentsline {subsection}{\numberline {6.1.12}SEQ012 - Creazione di una sessione di lavoro }{63}{subsection.6.1.12}
+\contentsline {subsection}{\numberline {6.1.13}SEQ013 - Associazione di utenti a una sessione di lavoro }{64}{subsection.6.1.13}
+\contentsline {subsection}{\numberline {6.1.14}SEQ014 - Generazione di un invite link per l'associazione degli utenti }{65}{subsection.6.1.14}
+\contentsline {subsection}{\numberline {6.1.15}SEQ015 - Join di una sessione di lavoro tramite invite link }{66}{subsection.6.1.15}
+\contentsline {subsection}{\numberline {6.1.16}SEQ016 - Logout di un utente }{67}{subsection.6.1.16}
+\contentsline {section}{\numberline {6.2}Diagramma delle classi per la fase di design}{68}{section.6.2}
+\contentsline {section}{\numberline {6.3}Diagrammi di sequenza per la fase di design}{69}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}SD001 - Login alla piattaforma }{69}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}SD002 - Selezione dell'ambiente }{70}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}SD003 - Selezione della sessione di lavoro }{71}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}SD004 - Aggiunta di un dispositivo }{72}{subsection.6.3.4}
+\contentsline {subsection}{\numberline {6.3.5}SD005 - Aggiunta di un link tra due dispositivi }{73}{subsection.6.3.5}
+\contentsline {subsection}{\numberline {6.3.6}SD006 - Eliminazione di un elemento dal canvas }{74}{subsection.6.3.6}
+\contentsline {subsection}{\numberline {6.3.7}SD007 - Configurazione di un dispositivo }{75}{subsection.6.3.7}
+\contentsline {subsection}{\numberline {6.3.8}SD008 - Configurazione di un link }{76}{subsection.6.3.8}
+\contentsline {subsection}{\numberline {6.3.9}SD009 - Deploy della topologia di rete }{77}{subsection.6.3.9}
+\contentsline {subsection}{\numberline {6.3.10}SD010 - Chiusura dell'esperimento }{78}{subsection.6.3.10}
+\contentsline {subsection}{\numberline {6.3.11}SD011 - Apertura del terminale di un dispositivo }{79}{subsection.6.3.11}
+\contentsline {subsection}{\numberline {6.3.12}SD012 - Creazione di una sessione di lavoro }{80}{subsection.6.3.12}
+\contentsline {subsection}{\numberline {6.3.13}SD013 - Associazione di utenti a una sessione di lavoro }{81}{subsection.6.3.13}
+\contentsline {subsection}{\numberline {6.3.14}SD014 - Generazione di un invite link per l'associazione degli utenti }{82}{subsection.6.3.14}
+\contentsline {subsection}{\numberline {6.3.15}SD015 - Join di una sessione di lavoro tramite invite link }{83}{subsection.6.3.15}
+\contentsline {subsection}{\numberline {6.3.16}SD016 - Logout di un utente }{84}{subsection.6.3.16}
+\contentsline {part}{\@mypartnumtocformat {III}{Testing}}{85}{part.3}
+\contentsline {part}{\@mypartnumtocformat {IV}{Pianificazione}}{87}{part.4}
+\contentsline {chapter}{\numberline {7}Text Chapter}{89}{chapter.7}
+\contentsline {section}{\numberline {7.1}Paragraphs of Text}{89}{section.7.1}
+\contentsline {section}{\numberline {7.2}Citation}{90}{section.7.2}
+\contentsline {section}{\numberline {7.3}Lists}{90}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Numbered List}{90}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Bullet Points}{90}{subsection.7.3.2}
+\contentsline {subsection}{\numberline {7.3.3}Descriptions and Definitions}{90}{subsection.7.3.3}
+\contentsline {chapter}{\numberline {8}In-text Elements}{91}{chapter.8}
+\contentsline {section}{\numberline {8.1}Theorems}{91}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Several equations}{91}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Single Line}{91}{subsection.8.1.2}
+\contentsline {section}{\numberline {8.2}Definitions}{91}{section.8.2}
+\contentsline {section}{\numberline {8.3}Notations}{92}{section.8.3}
+\contentsline {section}{\numberline {8.4}Remarks}{92}{section.8.4}
+\contentsline {section}{\numberline {8.5}Corollaries}{92}{section.8.5}
+\contentsline {section}{\numberline {8.6}Propositions}{92}{section.8.6}
+\contentsline {subsection}{\numberline {8.6.1}Several equations}{92}{subsection.8.6.1}
+\contentsline {subsection}{\numberline {8.6.2}Single Line}{92}{subsection.8.6.2}
+\contentsline {section}{\numberline {8.7}Examples}{92}{section.8.7}
+\contentsline {subsection}{\numberline {8.7.1}Equation and Text}{92}{subsection.8.7.1}
+\contentsline {subsection}{\numberline {8.7.2}Paragraph of Text}{93}{subsection.8.7.2}
+\contentsline {section}{\numberline {8.8}Exercises}{93}{section.8.8}
+\contentsline {section}{\numberline {8.9}Problems}{93}{section.8.9}
+\contentsline {section}{\numberline {8.10}Vocabulary}{93}{section.8.10}
+\contentsline {part}{\@mypartnumtocformat {V}{Part Two}}{95}{part.5}
+\contentsline {chapter}{\numberline {9}Presenting Information}{97}{chapter.9}
+\contentsline {section}{\numberline {9.1}Table}{97}{section.9.1}
+\contentsline {section}{\numberline {9.2}Figure}{97}{section.9.2}
+\contentsline {chapter}{\leavevmode {\color {myblue}Index}}{99}{section*.71}
 \contentsfinish 

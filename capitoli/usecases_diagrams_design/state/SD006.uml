@@ -1,0 +1,20 @@
+@startuml
+skinparam shadowing false
+skinparam monochrome true
+
+state "Modalità modifica topologia" as sm {
+state "Visualizzazione canvas" as s1 : Attesa eventi
+state "Modalità selezione" as s2
+state "Messaggio di conferma" as s3
+state "Eliminazione elemento dal database" as  s4
+state "Messaggio di errore" as s5
+[*] --> s1
+s1 --> s2 : Elimina elemento
+s2 --> s2 : Seleziona elemento
+s2 --> s3 : Conferma
+s3 --> s4 : Ok
+s3 --> s1 : Annulla
+s4 --> s5: : Eliminazione fallita 
+s4 --> [*] : Eliminazione avvenuta
+}
+@enduml

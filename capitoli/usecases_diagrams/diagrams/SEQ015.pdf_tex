@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{398.25bp}%
+    \setlength{\unitlength}{523.5bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,27 +48,29 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.49152542)%
+  \begin{picture}(1,0.43696275)%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{SEQ015.pdf}}%
-    \put(0.01506591,0.34275875){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Utente}}}%
+    \put(0.01146132,0.32378925){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Utente}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{SEQ015.pdf}}%
-    \put(0.49623352,0.35782467){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{UI}}}%
+    \put(0.31876791,0.33525057){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{UI}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{SEQ015.pdf}}%
-    \put(0.73822976,0.35782467){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Sistema}}}%
+    \put(0.57449857,0.33525057){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Sistema}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{SEQ015.pdf}}%
-    \put(0.12429379,0.28745047){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{1}}}}%
-    \put(0.14877589,0.28745047){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Click sul pulsante logout}}}%
+    \put(0.05945559,0.28171375){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{1}}}}%
+    \put(0.07808023,0.28171375){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Click sull'invite link}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{SEQ015.pdf}}%
-    \put(0.56591337,0.23258645){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{2}}}}%
-    \put(0.59039548,0.23258645){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Invio logout}}}%
+    \put(0.20988539,0.19967135){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{2}}}}%
+    \put(0.22922636,0.22135158){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Richiesta della sessione}}}%
+    \put(0.22851003,0.19967135){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{di lavoro corrispondente}}}%
+    \put(0.28080229,0.17799111){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{all'invite link}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{SEQ015.pdf}}%
-    \put(0.80508475,0.17772242){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{3}}}}%
-    \put(0.82956685,0.17772242){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Logout utente}}}%
+    \put(0.62535817,0.13625358){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{3}}}}%
+    \put(0.64398281,0.13625358){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Join dell'utente alla sessione di lavoro}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{SEQ015.pdf}}%
-    \put(0.53201507,0.09837626){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{4}}}}%
-    \put(0.55649718,0.09837626){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Logout effettuato}}}%
+    \put(0.34598854,0.0758914){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{4}}}}%
+    \put(0.36461318,0.0758914){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Join dell'utente avvenuto}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=8]{SEQ015.pdf}}%
-    \put(0.08757062,0.04351223){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{5}}}}%
-    \put(0.11205273,0.04351223){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Messaggio di logout effettuato}}}%
+    \put(0.06661891,0.03415385){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{5}}}}%
+    \put(0.08524355,0.03415385){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Messaggio di benvenuto}}}%
   \end{picture}%
 \endgroup%

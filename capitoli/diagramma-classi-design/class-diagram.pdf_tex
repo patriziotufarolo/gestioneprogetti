@@ -1,0 +1,184 @@
+%% Creator: Inkscape inkscape 0.92.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'class-diagram.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{474.75bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.30015798)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{class-diagram.pdf}}%
+    \put(0.65165877,0.49896636){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Sistema}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{class-diagram.pdf}}%
+    \put(0.78325433,1.11429021){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{WebUI}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{class-diagram.pdf}}%
+    \put(0.7464455,1.07312732){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{environment}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{class-diagram.pdf}}%
+    \put(0.7464455,1.0402605){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{get}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{class-diagram.pdf}}%
+    \put(0.7464455,1.02003192){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{do}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{class-diagram.pdf}}%
+    \put(0.7464455,0.99980332){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{populate}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{class-diagram.pdf}}%
+    \put(0.7464455,0.97957472){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{show}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{class-diagram.pdf}}%
+    \put(0.5120853,1.25568041){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{WebService}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{class-diagram.pdf}}%
+    \put(0.46050553,1.21451754){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{address}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{class-diagram.pdf}}%
+    \put(0.46050553,1.19428894){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{port}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{class-diagram.pdf}}%
+    \put(0.46050553,1.16142211){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{login}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{class-diagram.pdf}}%
+    \put(0.46050553,1.14119353){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{getEnvironments}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{class-diagram.pdf}}%
+    \put(0.46050553,1.12096493){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{getSessions}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{class-diagram.pdf}}%
+    \put(0.46050553,1.10073633){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{createDevice}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{class-diagram.pdf}}%
+    \put(0.46050553,1.08050773){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{createLink}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{class-diagram.pdf}}%
+    \put(0.46050553,1.06027914){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{generateLink}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{class-diagram.pdf}}%
+    \put(0.46050553,1.04005071){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{deleteElements}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{class-diagram.pdf}}%
+    \put(0.46050553,1.01982211){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{sendConfiguration}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{class-diagram.pdf}}%
+    \put(0.46050553,0.99959353){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{deployTopology}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{class-diagram.pdf}}%
+    \put(0.46050553,0.97936493){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{terminateExperiment}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{class-diagram.pdf}}%
+    \put(0.46050553,0.95913634){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{obtainTerminal}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{class-diagram.pdf}}%
+    \put(0.46050553,0.93890774){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{createSession}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{class-diagram.pdf}}%
+    \put(0.46050553,0.91867914){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{getSession}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{class-diagram.pdf}}%
+    \put(0.46050553,0.89845054){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{retrieveUsers}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{class-diagram.pdf}}%
+    \put(0.46050553,0.87822214){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{associate}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{class-diagram.pdf}}%
+    \put(0.46050553,0.85799351){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{generateLink}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{class-diagram.pdf}}%
+    \put(0.46050553,0.83776494){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{deleteSession}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{class-diagram.pdf}}%
+    \put(0.84802526,0.54951928){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{TerminalProxy}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{class-diagram.pdf}}%
+    \put(0.81990521,0.50835642){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{address}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=30]{class-diagram.pdf}}%
+    \put(0.81990521,0.48812784){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{port}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=31]{class-diagram.pdf}}%
+    \put(0.81990521,0.45526094){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{openTerminal}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=32]{class-diagram.pdf}}%
+    \put(0.81990521,0.43503237){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{prepareSocket}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=33]{class-diagram.pdf}}%
+    \put(0.81990521,0.41480379){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{attachTTYToSocket}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=34]{class-diagram.pdf}}%
+    \put(0.48894155,0.11586999){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{ContainerEngine}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=35]{class-diagram.pdf}}%
+    \put(0.47472354,0.0620689){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{createContainer}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=36]{class-diagram.pdf}}%
+    \put(0.47472354,0.04184032){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{removeContainer}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=37]{class-diagram.pdf}}%
+    \put(0.47472354,0.02161165){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{getContainerTty}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=38]{class-diagram.pdf}}%
+    \put(0.42101106,0.50923492){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{LDAPServer}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=39]{class-diagram.pdf}}%
+    \put(0.38941548,0.45543383){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{checkCredentials}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=40]{class-diagram.pdf}}%
+    \put(0.13704581,0.70117805){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Database}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=41]{class-diagram.pdf}}%
+    \put(0.04107425,0.66001518){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{hostname}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=42]{class-diagram.pdf}}%
+    \put(0.04107425,0.63978656){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{port}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=43]{class-diagram.pdf}}%
+    \put(0.04107425,0.61955799){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{username}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=44]{class-diagram.pdf}}%
+    \put(0.04107425,0.59932937){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{password}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=45]{class-diagram.pdf}}%
+    \put(0.04107425,0.57910079){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{driver}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=46]{class-diagram.pdf}}%
+    \put(0.04107425,0.54623399){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{retrieveDevicesForTopology}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=47]{class-diagram.pdf}}%
+    \put(0.04107425,0.52600536){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{retrieveLinksForTopology}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=48]{class-diagram.pdf}}%
+    \put(0.04107425,0.50577679){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{saveConfiguration}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=49]{class-diagram.pdf}}%
+    \put(0.04107425,0.48554836){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{createDevice}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=50]{class-diagram.pdf}}%
+    \put(0.04107425,0.46531979){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{createLink}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=51]{class-diagram.pdf}}%
+    \put(0.04107425,0.44509111){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{deleteDevice}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=52]{class-diagram.pdf}}%
+    \put(0.04107425,0.42486254){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{deleteLink}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=53]{class-diagram.pdf}}%
+    \put(0.04107425,0.40463397){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{getUsers}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=54]{class-diagram.pdf}}%
+    \put(0.04107425,0.38440539){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{checkIfUserExists}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=55]{class-diagram.pdf}}%
+    \put(0.04107425,0.36417682){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{createUserAndLogin}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=56]{class-diagram.pdf}}%
+    \put(0.04107425,0.34394815){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{lookupSessions}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=57]{class-diagram.pdf}}%
+    \put(0.04107425,0.32371977){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{retrieveSession}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=58]{class-diagram.pdf}}%
+    \put(0.04107425,0.30349119){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{storeLink}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=59]{class-diagram.pdf}}%
+    \put(0.04107425,0.28326252){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{storeAssociation}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=60]{class-diagram.pdf}}%
+    \put(0.04107425,0.26303395){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{deleteToken}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=61]{class-diagram.pdf}}%
+    \put(0.75363347,0.12613855){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{KernelLinux}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=62]{class-diagram.pdf}}%
+    \put(0.7385466,0.07233746){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{createNetNS}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=63]{class-diagram.pdf}}%
+    \put(0.7385466,0.05210889){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{createFS}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=64]{class-diagram.pdf}}%
+    \put(0.7385466,0.03188021){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{removeNetNS}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=65]{class-diagram.pdf}}%
+    \put(0.7385466,0.01165164){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{removeFS}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=66]{class-diagram.pdf}}%
+  \end{picture}%
+\endgroup%

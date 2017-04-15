@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{432.75bp}%
+    \setlength{\unitlength}{498bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,38 +48,47 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.63431542)%
+  \begin{picture}(1,0.74698795)%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{SEQ013.pdf}}%
-    \put(0.01386482,0.49740884){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Supervisore}}}%
+    \put(0.01204819,0.62801942){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Supervisore}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{SEQ013.pdf}}%
-    \put(0.56065858,0.51127365){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{UI}}}%
+    \put(0.4871988,0.64006762){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{UI}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{SEQ013.pdf}}%
-    \put(0.88734835,0.51127365){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Sistema}}}%
+    \put(0.72740964,0.64006762){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Sistema}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{SEQ013.pdf}}%
-    \put(0.10485269,0.44650988){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{1}}}}%
-    \put(0.12738302,0.44650988){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Richiesta pagina "Sessioni di lavoro"}}}%
+    \put(0.09111446,0.58378946){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{1}}}}%
+    \put(0.11069277,0.58378946){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Richiesta pagina "Sessioni di lavoro"}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{SEQ013.pdf}}%
-    \put(0.12218371,0.38290641){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{2}}}}%
-    \put(0.14471404,0.39601976){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Visualizzazione della pagina}}}%
-    \put(0.14471404,0.36979308){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{"Sessioni di lavoro"}}}%
+    \put(0.1061747,0.52851957){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{2}}}}%
+    \put(0.12575301,0.53991476){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Visualizzazione della pagina}}}%
+    \put(0.12575301,0.51712441){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{"Sessioni di lavoro"}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{SEQ013.pdf}}%
-    \put(0.10485269,0.3061896){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{3}}}}%
-    \put(0.12738302,0.31930293){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Apertura di una sessione}}}%
-    \put(0.12738302,0.29307625){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{di lavoro esistente}}}%
+    \put(0.09111446,0.46185452){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{3}}}}%
+    \put(0.11069277,0.47324969){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Apertura di una sessione}}}%
+    \put(0.11069277,0.45045933){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{di lavoro esistente}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{SEQ013.pdf}}%
-    \put(0.12218371,0.24258613){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{4}}}}%
-    \put(0.14471404,0.24258613){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Visualizzazione "sessione di lavoro"}}}%
+    \put(0.1061747,0.40658464){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{4}}}}%
+    \put(0.12575301,0.40658464){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Visualizzazione "sessione di lavoro"}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=8]{SEQ013.pdf}}%
-    \put(0.10485269,0.19209602){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{5}}}}%
-    \put(0.12738302,0.19209602){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Click sul pulsante "Genera link"}}}%
+    \put(0.09111446,0.35131459){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{5}}}}%
+    \put(0.11069277,0.36270994){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Selezione degli utenti}}}%
+    \put(0.11069277,0.33991945){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{da associare}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=9]{SEQ013.pdf}}%
-    \put(0.58492201,0.14160574){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{6}}}}%
-    \put(0.60745234,0.14160574){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Richiedi nuovo link di join}}}%
+    \put(0.09111446,0.27646642){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{6}}}}%
+    \put(0.11069277,0.27646642){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Click sul pulsante associa}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=10]{SEQ013.pdf}}%
-    \put(0.61091854,0.0911156){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{7}}}}%
-    \put(0.63344887,0.0911156){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Restituisci link di join}}}%
+    \put(0.50828313,0.2325917){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{7}}}}%
+    \put(0.52786145,0.2325917){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Associa utenti}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=11]{SEQ013.pdf}}%
-    \put(0.12218371,0.04062545){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{8}}}}%
-    \put(0.14471404,0.04062545){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Mostra link di join}}}%
+    \put(0.78840361,0.18871703){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{8}}}}%
+    \put(0.80798193,0.18871703){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Associazione utenti}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{SEQ013.pdf}}%
+    \put(0.53087349,0.11386881){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{9}}}}%
+    \put(0.55045181,0.125264){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Notifica associazione}}}%
+    \put(0.55045181,0.10247366){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{completata}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{SEQ013.pdf}}%
+    \put(0.1061747,0.04720375){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{10}}}}%
+    \put(0.13930723,0.05859894){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Messaggio "Utenti associati}}}%
+    \put(0.13930723,0.03580856){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{con successo"}}}%
   \end{picture}%
 \endgroup%

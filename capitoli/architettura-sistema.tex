@@ -1,0 +1,18 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\chapter{Architettura del sistema}
+Verr\`a ora fornita una descrizione dell'architettura del sistema nei vari componenti, ad alto livello.
+Le componenti del sistema sono le seguenti:
+\\
+\begin{itemize}
+    \setlength\itemsep{1em}
+    \item[\textbf{WEB UI}] Interfaccia grafica di frontend mostrata sul browser dell'utente, che offre la possibilità di effettuare le operazioni descritte nei casi d'uso
+    \item[\textbf{WEB service}] Backend dell'interfaccia grafica, con API interrogabili ed autenticate, che effettua l'orchestrazione delle operazioni in backend
+    \item[\textbf{DAO}] Interfaccia tra le classi di progetto e il substrato di persistenza. Questo componente \`e indicato nel diagramma di deployment, ma non verr\`a esplicitato nei diagrammi di sequenza né nei diagrammi di interazione, per motivi di semplciit\`a. Infatti costituisce un layer trasparente per l'interazione con la base di dati, implementato e fornito da gran parte dei linguaggi di programmazione (es. Hibernate in Java, Django ORM in Python), il cui ruolo \`e limitato alla gestione delle operazioni CRUD (create, retrieve, update, delete) delle istanze.
+    \item[\textbf{Database}] Base di dati utilizzata per la persistenza e il caching degli oggetti
+    \item[\textbf{LDAP}] Base di dati utilizzata per gestire le credenziali degli utenti e il login
+    \item[\textbf{Container engine}] Componente utilizzato per effettuare la segregazione del filesystem e dello stack di rete per simulare i dispositivi appartenenti alla topologia
+    \item[\textbf{Terminal proxy}] Componente che offre la possibilit\`a di effettuare operazioni di scrittura e lettura nei terminali dei dispositivi simulati
+    \item[\textbf{Kernel Linux}] Componente di backend che gestisce tutte le funzionalit\`a di rete
+\end{itemize}
+\end{document}

@@ -1,0 +1,45 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\chapter{Modello di dominio}
+\newpage
+\section{Diagramma delle classi per la fase di analisi}
+\figure[H]
+\centering
+\includesvg[svgpath=capitoli/domain-model/,height=20cm, pretex=\small]{class-diagram}
+\endfigure
+\vfill\newpage
+\section{Regole di dominio}
+Le regole di dominio sono linee di condotta e procedure dell’organizzazione che definiscono o vincolano aspetti particolari del business.
+
+Esse esistono prima ed indipendentemente dal sistema che si deve sviluppare, e regolano il comportamento del software progettato in tutti i suoi aspetti.
+
+Possono essere specificate in modo generico, per poi essere istanziate nello specifico scenario in cui il prodotto deve inserirsi.
+
+\`E di seguito esposto il \textbf{catalogo delle regole di dominio} per il progetto in questione nello scenario di un istituto didattico (i.e. universit\`a) che vuole erogare un corso di Reti di Calcolatori; \`e altres\`i offerto un mapping tra le entit\`a espresse in questo documento di progetto e i requisiti esplicitati per lo scenario illustrato.
+
+La figura del \textit{docente} trova la sua corrispondenza nel ruolo dell'attore \textit{supervisore di sessione}.
+
+La figura del \textit{discente} trova la sua corrispondenza nel ruolo dell'attore \textit{utente}.
+
+Il docente pu`o dunque creare una nuova sessione di lavoro ed associare gli utenti ad essa, fornendo un invite-link o provvedendo all'associazione manuale.
+
+Il discente, una volta associato alla sessione, pu\`o disegnare la propria topologia inserendo dispositivi e link. Pu\`o inoltre effettuare il deployment della topologia.
+
+Il docente pu\`o effettuare, oltre alle azioni di gestione della sessione di lavoro, le stesse azioni del discente, in modo da poter condurre dimostrazioni ed esperimenti.
+\subsection{Catalogo delle regole di dominio}
+\begin{enumerate}
+    \setlength\itemsep{1em}
+    \item L'inserimento di un utente all'interno della piattaforma pu\`o avvenire esclusivamente all'atto del primo login, in cui il sistema effettua un check con il database LDAP centralizzato.
+
+    \item L'utente non pu\`o creare una sessione di lavoro, a meno che non abbia il ruolo di supervisore.
+
+    \item L'utente non pu\`o interagire con il canvas di un altro utente.
+
+    \item I dispositivi di livello 2 disponibili sono Hub e switch.
+
+    \item I dispositivi di livello 3 disponibili sono router e host.
+
+    \item Gli invite link hanno una durata di un'ora.
+
+\end{enumerate}
+\end{document}

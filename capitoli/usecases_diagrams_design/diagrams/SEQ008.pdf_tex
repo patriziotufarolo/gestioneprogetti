@@ -1,0 +1,88 @@
+%% Creator: Inkscape inkscape 0.92.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'SEQ008.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{527.25bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.53769559)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{SEQ008.pdf}}%
+    \put(0.0113798,0.42532702){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Utente}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{SEQ008.pdf}}%
+    \put(0.35633001,0.43670683){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{WebUI}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{SEQ008.pdf}}%
+    \put(0.57183499,0.43670683){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{WebService}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{SEQ008.pdf}}%
+    \put(0.89260313,0.43670683){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Database}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{SEQ008.pdf}}%
+    \put(0.11948791,0.38355078){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{1}}}}%
+    \put(0.13798009,0.38355078){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{do(configureLink,l)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{SEQ008.pdf}}%
+    \put(0.07539118,0.3421101){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{2}}}}%
+    \put(0.09388336,0.3421101){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{show(linkConfigurationForm)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{SEQ008.pdf}}%
+    \put(0.05903272,0.30066942){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{3}}}}%
+    \put(0.07752489,0.30066942){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{writeConfiguration()}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{SEQ008.pdf}}%
+    \put(0.10312945,0.24073655){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{4}}}}%
+    \put(0.12162162,0.24073655){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{do(sendConfiguration)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{SEQ008.pdf}}%
+    \put(0.40611664,0.19929587){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{5}}}}%
+    \put(0.42460882,0.19929587){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{sendConfiguration()}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{SEQ008.pdf}}%
+    \put(0.68207681,0.15785519){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{6}}}}%
+    \put(0.70056899,0.15785519){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{saveConfiguration()}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{SEQ008.pdf}}%
+    \put(0.65647226,0.11641449){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{7}}}}%
+    \put(0.67496444,0.11641449){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{return(configurationSaved)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{SEQ008.pdf}}%
+    \put(0.42105263,0.0749737){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{8}}}}%
+    \put(0.43954481,0.0749737){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{return(configured)}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{SEQ008.pdf}}%
+    \put(0.06970128,0.033533){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{9}}}}%
+    \put(0.08819346,0.033533){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{show(configuredLinkMessage)}}}%
+  \end{picture}%
+\endgroup%

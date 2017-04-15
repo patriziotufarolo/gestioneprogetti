@@ -1,0 +1,62 @@
+
+  ┌─┐
+  ║"│
+  └┬┘
+  ┌┼┐
+   │                       ┌─────┐               ┌──────────┐           ┌────────┐
+  ┌┴┐                      │WebUI│               │WebService│           │Database│
+Utente                     └──┬──┘               └────┬─────┘           └───┬────┘
+  │      1 get(logout)       ┌┴┐                      │                     │
+  │ ────────────────────────>│ │                      │                     │
+  │                          │ │                      │                     │
+  │                          │ │2 deleteSession(user)┌┴┐                    │
+  │                          │ │ ───────────────────>│ │                    │
+  │                          └┬┘                     │ │                    │
+  │                           │                      │ │3 deleteToken(user) ┌┴┐
+  │                           │                      │ │ ─────────────────> │ │
+  │                           │                      └┬┘                    │ │
+  │                           │                       │    4 return(ok)     │ │
+  │                           │                       │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─│ │
+  │                           │                       │                     └┬┘
+  │                          ┌┴┐   5 sessionDelete()  │                     │
+  │                          │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─                     │
+  │                          │ │                      │                     │
+  │                          │ │────┐                 │                     │
+  │                          │ │    │ <b>6</b>        │                     │
+  │                          │ │<───┘ deleteToken()   │                     │
+  │                          │ │                      │                     │
+  │                          │ │                      │                     │
+  │ 7 show(loggedOutMessage) │ │                      │                     │
+  │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │                      │                     │
+  │                          └┬┘                      │                     │
+
+@startuml
+autonumber
+hide footbox
+skinparam shadowing false
+skinparam sequenceMessageAlign cener
+skinparam monochrome true
+
+actor Utente as u
+participant WebUI as ui
+participant WebService as ws
+participant Database as db
+
+u -> ui : get(logout)
+activate ui
+ui -> ws: deleteSession(user)
+deactivate ui
+activate ws
+ws -> db: deleteToken(user)
+deactivate ws
+activate db
+ws <-- db: return(ok)
+deactivate db
+activate ws
+ui <-- ws: sessionDelete()
+deactivate ws
+activate ui
+ui -> ui: deleteToken()
+u <-- ui: show(loggedOutMessage)
+deactivate ui
+@enduml

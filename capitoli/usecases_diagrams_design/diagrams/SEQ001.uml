@@ -1,0 +1,132 @@
+
+             ┌─┐
+             ║"│
+             └┬┘
+             ┌┼┐
+              │                   ┌─────┐                ┌──────────┐              ┌────────┐          ┌──────────┐
+             ┌┴┐                  │WebUI│                │WebService│              │Database│          │LDAPServer│
+           Utente                 └──┬──┘                └────┬─────┘              └───┬────┘          └────┬─────┘
+             │    1 get(loginPage)   │                        │                        │                    │
+             │ ──────────────────────>                        │                        │                    │
+             │                       │                        │                        │                    │
+             │  2 return(loginPage)  │                        │                        │                    │
+             │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─                         │                        │                    │
+             │                       │                        │                        │                    │
+             │────┐                                           │                        │                    │
+             │    │ <b>3</b>                                  │                        │                    │
+             │<───┘ Insert credentials                        │                        │                    │
+             │                                                │                        │                    │
+             │                       │                        │                        │                    │
+             │     4 do(login)      ┌┴┐                       │                        │                    │
+             │ ────────────────────>│ │                       │                        │                    │
+             │                      │ │                       │                        │                    │
+             │                      │ │       5 login         ┌┴┐                      │                    │
+             │                      │ │ ────────────────────> │ │                      │                    │
+             │                      └┬┘                       │ │                      │                    │
+             │                       │                        │ │          6 checkCredentials(u,p)          ┌┴┐
+             │                       │                        │ │ ─────────────────────────────────────────>│ │
+             │                       │                        └┬┘                      │                    │ │
+             │                       │                        │              7 return(result)               │ │
+             │                       │                        │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─  │ │
+             │                       │                        │                        │                    └┬┘
+             │                       │                        │                        │                    │
+╔══════╤═════╪═══════════════════════╪════════════════════════╪════════════════════════╪════════════════════╪═══╗
+║ ALT  │  result = true              │                        │                        │                    │   ║
+╟──────┘     │                       │                        │                        │                    │   ║
+║            │                       │                        │ 8 checkIfUserExists()  ┌┴┐                  │   ║
+║            │                       │                        │ ─────────────────────> │ │                  │   ║
+║            │                       │                        │                        │ │                  │   ║
+║            │                       │                        │   9 return(result)     │ │                  │   ║
+║            │                       │                        │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │                  │   ║
+║            │                       │                        │                        └┬┘                  │   ║
+║            │                       │                        │                        │                    │   ║
+║            │                       │         ╔══════╤═══════╪════════════════════════╪══════════════╗     │   ║
+║            │                       │         ║ ALT  │  queryResult = 0               │              ║     │   ║
+║            │                       │         ╟──────┘       │                        │              ║     │   ║
+║            │                       │         ║              │10 createUserAndLogin() ┌┴┐            ║     │   ║
+║            │                       │         ║              │ ─────────────────────> │ │            ║     │   ║
+║            │                       │         ║              │                        │ │            ║     │   ║
+║            │                       │         ║              │   11 return(token)     │ │            ║     │   ║
+║            │                       │         ║              │ <───────────────────── │ │            ║     │   ║
+║            │                       │         ╚══════════════╪═══════════════════════════════════════╝     │   ║
+║            │                       │                        │                        │                    │   ║
+║            │                      ┌┴┐    12 return(token)   │                        │                    │   ║
+║            │                      │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─                         │                    │   ║
+║            │                      │ │                       │                        │                    │   ║
+║            │                      │ │────┐                  │                        │                    │   ║
+║            │                      │ │    │ <b>13</b>        │                        │                    │   ║
+║            │                      │ │<───┘ store(token)     │                        │                    │   ║
+║            │                      │ │                       │                        │                    │   ║
+║            │                      │ │                       │                        │                    │   ║
+║            │ 14 show(successPage) │ │                       ┌┴┐                      │                    │   ║
+║            │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │                       │ │                      │                    │   ║
+╠════════════╪════════════════════════════════════════════════╪═╪══════════════════════╪════════════════════╪═══╣
+║ [result = false]                   │                        │ │                      │                    │   ║
+║            │                      ┌┴┐15 return(loginFailed) │ │                      │                    │   ║
+║            │                      │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─  │ │                      │                    │   ║
+║            │                      │ │                       └┬┘                      │                    │   ║
+║            │  16 show(failPage)   │ │                       │                        │                    │   ║
+║            │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │                       │                        │                    │   ║
+╚════════════╪════════════════════════════════════════════════╪════════════════════════╪════════════════════╪═══╝
+             │                       │                        │                        │                    │
+
+@startuml
+hide footbox
+autonumber
+
+skinparam shadowing false
+skinparam sequenceMessageAlign center
+skinparam monochrome true
+
+Actor Utente
+Participant WebUI
+Participant WebService
+Participant Database
+Participant LDAPServer
+
+Utente -> WebUI : get(loginPage)
+Utente <-- WebUI : return(loginPage)
+
+Utente -> Utente: Insert credentials
+Utente -> WebUI : do(login)
+activate WebUI
+WebUI -> WebService : login
+deactivate WebUI
+activate WebService
+WebService -> LDAPServer: checkCredentials(u,p)
+deactivate WebService
+activate LDAPServer
+WebService <-- LDAPServer: return(result)
+deactivate LDAPServer
+alt result = true
+    activate WebService
+    WebService -> Database : checkIfUserExists()
+    deactivate WebService
+    activate Database
+    WebService <-- Database : return(result)
+    deactivate Database
+    alt queryResult = 0
+        activate WebService
+        WebService -> Database: createUserAndLogin()
+        deactivate WebService
+        activate Database
+        WebService <- Database: return(token)
+        deactivate Database
+    end
+    activate WebService
+    WebUI <-- WebService: return(token)
+    deactivate WebService
+    activate WebUI
+    WebUI -> WebUI : store(token)
+    Utente <-- WebUI: show(successPage)
+    deactivate WebUI
+else result = false
+    activate WebService
+    WebUI <-- WebService: return(loginFailed)
+    deactivate WebService
+    activate WebUI
+    Utente <-- WebUI: show(failPage)
+    deactivate WebUI
+end
+
+@enduml

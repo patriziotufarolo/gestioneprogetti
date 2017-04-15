@@ -1,0 +1,121 @@
+
+    ┌─┐
+    ║"│
+    └┬┘
+    ┌┼┐
+     │                               ┌─────┐                            ┌──────────┐                            ┌────────┐
+    ┌┴┐                              │WebUI│                            │WebService│                            │Database│
+Supervisore                          └──┬──┘                            └────┬─────┘                            └───┬────┘
+     │       1 get(sessionPage)        ┌┴┐                                   │                                      │
+     │────────────────────────────────>│ │                                   │                                      │
+     │                                 │ │                                   │                                      │
+     │                                 │ │          2 getSession()          ┌┴┐                                     │
+     │                                 │ │ ────────────────────────────────>│ │                                     │
+     │                                 │ │                                  │ │                                     │
+     │                                 │ │                                  │ │        3 retrieveSession()          ┌┴┐
+     │                                 │ │                                  │ │ ──────────────────────────────────> │ │
+     │                                 │ │                                  └┬┘                                     │ │
+     │                                 │ │                                   │          4 return(session)           │ │
+     │                                 │ │                                   │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │
+     │                                 │ │                                   │                                      └┬┘
+     │                                 │ │         5 return(session)         │                                      │
+     │                                 │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─│                                      │
+     │                                 │ │                                   │                                      │
+     │      6 show(sessionPage)        │ │                                   │                                      │
+     │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │                                   │                                      │
+     │                                 │ │                                   │                                      │
+     │                                 │ │         7 retrieveUsers()         │                                      │
+     │                                 │ │ ─────────────────────────────────>│                                      │
+     │                                 │ │                                   │                                      │
+     │                                 │ │                                   │             8 getUsers()             ┌┴┐
+     │                                 │ │                                   │ ────────────────────────────────────>│ │
+     │                                 │ │                                   │                                      │ │
+     │                                 │ │                                  ┌┴┐          9 return(users)            │ │
+     │                                 │ │                                  │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─  │ │
+     │                                 │ │                                  │ │                                     └┬┘
+     │                                 │ ┌┴┐        10 return(users)        │ │                                     │
+     │                                 │ │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │                                     │
+     │                                 │ │ │                                └┬┘                                     │
+     │       11 show(usersList)        │ │ │                                 │                                      │
+     │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │                                 │                                      │
+     │                                 │ └┬┘                                 │                                      │
+     ────┐                             │ │                                   │                                      │
+         │ <b>12</b>                   │ │                                   │                                      │
+     <───┘ select(users)               │ │                                   │                                      │
+                                       │ │                                   │                                      │
+     │                                 │ │                                   │                                      │
+     │13 do(associate, session, users) │ ┌┴┐                                 │                                      │
+     │─────────────────────────────────> │ │                                 │                                      │
+     │                                 │ │ │                                 │                                      │
+     │                                 │ │ │14 do(associate, session, users)┌┴┐                                     │
+     │                                 │ │ │ ──────────────────────────────>│ │                                     │
+     │                                 │ └┬┘                                │ │                                     │
+     │                                 │ │                                  │ │15 createAssociation(session, users) ┌┴┐
+     │                                 │ │                                  │ │ ──────────────────────────────────> │ │
+     │                                 │ │                                  └┬┘                                     │ │
+     │                                 │ │                                   │            16 return(ok)             │ │
+     │                                 │ │                                   │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │
+     │                                 │ │                                   │                                      └┬┘
+     │                                 │ ┌┴┐      17 return(associated)      │                                      │
+     │                                 │ │ │ <─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─                                       │
+     │                                 │ │ │                                 │                                      │
+     │   18 show(associatedMessage)    │ │ │                                 │                                      │
+     │<─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ │ │                                 │                                      │
+     │                                 │ └┬┘                                 │                                      │
+                                       └┬┘
+
+@startuml
+autonumber
+hide footbox
+skinparam shadowing false
+skinparam sequenceMessageAlign cener
+skinparam monochrome true
+
+actor Supervisore as u
+participant WebUI as ui
+participant WebService as ws
+participant Database as db
+
+u -> ui : get(sessionPage)
+activate ui
+ui -> ws: getSession()
+activate ws
+ws -> db: retrieveSession()
+deactivate ws
+activate db
+ws <-- db: return(session)
+deactivate db
+activate ws
+ui <-- ws: return(session)
+deactivate ws
+u <-- ui : show(sessionPage)
+
+ui -> ws: retrieveUsers()
+ws -> db: getUsers()
+activate db
+ws <-- db: return(users)
+deactivate db
+activate ws
+ui <-- ws: return(users)
+deactivate ws
+activate ui
+u <-- ui: show(usersList)
+deactivate ui
+u -> u : select(users)
+u -> ui : do(associate, session, users)
+activate ui
+ui -> ws: do(associate, session, users)
+deactivate ui
+activate ws
+ws -> db: createAssociation(session, users)
+deactivate ws
+activate db
+ws <-- db: return(ok)
+deactivate db
+activate ws
+ui <-- ws: return(associated)
+deactivate ws
+activate ui
+u <-- ui: show(associatedMessage)
+deactivate ui
+@enduml

@@ -36,7 +36,7 @@
   }%
   \providecommand\rotatebox[2]{#2}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{407.25bp}%
+    \setlength{\unitlength}{453.75bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -48,24 +48,29 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.40331492)%
+  \begin{picture}(1,0.48264463)%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{SEQ010.pdf}}%
-    \put(0.01473297,0.25783591){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Supervisore}}}%
+    \put(0.01322314,0.35207421){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Utente}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{SEQ010.pdf}}%
-    \put(0.48158379,0.27256887){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{UI}}}%
+    \put(0.41239669,0.36529735){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{UI}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{SEQ010.pdf}}%
-    \put(0.88029466,0.27256887){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Sistema}}}%
+    \put(0.67768595,0.36529735){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Sistema}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{SEQ010.pdf}}%
-    \put(0.1160221,0.20374991){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{1}}}}%
-    \put(0.13996317,0.20374991){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Doppio click sul dispositivo}}}%
+    \put(0.07272727,0.30353091){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{1}}}}%
+    \put(0.09421488,0.30353091){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Click sul pulsante "Termina"}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{SEQ010.pdf}}%
-    \put(0.53130755,0.15009835){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{2}}}}%
-    \put(0.55524862,0.15009835){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Richiedi sessione terminale}}}%
+    \put(0.44380165,0.25537753){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{2}}}}%
+    \put(0.46528926,0.25537753){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Termina esperimento}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{SEQ010.pdf}}%
-    \put(0.52578269,0.09644679){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{3}}}}%
-    \put(0.54972376,0.09644679){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Restituisci sessione terminale}}}%
+    \put(0.7446281,0.20722414){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{3}}}}%
+    \put(0.7661157,0.20722414){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Rimuovi device e link}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{SEQ010.pdf}}%
-    \put(0.16206262,0.0427952){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{4}}}}%
-    \put(0.18600368,0.0427952){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Visualizza terminale}}}%
+    \put(0.45785124,0.1250767){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{4}}}}%
+    \put(0.5338843,0.13758313){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Notifica di}}}%
+    \put(0.47933884,0.11257024){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{chiusura completata}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{SEQ010.pdf}}%
+    \put(0.11652893,0.0519104){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{\textbf{5}}}}%
+    \put(0.18099174,0.06441686){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{Messaggio di}}}%
+    \put(0.1446281,0.03940394){\color[rgb]{0,0,0}\makebox(0,0)[lb]{\smash{chiusura completata}}}%
   \end{picture}%
 \endgroup%
