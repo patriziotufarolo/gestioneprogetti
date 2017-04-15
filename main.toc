@@ -106,34 +106,11 @@
 \contentsline {subsection}{\numberline {6.3.15}SD015 - Join di una sessione di lavoro tramite invite link }{83}{subsection.6.3.15}
 \contentsline {subsection}{\numberline {6.3.16}SD016 - Logout di un utente }{84}{subsection.6.3.16}
 \contentsline {part}{\@mypartnumtocformat {III}{Testing}}{85}{part.3}
-\contentsline {part}{\@mypartnumtocformat {IV}{Pianificazione}}{87}{part.4}
-\contentsline {chapter}{\numberline {7}Text Chapter}{89}{chapter.7}
-\contentsline {section}{\numberline {7.1}Paragraphs of Text}{89}{section.7.1}
-\contentsline {section}{\numberline {7.2}Citation}{90}{section.7.2}
-\contentsline {section}{\numberline {7.3}Lists}{90}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Numbered List}{90}{subsection.7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}Bullet Points}{90}{subsection.7.3.2}
-\contentsline {subsection}{\numberline {7.3.3}Descriptions and Definitions}{90}{subsection.7.3.3}
-\contentsline {chapter}{\numberline {8}In-text Elements}{91}{chapter.8}
-\contentsline {section}{\numberline {8.1}Theorems}{91}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}Several equations}{91}{subsection.8.1.1}
-\contentsline {subsection}{\numberline {8.1.2}Single Line}{91}{subsection.8.1.2}
-\contentsline {section}{\numberline {8.2}Definitions}{91}{section.8.2}
-\contentsline {section}{\numberline {8.3}Notations}{92}{section.8.3}
-\contentsline {section}{\numberline {8.4}Remarks}{92}{section.8.4}
-\contentsline {section}{\numberline {8.5}Corollaries}{92}{section.8.5}
-\contentsline {section}{\numberline {8.6}Propositions}{92}{section.8.6}
-\contentsline {subsection}{\numberline {8.6.1}Several equations}{92}{subsection.8.6.1}
-\contentsline {subsection}{\numberline {8.6.2}Single Line}{92}{subsection.8.6.2}
-\contentsline {section}{\numberline {8.7}Examples}{92}{section.8.7}
-\contentsline {subsection}{\numberline {8.7.1}Equation and Text}{92}{subsection.8.7.1}
-\contentsline {subsection}{\numberline {8.7.2}Paragraph of Text}{93}{subsection.8.7.2}
-\contentsline {section}{\numberline {8.8}Exercises}{93}{section.8.8}
-\contentsline {section}{\numberline {8.9}Problems}{93}{section.8.9}
-\contentsline {section}{\numberline {8.10}Vocabulary}{93}{section.8.10}
-\contentsline {part}{\@mypartnumtocformat {V}{Part Two}}{95}{part.5}
-\contentsline {chapter}{\numberline {9}Presenting Information}{97}{chapter.9}
-\contentsline {section}{\numberline {9.1}Table}{97}{section.9.1}
-\contentsline {section}{\numberline {9.2}Figure}{97}{section.9.2}
-\contentsline {chapter}{\leavevmode {\color {myblue}Index}}{99}{section*.71}
+\contentsline {chapter}{\numberline {7}Casi di test di unit\IeC {\`a}}{87}{chapter.7}
+\contentsline {chapter}{\numberline {8}Casi di test di integrazione e di sistema}{91}{chapter.8}
+\contentsline {chapter}{\numberline {9}Casi di test di accettazione}{93}{chapter.9}
+\contentsline {part}{\@mypartnumtocformat {IV}{Pianificazione}}{95}{part.4}
+\contentsline {section}{\numberline {9.1}WBS}{97}{section.9.1}
+\contentsline {section}{\numberline {9.2}Activity Network}{98}{section.9.2}
+\contentsline {section}{\numberline {9.3}GANTT}{99}{section.9.3}
 \contentsfinish 

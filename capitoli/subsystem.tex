@@ -1,0 +1,28 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\chapter{Casi di test di integrazione e di sistema}
+
+Il prodotto descritto prevede l'integrazione con vari altri componenti. In particolare, come illustrato nei capitoli precedenti, le interazioni si svolgono con i seguenti moduli esterni
+\begin{itemize}
+    \item Database LDAP
+    \item Container Engine
+    \item Kernel Linux
+\end{itemize}
+
+\clearpage
+
+\begin{tabularx}{\linewidth}{|c|X|X|X|c|}
+    \toprule
+    \textbf{Codice}      & \textbf{Classe}        & \textbf{Metodo}        & \textbf{Oracolo} & \textbf{Autom.} \\ 
+    \midrule
+    \endhead
+    ST001       & LDAPServer    & checkCredentials         & Errore se non è possibile consultare il database LDAP con credenziali di autenticazione e cifratura valide & Si \\ \hline
+    ST002       & ContainerEngine    & createContainer         & Errore se viene restituito un errore nella creazione di un container & Si \\ \hline
+    ST003       & ContainerEngine    & removeContainer         & Errore se viene restituito un errore nella rimozione di un container & Si \\ \hline
+    ST004       & ContainerEngine    & getContainerTTY         & Errore se viene restituito un errore nell'attachment alla TTY di un container & Si \\ \hline 
+    ST005       & KernelLinux    & createNetNS         & Errore se il namespace non viene creato & Si \\ \hline
+    ST006       & KernelLinux    & removeNetNS         & Errore se il namespace non viene rimosso & Si \\ \hline
+    ST007       & KernelLinux    & createFS         & Errore se il filesystem non viene creato & Si \\ \hline
+    ST008       & KernelLinux    & removeFS         & Errore se il filesystem non viene rimosso & Si \\ \hline
+\end{tabularx}
+\end{document}

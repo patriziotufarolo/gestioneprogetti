@@ -1,7 +1,7 @@
 \documentclass[../../main.tex]{subfiles}
 \begin{document}
 \subsection{Caso d’uso UC001: Login alla piattaforma}
-\begin{tabularx}{150mm}{|l|X|}
+\begin{tabularx}{\textwidth}{|l|X|}
     \hline
     ID                                  & \textbf{UC001}\\
     \hline
@@ -19,23 +19,24 @@
     \hline
     Post-condizioni                     & L'utente ha accesso al sistema e può condurre le azioni desiderate, in base ai privilegi ad esso garantiti   \\
     \hline
-    Scenario principale                 & \begin {enumerate}
-\item {L'utente visita la pagina web della piattaforma}
-\item {L'utente clicca sul link login}
-\item {L'utente inserisce le proprie credenziali}
-\item {Il sistema effettua un check sulle credenziali e accetta l'accesso}
-    \end{enumerate}
+    Scenario principale                 & \parbox[t][2.5cm]{8cm}{\begin{enumerate}
+\item L'utente visita la pagina web della piattaforma
+\item L'utente clicca sul link login
+\item L'utente inserisce le proprie credenziali
+\item Il sistema effettua un check sulle credenziali e accetta l'accesso
+    \end{enumerate}}
     \\
     \hline
     Scenari alternativi                 &
-    \begin {enumerate}
-\item{L'utente visita la pagina web della piattaforma}
-\item{L'utente clicca sul link login}
-\item{L'utente inserisce credenziali errate}
-\item{Il sistema effettua un check sulle credenziali e nega l'accesso}
-\item{L'utente inserisce credenziali corrette}
-\item{Il sistema effettua un check sulle credenziali e accetta l'accesso}
-    \end{enumerate}
+    \parbox[t][4cm]{8cm}{
+    \begin{enumerate}
+\item L'utente visita la pagina web della piattaforma
+\item L'utente clicca sul link login
+\item L'utente inserisce credenziali errate
+\item Il sistema effettua un check sulle credenziali e nega l'accesso
+\item L'utente inserisce credenziali corrette
+\item Il sistema effettua un check sulle credenziali e accetta l'accesso
+    \end{enumerate}}
     \\
     \hline
     Requisiti speciali                  & -   \\

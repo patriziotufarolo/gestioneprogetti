@@ -1,0 +1,127 @@
+%% Creator: Inkscape inkscape 0.92.1, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'wbs.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{1420.5bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.41657867)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{wbs.pdf}}%
+    \put(0.49208025,0.39704329){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{CiViEl}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{wbs.pdf}}%
+    \put(0.03220697,0.29303062){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Pianificazione}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{wbs.pdf}}%
+    \put(0.49260824,0.29303062){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Sviluppo}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{wbs.pdf}}%
+    \put(0.16420275,0.29303062){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Design e progettazione}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{wbs.pdf}}%
+    \put(0.03220697,0.22967265){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Raccolta delle specifiche}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{wbs.pdf}}%
+    \put(0.03220697,0.19271383){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Analisi delle caratteristiche}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{wbs.pdf}}%
+    \put(0.05860612,0.15575502){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Studio di fattibilità&nbsp;}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{wbs.pdf}}%
+    \put(0.05860612,0.1187962){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Scelta delle tecnologie}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{wbs.pdf}}%
+    \put(0.19112988,0.22967265){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Design delle funzionalità}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{wbs.pdf}}%
+    \put(0.19112988,0.19271383){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Strutturazione dei casi d'uso}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{wbs.pdf}}%
+    \put(0.31731785,0.22967265){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Codifica}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{wbs.pdf}}%
+    \put(0.26504752,0.19271383){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Frontend}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{wbs.pdf}}%
+    \put(0.36483633,0.19271383){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Backend}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{wbs.pdf}}%
+    \put(0.49208025,0.22967265){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Revisione del codice}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{wbs.pdf}}%
+    \put(0.2967265,0.1531151){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{UX/UI}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{wbs.pdf}}%
+    \put(0.29619852,0.1187962){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Integrazione con backend}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{wbs.pdf}}%
+    \put(0.3907075,0.1531151){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Creazione dei modelli}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{wbs.pdf}}%
+    \put(0.3907075,0.1187962){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Creazione JSON Schema entità}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{wbs.pdf}}%
+    \put(0.3907075,0.08394931){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Integrazione con container engine}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{wbs.pdf}}%
+    \put(0.3907075,0.04910243){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Integrazione con kernel linux}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{wbs.pdf}}%
+    \put(0.3907075,0.01319958){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Preparazione immagini contianer}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{wbs.pdf}}%
+    \put(0.53379092,0.19271383){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Unit tests}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{wbs.pdf}}%
+    \put(0.5343189,0.05121436){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Bug Fixing}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{wbs.pdf}}%
+    \put(0.53379092,0.15733897){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Test di integrazione}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{wbs.pdf}}%
+    \put(0.53379092,0.1219641){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Componenti}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{wbs.pdf}}%
+    \put(0.5343189,0.08658923){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Sistema}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{wbs.pdf}}%
+    \put(0.66631468,0.22967265){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Sicurezza}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{wbs.pdf}}%
+    \put(0.69218585,0.19271383){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Vulnerability assessment}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{wbs.pdf}}%
+    \put(0.69218585,0.15733897){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Bugfixing}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=30]{wbs.pdf}}%
+    \put(0.79303062,0.29303062){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Deploy}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=31]{wbs.pdf}}%
+    \put(0.83474129,0.23706441){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Setup ambiente<div>di produzione</div>}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=32]{wbs.pdf}}%
+    \put(0.83474129,0.19746568){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Installazione del prodotto}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=33]{wbs.pdf}}%
+    \put(0.83526927,0.15733897){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Testing}}}%
+    \put(0.36325238,0.04963041){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Text}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=34]{wbs.pdf}}%
+    \put(0.9250264,0.29250264){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Quality assurance}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=35]{wbs.pdf}}%
+    \put(0.96673706,0.23653643){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Raccolta feedback<br>}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=36]{wbs.pdf}}%
+    \put(0.96673706,0.1969377){\color[rgb]{0,0,0}\makebox(0,0)[b]{\smash{Bugfixing e implementazione}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=37]{wbs.pdf}}%
+  \end{picture}%
+\endgroup%

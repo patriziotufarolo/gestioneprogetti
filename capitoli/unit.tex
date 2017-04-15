@@ -1,0 +1,35 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+\chapter{Casi di test di unità}
+Lo unit testing viene normalmente eseguito dagli sviluppatori, e può essere occasionalmente glass box, ovvero essere esplicitamente basato sulla conoscenza dell'architettura e del funzionamento interno di un componente oltre che sulle sue funzionalità esternamente esposte.
+
+Come le altre forme di testing, lo unit testing può variare da completamente "manuale" ad automatico.
+
+Specialmente nel caso dello unit testing automatico, lo sviluppo dei test case (cioè delle singole procedure di test) può essere considerato parte integrante dell'attività di sviluppo (per esempio, nel caso dello sviluppo guidato da test).
+\clearpage
+
+\begin{tabularx}{\linewidth}{|c|X|X|X|c|}
+    \toprule
+    \textbf{Codice}      & \textbf{Classe}        & \textbf{Metodo}        & \textbf{Oracolo} & \textbf{Autom.} \\ 
+    \midrule
+    \endhead
+    UT001       & WebService    & login         & Errore se il login con credenziali valide fallisce & Si \\ \hline
+    UT002       & WebService    & login         & Errore se il login con credenziali errate va a buon fine & Si \\ \hline
+    UT003       & WebService    & getEnvironments         & Errore se non c'è alcun ambiente configurato & Si \\ \hline
+    UT005       & WebService    & createDevice         & Errore se fallisce la creazione di un device & Si \\ \hline
+    UT006       & WebService    & createLink         & Errore se fallisce la creazione di un link & Si \\ \hline
+    UT007       & WebService    & generateLink         & Errore se il link di invito non viene generato & Si \\ \hline
+    UT008       & WebService    & deleteElements         & Errore se dopo l'eliminazione gli elementi esistono ancora & Si \\ \hline
+    UT009       & WebService    & sendConfiguration         & Errore se una configurazione valida non viene validata & Si \\ \hline
+    UT011       & WebService    & createSession         & Errore se la sessione non viene creata & Si \\ \hline
+    UT012       & WebService    & getSession         & Errore se i dati di sessione non vengono restituiti & Si \\ \hline
+    UT013       & WebService    & retrieveUsers         & Errore se il sistema non riesce ad ottenere la lista degli utenti & Si \\ \hline
+    UT014       & WebService    & associate         & Errore se dopo l'esecuzione del metodo gli utenti non risultano associati alla sessione di lavoro & Si \\ \hline
+    UT015       & WebService    & logout         & Errore se la sessione utente non viene cancellata dopo il logout & Si \\ \hline
+    UT017       & WebUI         & do         & Errore se la richiesta POST associata non viene eseguita & Si\\ \hline
+    UT018       & WebUI         & populate         & Errore se la pagina non viene popolata con i dati ottenuti dalla GET & Si \\ \hline
+    UT019       & WebUI         & show         & Errore se una pagina richiesta non esiste o non può essere caricata & Si \\ \hline
+    UT020       & TerminalProxy & openTerminal & Errore se la sessione terminale per un host non viene aperta & Si \\ \hline
+    UT021       & TerminalProxy & attachTTYToSocket & Errore se la socket TTY viene chiusa inaspettatamente & Si \\ \hline
+\end{tabularx}
+\end{document}

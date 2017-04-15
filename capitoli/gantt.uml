@@ -1,0 +1,9 @@
+@startuml
+Project starts the 1th of July 2017
+[Planning] as [T1] lasts 15 days
+[Raccolta specifiche] as [T2] lasts 6 days
+[Analisi delle caratteristiche] lasts 9 days
+[Studio di fattibilità] lasts 4 days
+[Scelta delle tecnologie] lasts 5 days
+@enduml
+pe
