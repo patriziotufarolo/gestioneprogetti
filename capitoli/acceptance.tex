@@ -1,7 +1,7 @@
 \documentclass[../main.tex]{subfiles}
 \begin{document}
 \chapter{Casi di test di accettazione}
-
+I test di accettazione costituiscono un modello di verifica per collaudare la soluzione software rispetto alle aspettative e alle esigenze dell'utente.
 \clearpage
 
 \begin{tabularx}{\linewidth}{|c|c|X|c|}
@@ -13,23 +13,34 @@
     AT002       & UC001    & Se il login non va a buon fine viene mostrato un messaggio & No \\ \hline
     AT003       & UC002    & L'accesso all'ambiente avviene con successo & No \\ \hline
     AT004       & UC002    & Se l'ambiente ha problemi viene inviata una notifica all'amministratore di sistema & No \\ \hline
-    AT005       & UC003    & L'utente è in grado di accedere alla sessione di lavoro & No \\ \hline
-    AT006       & UC004    & Il dispositivo viene aggiunto sul canvas e può essere configurato & No \\ \hline
-    AT007       & UC004    & Il dispositivo non viene aggiunto sul canvas e viene restituito un errore & No \\ \hline
-    AT008       & UC005    & Il link tra i due dispositivi viene aggiunto sul canvas e può essere configurato & No \\ \hline
-    AT009       & UC006    & L'elemento selezionato viene rimosso dal canvas & No \\ \hline
-    AT010       & UC007    & Il dispositivo è configurato correttamente e in modo valido & No \\ \hline
-    AT011       & UC007    & Il dispositivo è configurato correttamente ma non in modo valido & No \\ \hline
-    AT012       & UC008    & Il link è configurato correttamente e in modo valido & No \\ \hline
-    AT013       & UC009    & La topologia di rete viene avviata e tutti i nodi sono accessibili & No \\ \hline
-    AT014       & UC0010    & L'esperimento viene fermato e il sistema torna alla modalità di modifica & No \\ \hline
-    AT015       & UC0011    & Il terminale viene aperto correttamente ed è possibile digitare comandi & No \\ \hline
-    AT016       & UC0011    & Il terminale non viene aperto ma viene mostrato un messaggio di errore & No \\ \hline
-    AT017       & UC0012    & La sessione di lavoro viene creata ed è disponibile & No \\ \hline
-    AT018       & UC0013    & Gli utenti vengono associati con successo & No \\ \hline
-    AT019       & UC0014    & L'invite link viene generato & No \\ \hline
-    AT020       & UC0015    & L'invite link è funzionante & No \\ \hline
-    AT021       & UC0015    & L'invite link scade dopo 1h & No \\ \hline
-    AT022       & UC0016    & Il logout avviene con successo & No \\ \hline
+    AT005       & UC002    & Se l'ambiente ha problemi viene mostrato un messaggio di errore all'utente & No \\ \hline
+    AT006       & UC003    & L'utente è in grado di accedere alla sessione di lavoro & No \\ \hline
+    AT007       & UC003    & L'utente non è in grado di accedere alla sessione di lavoro & No \\ \hline
+    AT008       & UC004    & Il dispositivo viene aggiunto sul canvas e può essere configurato & No \\ \hline
+    AT009       & UC004    & Il dispositivo non viene aggiunto sul canvas e viene restituito un errore & No \\ \hline
+    AT010       & UC005    & Il link tra i due dispositivi viene aggiunto sul canvas e può essere configurato & No \\ \hline
+    AT011       & UC005    & Il link tra i due dispositivi non viene aggiunto sul canvas e viene restituito un errore & No \\ \hline
+    AT012       & UC006    & L'elemento selezionato viene rimosso dal canvas & No \\ \hline
+    AT013       & UC006    & L'elemento selezionato non viene rimosso dal canvas & No \\ \hline
+    AT014       & UC007    & Il dispositivo è configurato correttamente e in modo valido & No \\ \hline
+    AT015       & UC007    & Il dispositivo è configurato correttamente ma non in modo valido & No \\ \hline
+    AT016       & UC007    & Il dispositivo non è configurato correttamente ma in modo valido & No \\ \hline
+    AT017       & UC007    & Il dispositivo non è configurato correttamente & No \\ \hline
+    AT018       & UC008    & Il link è configurato correttamente e in modo valido & No \\ \hline
+    AT019       & UC008    & Il link è configurato correttamente ma non in modo valido & No \\ \hline
+    AT020       & UC008    & Il link non è configurato correttamente ma in modo valido & No \\ \hline
+    AT021       & UC008    & Il link non è configurato correttamente  & No \\ \hline
+    AT022       & UC009    & La topologia di rete viene avviata e tutti i nodi sono accessibili & No \\ \hline
+    AT023       & UC009    & La topologia di rete viene avviata ma c'è almeno un nodo non accessibile & No \\ \hline
+    AT024       & UC0010    & L'esperimento viene fermato e il sistema torna alla modalità di modifica & No \\ \hline
+    AT025       & UC0010    & L'esperimento viene fermato ma il sistema rimane in stallo & No \\ \hline
+    AT026       & UC0011    & Il terminale viene aperto correttamente ed è possibile digitare comandi & No \\ \hline
+    AT027       & UC0011    & Il terminale non viene aperto ma viene mostrato un messaggio di errore & No \\ \hline
+    AT028       & UC0012    & La sessione di lavoro viene creata ed è disponibile & No \\ \hline
+    AT029       & UC0013    & Gli utenti vengono associati con successo & No \\ \hline
+    AT030       & UC0014    & L'invite link viene generato & No \\ \hline
+    AT031       & UC0015    & L'invite link è funzionante & No \\ \hline
+    AT032       & UC0015    & L'invite link scade dopo 1h & No \\ \hline
+    AT033       & UC0016    & Il logout avviene con successo & No \\ \hline
 \end{tabularx}
 \end{document}
